@@ -1,0 +1,33 @@
+div button {
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+   /* border: 2px solid var(--primary-color); */
+}
+
+button.big {
+    height: 56px;
+}
+
+button.small {
+    height: 31px;
+    width: 93px;
+}
+
+button.secondary {
+    background-color: var(--secondary-color);
+    outline: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.disabled {
+    background-color: var(--disabled-color);
+  /*  border-color: var(--disabled-color); */
+}
+
+/*desktop view*/
+@media screen and (min-width: 992px) { /*vista desktop*/
+    button.big {
+        width: 244px;
+    }
+}

@@ -1,0 +1,74 @@
+fieldset {
+    height: calc(24px + 46px);
+    padding: 26px 12px 16px 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid;
+}
+
+.error-text {
+    height: 22px;
+    width: 100%;
+}
+
+.input-margin {
+    margin-bottom: 22px;
+}
+
+fieldset input {
+    border: 0;
+    outline:0; /* el borde cuando cliqueo en el input*/
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    left: 12px; /* deja espacio para iconos */
+    width: calc(100% - 60px);
+    padding: 0;
+}
+
+fieldset input.icon-left {
+    left: 48px; /* deja espacio para iconos */
+    width: calc(100% - 96px);
+}
+
+@keyframes icons_rotate_animation {
+    /*  0% {transform: rotateY(0deg);}
+      50% { transform: rotateY(180deg); }
+      100% { transform: rotateY(360deg);}
+    */
+      0% {transform: skewY(0deg);}
+      25% { transform: skewY(10deg); }
+      75% { transform: skewY(-10deg); }
+      100% { transform: skewY(0deg);}
+}
+
+.input-icons .icon{
+    animation: icons_rotate_animation 2s 3;
+}
+
+.input-icons svg {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    z-index: 1;
+}
+
+.input-icons svg.right {
+    right: 0;
+    left: auto;
+}
+
+.input-with-padding {
+    width: calc(100% - 100px); /* resto el padding y border*/
+    border-radius: 4px;
+    padding: 18px 48px; /*padding izq para el icono y su margen*/
+    border: 2px solid;
+}
+
+
+/*desktop view*/
+@media screen and (min-width: 992px) { /*vista desktop*/
+    fieldset {
+        width: 551px;
+    }
+}

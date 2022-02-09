@@ -1,10 +1,12 @@
 #root {
     height: 100vh;
-    --primay-color: #AC0000;
+    --primary-color: #AC0000;
+    --secondary-color: #FFFFFF;
     --background-color: #AC0000;
     --container-color: #FFFFFF;
     --disabled-color: #858585;
     --icon-color: #007BAD;
+    --text-color: #000000;
 }
 
 .App {
@@ -24,6 +26,11 @@
     font-style: normal;
     position: relative;
     margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, textarea, input {
+    color: var(--text-color);
 }
 
 
@@ -82,7 +89,6 @@ h5 {
 }
 
 .text2 {
-    height: 20px;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
@@ -95,6 +101,7 @@ button {
     line-height: 16px;
     letter-spacing: 1.25px;
     text-transform: capitalize;
+    color: var(--secondary-color);
 }
 
 div {
@@ -127,7 +134,7 @@ article.container-pages {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--primay-color);
+  background-color: var(--primary-color);
   border-radius: 50px;
 }
 

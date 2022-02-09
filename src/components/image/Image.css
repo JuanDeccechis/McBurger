@@ -1,0 +1,119 @@
+div.image {
+    width: 233px;
+    height: 175px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*object-fit: contain; */
+}
+
+div.image.big.food {
+    width: 233px;
+    height: 175px;
+}
+
+div.image.small.food {
+    width: 125px;
+    height: 93.75px;
+}
+
+div.image.big.promotion {
+    width: 288.75px;
+    height: 175px;
+}
+
+div.image.small.promotion {
+    width: 125px;
+    height: 75.75px;
+}
+
+div.image.Donut{
+    background-image: url("../../images/food/Donut.png");
+}
+
+div.image.EnsCaesar{
+    background-image: url("../../images/food/EnsCaesar.png");
+}
+
+div.image.EnsYamani{
+    background-image: url("../../images/food/EnsYamani.png");
+}
+
+div.image.Medialuna{
+    background-image: url("../../images/food/Medialuna.png");
+}
+
+div.image.MedialunaJyQ{
+    background-image: url("../../images/food/MedialunaJyQ.png");
+}
+
+div.image.MegaBaconDoble{
+    background-image: url("../../images/food/MegaBaconDoble.png");
+}
+
+div.image.MegaBaconSimple{
+    background-image: url("../../images/food/MegaBaconSimple.png");
+}
+
+div.image.MegaBoomDoble{
+    background-image: url("../../images/food/MegaBoomDoble.png");
+}
+
+div.image.MegaCuarto{
+    background-image: url("../../images/food/MegaCuarto.png");
+}
+
+div.image.MegaDeluxeBaconDoble{
+    background-image: url("../../images/food/MegaDeluxeBaconDoble.png");
+}
+
+div.image.MegaPolloGrillCheddar{
+    background-image: url("../../images/food/MegaPolloGrillCheddar.png");
+}
+
+div.image.Nuggets{
+    background-image: url("../../images/food/Nuggets.png");
+}
+
+div.image.NuggetsCheddarBacon{
+    background-image: url("../../images/food/NuggetsCheddarBacon.png");
+}
+
+div.image.TostadoJyQ{
+    background-image: url("../../images/food/TostadoJyQ.png");
+}
+
+div.image.TostadoNapolitano{
+    background-image: url("../../images/food/TostadoNapolitano.png");
+}
+
+div.image.TostadoSimpleJyQ{
+    background-image: url("../../images/food/TostadoSimpleJyQ.png");
+}
+
+
+
+
+div.image.Combo{
+    background-image: url("../../images/promotions/2Combo.png");
+}
+
+div.image.ComboWhopper{
+    background-image: url("../../images/promotions/2ComboWhopper.png");
+}
+
+div.image.ComboCafeFactura{
+    background-image: url("../../images/promotions/ComboCafeFactura.png");
+}
+
+div.image.ComboEnsalada{
+    background-image: url("../../images/promotions/ComboEnsalada.png");
+}
+
+div.image.TripleDoblePapas{
+    background-image: url("../../images/promotions/TripleDoblePapas.png");
+}
+
+div.image.TriplePapas{
+    background-image: url("../../images/promotions/TriplePapas.png");
+}
