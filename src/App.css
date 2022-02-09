@@ -1,0 +1,160 @@
+#root {
+    height: 100vh;
+    --primay-color: #AC0000;
+    --background-color: #AC0000;
+    --container-color: #FFFFFF;
+    --disabled-color: #858585;
+    --icon-color: #007BAD;
+}
+
+.App {
+    height: 100%;
+}
+
+.container-pages {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+* {
+    font-family: Roboto;
+    font-style: normal;
+    position: relative;
+    margin: 0;
+}
+
+
+h1 {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 56px;
+}
+
+h3 {
+    letter-spacing: 0.18px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h4 {
+    letter-spacing: 0.18px;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+h5 {
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.text1 {
+    height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.text1-bold {
+    font-weight: bold;  
+}
+
+.subtitle2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.text2 {
+    height: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-transform: capitalize;
+}
+
+div {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.container-centralized {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article.container-pages {
+    height: 100%;
+    display: block;
+    padding: 0 23px;
+    width: calc(100% - 46px);
+    overflow-y: auto;
+}
+
+/* scrollbar*/
+/*
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primay-color);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+}
+*/
+/*desktop view*/
+@media screen and (min-width: 992px) { /*vista desktop*/
+    h1 {
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: -0.5px;
+    }
+
+    h2 {
+        height: 72px;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 36px;
+    }
+}
