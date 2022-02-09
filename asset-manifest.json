@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/McBurger/static/css/main.38c7b003.chunk.css",
+    "main.js": "/McBurger/static/js/main.6698f520.chunk.js",
+    "main.js.map": "/McBurger/static/js/main.6698f520.chunk.js.map",
+    "runtime-main.js": "/McBurger/static/js/runtime-main.a56045a7.js",
+    "runtime-main.js.map": "/McBurger/static/js/runtime-main.a56045a7.js.map",
+    "static/js/2.f699eaf1.chunk.js": "/McBurger/static/js/2.f699eaf1.chunk.js",
+    "static/js/2.f699eaf1.chunk.js.map": "/McBurger/static/js/2.f699eaf1.chunk.js.map",
+    "static/js/3.e6a62d12.chunk.js": "/McBurger/static/js/3.e6a62d12.chunk.js",
+    "static/js/3.e6a62d12.chunk.js.map": "/McBurger/static/js/3.e6a62d12.chunk.js.map",
+    "index.html": "/McBurger/index.html",
+    "static/css/main.38c7b003.chunk.css.map": "/McBurger/static/css/main.38c7b003.chunk.css.map",
+    "static/js/2.f699eaf1.chunk.js.LICENSE.txt": "/McBurger/static/js/2.f699eaf1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a56045a7.js",
+    "static/js/2.f699eaf1.chunk.js",
+    "static/css/main.38c7b003.chunk.css",
+    "static/js/main.6698f520.chunk.js"
+  ]
+}
