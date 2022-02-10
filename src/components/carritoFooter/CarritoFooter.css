@@ -14,3 +14,24 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.container-carrito-footer-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*desktop view*/
+@media screen and (min-width: 992px) { /*vista desktop*/
+    .container-carrito-footer {
+        width: 551px;
+        height: calc(156px - 48px);
+    }
+
+    .container-carrito-footer-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

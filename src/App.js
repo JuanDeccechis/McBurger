@@ -4,6 +4,7 @@ import Input from './components/input/Input';
 import Image from './components/image/Image';
 import IconsCustom from './components/icons/IconsCustom';
 import CarritoFooter from './components/carritoFooter/CarritoFooter';
+import FoodInfo from './components/foodInfo/FoodInfo';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Image alt="foto" className="Combo" isBig={false} isFood={false}/>
             <IconsCustom icon="NavigationOutlinedIcon" />
             <CarritoFooter value={123}/>
+            <FoodInfo />
         </div>
     );
 }

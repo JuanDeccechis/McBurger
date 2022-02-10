@@ -1,0 +1,16 @@
+.container-food-info {
+    border-radius: 4px;
+    background-color: var(--container-color);
+    padding: 24px 23px 24px 24px;
+    height: calc(136px - 48px);
+    width: calc(100% - 47px);
+}
+
+/*desktop view*/
+@media screen and (min-width: 992px) { /*vista desktop*/
+    .container-food-info {
+        height: calc(148px - 48px);
+        width: 551px;
+    }
+
+}
