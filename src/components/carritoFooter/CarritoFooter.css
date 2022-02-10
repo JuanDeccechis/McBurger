@@ -1,0 +1,16 @@
+.container-carrito-footer {
+    border-radius: 4px;
+    background-color: var(--container-color);
+    padding: 24px 23px 24px 24px;
+    height: calc(216px - 48px);
+    width: calc(100% - 47px);
+    position: absolute;
+    bottom: 0;
+}
+
+.titles-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

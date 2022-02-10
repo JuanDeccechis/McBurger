@@ -1,5 +1,5 @@
+import React, { Component } from 'react';
 import './Button.css';
-import React from 'react'
 
 class Button extends React.Component {
     constructor(props) {
@@ -13,11 +13,12 @@ class Button extends React.Component {
     }
 
     render() {
-        const { isDisabled, handleClick, content, isBig, className } = this.props;
+        const { isDisabled, handleClick, content, isBig, isPrimary, className } = this.props;
         return (
             <button className={`${isBig ? "big" : "small"}
-            ${className ? className : ''}
-            ${isDisabled ? "disabled" : ""}`} onClick={isDisabled ? this.handleNothing : handleClick}>
+            ${isPrimary ? "primary" : "secondary"}
+            ${isDisabled ? "disabled" : ""}
+            ${className ? className : ''}`} onClick={isDisabled ? this.handleNothing : handleClick}>
                 {content}
             </button>
         );

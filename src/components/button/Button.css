@@ -2,7 +2,8 @@ div button {
     width: 100%;
     background-color: var(--primary-color);
     border-radius: 4px;
-   /* border: 2px solid var(--primary-color); */
+    border-color: var(--primary-color);
+    border-width: 2px;
 }
 
 button.big {

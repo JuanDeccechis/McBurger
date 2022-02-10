@@ -7,6 +7,7 @@
     --disabled-color: #858585;
     --icon-color: #007BAD;
     --text-color: #000000;
+    background-color: var(--background-color);
 }
 
 .App {
@@ -110,6 +111,10 @@ div {
 
 textarea {
     resize: none;
+}
+
+.divider {
+    height: 16px;
 }
 
 .container-centralized {
