@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './CarritoFooter.css'
+import './CarritoFooter.css';
 import Button from '../button/Button';
+import Title from '../title/Title';
 
 class CarritoFooter extends React.Component {
     constructor(props) {
@@ -14,13 +15,10 @@ class CarritoFooter extends React.Component {
     }
 
     render() {
-        const { value } = this.props;
+        const { title, value } = this.props;
         return (
             <div className="container-carrito-footer">
-                <div className="titles-space-between">
-                    <h3>Total</h3>
-                    <h3>{value}</h3>
-                </div>
+                <Title text={title} value={value} />
                 <div className="container-carrito-footer-buttons">
                     <Button handleClick={this.goPromotions} content="Seguir Comprando" isBig={true} isPrimary={true} className="divider" />
                     <Button content="Finalizar Compra" isBig={true} isPrimary={false} className="divider"/>

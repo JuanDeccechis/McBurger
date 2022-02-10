@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './FoodInfo.css'
+import './FoodInfo.css';
+import Title from '../title/Title';
 
 class FoodInfo extends React.Component {
     constructor(props) {
@@ -11,7 +12,7 @@ class FoodInfo extends React.Component {
         const { value } = this.props;
         return (
             <div className="container-food-info">
-                <h3>Doble combo</h3>
+                <Title text={"Doble combo"} value={value} />
                 <div className="titles-space-between divider">
                     <span>
                         <span>Calorias: </span>

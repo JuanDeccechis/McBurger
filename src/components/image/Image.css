@@ -7,6 +7,10 @@ div.image {
     /*object-fit: contain; */
 }
 
+.image-centralized {
+    margin: 0 auto;
+}
+
 div.image.big.food {
     width: 233px;
     height: 175px;

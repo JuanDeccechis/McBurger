@@ -78,8 +78,8 @@ class Input extends React.Component {
                     <input
                         id={name}
                         name={name}
-                        className={`text1 ${hasIconLeft ? "icon-left" : ""}
-                            ${error=== null ? "valid" : error ? "error" : ""
+                        className={`text1 ${hasIconLeft ? "icon-left" : ''}
+                            ${error=== null ? "valid" : error ? "error" : ''
                         } ${className ? className : ''}`}
                         type={type}
                         required

@@ -1,0 +1,50 @@
+.container-item {
+    border-radius: 4px;
+    background-color: var(--container-color);
+    padding: 24px 23px 24px 24px;
+    height: calc(435px - 48px);
+    width: calc(100% - 47px);
+}
+
+.food {
+    height: calc(435px - 48px - 40px);
+}
+
+.short-item {
+    height: calc(435px - 48px - 172px);
+}
+
+.titles-item-space {
+    margin: 16px 0;
+}
+
+.text-centralized {
+    text-align: center;
+}
+
+.item-description {
+    height: 44px;
+}
+
+/*desktop view*/
+@media screen and (min-width: 992px) { /*vista desktop*/
+    .container-item {
+        height: calc(447px - 48px);
+        width: calc(551px - 47px);
+    }
+
+    .food {
+        height: calc(447px - 48px - 40px);
+    }
+    
+    .short-item {
+        height: calc(447px - 48px - 172px);
+    }
+
+    .desktop-centralized {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}

@@ -17,7 +17,7 @@ class Button extends React.Component {
         return (
             <button className={`${isBig ? "big" : "small"}
             ${isPrimary ? "primary" : "secondary"}
-            ${isDisabled ? "disabled" : ""}
+            ${isDisabled ? "disabled" : ''}
             ${className ? className : ''}`} onClick={isDisabled ? this.handleNothing : handleClick}>
                 {content}
             </button>
