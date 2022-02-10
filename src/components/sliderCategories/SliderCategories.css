@@ -49,6 +49,6 @@
 /*desktop view*/
 @media screen and (min-width: 992px) { /*vista desktop*/
     .container-slider-data-categories {
-        width: calc(551px);
+        width: calc(551px - 23px);
     }
 }

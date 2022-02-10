@@ -1,4 +1,4 @@
-.container-food-info {
+.container-ingredients-info {
     border-radius: 4px;
     background-color: var(--container-color);
     padding: 24px 23px 24px 24px;
@@ -6,9 +6,21 @@
     width: calc(100% - 47px);
 }
 
+.references{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ingredientItem {
+    width: 160px;
+    text-align: center;
+}
+
 /*desktop view*/
 @media screen and (min-width: 992px) { /*vista desktop*/
-    .container-food-info {
+    .container-ingredients-info {
         height: calc(148px - 48px);
         width: calc(551px - 47px);
     }

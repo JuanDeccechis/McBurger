@@ -8,6 +8,7 @@ import FoodInfo from './components/foodInfo/FoodInfo';
 import LocationInfo from './components/locationInfo/LocationInfo';
 import Item from './components/item/Item';
 import SliderCategories from './components/sliderCategories/SliderCategories';
+import IngredientsInfo from './components/ingredientsInfo/IngredientsInfo';
 
 
 function App() {
@@ -31,7 +32,11 @@ function App() {
         <LocationInfo />
         <SliderCategories hasArrows={true} isMobile={true} />
         */}
+                    <Input placeholder="name" name="name" minLength={3} maxLength={12} type="text" hasIconLeft={true} >
+                <IconsCustom icon="VisibilityIcon" className="right" />
+    </Input>
         <SliderCategories hasArrows={true} isMobile={false} />
+        <IngredientsInfo />
         </div>
     );
 }
