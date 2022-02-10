@@ -5,6 +5,7 @@ import Image from './components/image/Image';
 import IconsCustom from './components/icons/IconsCustom';
 import CarritoFooter from './components/carritoFooter/CarritoFooter';
 import FoodInfo from './components/foodInfo/FoodInfo';
+import LocationInfo from './components/locationInfo/LocationInfo';
 import Item from './components/item/Item';
 
 
@@ -22,12 +23,12 @@ function App() {
             <Image alt="foto" className="Combo" isBig={false} isFood={false}/>
             <IconsCustom icon="NavigationOutlinedIcon" />
             <CarritoFooter title="Total" value={123}/>
-            <FoodInfo />
-            <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" date="08/03" isDetail={true}/>
             <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={true}/>
+            <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={false}/>
+            <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" date="08/03" isDetail={true}/>
         */}
-        <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={false}/>
-            
+        <FoodInfo />
+        <LocationInfo />
         </div>
     );
 }

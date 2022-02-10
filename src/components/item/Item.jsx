@@ -21,7 +21,7 @@ class Item extends React.Component {
                 {isDetail &&
                     <>
                         <div className="item-description">
-                            {description}
+                            <span className="text1"> {description} </span>
                         </div>
                         {date &&
                             <div className="divider text-centralized">
