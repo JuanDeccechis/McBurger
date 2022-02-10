@@ -4,8 +4,11 @@ import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined'
 import AddCircleOutlineOutlinedIcon from '@material-ui/icons/AddCircleOutlineOutlined';
 import AlternateEmailOutlinedIcon from '@material-ui/icons/AlternateEmailOutlined';
 import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
+import ChevronLeftOutlinedIcon from '@material-ui/icons/ChevronLeftOutlined';
+import ChevronRightOutlinedIcon from '@material-ui/icons/ChevronRightOutlined';
 import DeleteForeverOutlinedIcon from '@material-ui/icons/DeleteForeverOutlined';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
+import ExpandLessOutlinedIcon from '@material-ui/icons/ExpandLessOutlined';
 import FaceOutlinedIcon from '@material-ui/icons/FaceOutlined';
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
@@ -133,17 +136,17 @@ class IconsCustom extends Component {
             break;
             case "arrowLeft":
                 return (
-                    <ExpandMoreOutlinedIcon className={`icon icon-color ${className ? className : ''} rotate-horizontal`} onClick={handleClick} /> 
+                    <ChevronLeftOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
             break;
             case "arrowRight":
                 return (
-                    <ExpandMoreOutlinedIcon className={`icon icon-color ${className ? className : ''} rotate-vertical-horizontal`} onClick={handleClick} /> 
+                    <ChevronRightOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
             break;
             case "arrowUp":
                 return (
-                    <ExpandMoreOutlinedIcon className={`icon icon-color ${className ? className : ''} rotate-vertical`} onClick={handleClick} /> 
+                    <ExpandLessOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
             break;
             case "NavigationOutlinedIcon":

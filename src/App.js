@@ -7,6 +7,7 @@ import CarritoFooter from './components/carritoFooter/CarritoFooter';
 import FoodInfo from './components/foodInfo/FoodInfo';
 import LocationInfo from './components/locationInfo/LocationInfo';
 import Item from './components/item/Item';
+import SliderCategories from './components/sliderCategories/SliderCategories';
 
 
 function App() {
@@ -26,9 +27,11 @@ function App() {
             <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={true}/>
             <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={false}/>
             <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" date="08/03" isDetail={true}/>
-        */}
         <FoodInfo />
         <LocationInfo />
+        <SliderCategories hasArrows={true} isMobile={true} />
+        */}
+        <SliderCategories hasArrows={true} isMobile={false} />
         </div>
     );
 }

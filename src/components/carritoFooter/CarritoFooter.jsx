@@ -10,8 +10,7 @@ class CarritoFooter extends React.Component {
     }
     
     goPromotions = () => {
-        console.log("promotions");
-        console.log(this);
+        
     }
 
     render() {
