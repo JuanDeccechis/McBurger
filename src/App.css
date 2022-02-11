@@ -132,6 +132,12 @@ article.container-pages {
     overflow-y: auto;
 }
 
+.control-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
 /* scrollbar*/
 /*
 ::-webkit-scrollbar {

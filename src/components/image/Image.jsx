@@ -13,9 +13,10 @@ class Image extends React.Component {
     }
 
     render() {
-        const { alt, handleClick, className, isBig, isFood } = this.props;
+        const { alt, handleClick, className, isBig, isFood, isLeft } = this.props;
         return (
-            <div className={`image image-centralized ${isBig ? "big" : "small"}
+            <div className={`image ${isLeft ? '' : 'image-centralized'} 
+            ${isBig ? "big" : "small"}
             ${isFood ? "food" : "promotion"}
             ${className ? className : ''}`} 
             onClick={handleClick ? handleClick : this.handleNothing}

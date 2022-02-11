@@ -13,7 +13,7 @@ class Title extends React.Component {
                 <div className= {`title-space-between ${className ? className : ''}`}>
                     <h3>{text}</h3>
                     {value &&
-                        <h3>{value}</h3>
+                        <h3>${value}</h3>
                     }
                 </div>
                 

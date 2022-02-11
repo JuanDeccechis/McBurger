@@ -31,12 +31,13 @@ function App() {
         <FoodInfo />
         <LocationInfo />
         <SliderCategories hasArrows={true} isMobile={true} />
-        */}
-                    <Input placeholder="name" name="name" minLength={3} maxLength={12} type="text" hasIconLeft={true} >
-                <IconsCustom icon="VisibilityIcon" className="right" />
-    </Input>
         <SliderCategories hasArrows={true} isMobile={false} />
         <IngredientsInfo />
+        <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false}/>
+                <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={false} />
+        */}
+        <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={true} />
+        
         </div>
     );
 }
