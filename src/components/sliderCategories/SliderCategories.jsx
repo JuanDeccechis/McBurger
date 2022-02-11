@@ -22,6 +22,7 @@ class SliderCategories extends React.Component {
                 behavior: 'smooth'
             });
             this.setState({ currentSection: sectionId });
+            this.setFocus(sectionId);
         }
     }
 

@@ -11,7 +11,7 @@ class LocationInfo extends React.Component {
     render() {
         const { value } = this.props;
         return (
-            <div className="container-food-info">
+            <div className="container-location-info">
                 <Title text={"McBurger 9 de Julio"} value={value} />
                 <div className="titles-space-between divider">
                     <span>

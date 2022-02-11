@@ -1,11 +1,12 @@
 .container-carrito-footer {
     border-radius: 4px;
     background-color: var(--container-color);
-    padding: 24px 23px 24px 24px;
+    padding: 22px 21px 22px 22px;
     height: calc(216px - 48px);
     width: calc(100% - 47px);
     position: absolute;
     bottom: 0;
+    border: 2px solid var(--text-color);
 }
 
 .titles-space-between {

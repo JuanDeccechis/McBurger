@@ -9,9 +9,14 @@ import LocationInfo from './components/locationInfo/LocationInfo';
 import Item from './components/item/Item';
 import SliderCategories from './components/sliderCategories/SliderCategories';
 import IngredientsInfo from './components/ingredientsInfo/IngredientsInfo';
+import SliderItem from './components/sliderItem/SliderItem';
+import SliderProducts from './components/sliderProducts/SliderProducts';
 
+const mobileMax = 425;
+const tabletMax = 992;
 
 function App() {
+    const isMobile = window.innerWidth <= tabletMax;
     return (
         <div className="App">
             {/*<Button isDisabled={true} content="comidas" isBig={true} />
@@ -35,8 +40,10 @@ function App() {
         <IngredientsInfo />
         <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false}/>
                 <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={false} />
-        */}
         <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={true} />
+        <SliderItem title="Bacon full" dateExprirePromotion="08/03" value={1400} />
+        */}
+        <SliderProducts isMobile={true} title="Bacon full" dateExprirePromotion="11/03" value={750} isMobile={isMobile}/>
         
         </div>
     );

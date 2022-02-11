@@ -1,7 +1,7 @@
 .container-slider-data-categories {
     border-radius: 4px;
     background-color: var(--container-color);
-    padding: 8px 11px 8px 12px;
+    padding: 8px 7px 8px 8px; /*8px 11px 8px 12px;*/
     height: calc(40px);
     width: calc(100% - 23px);
     display: flex;

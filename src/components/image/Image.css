@@ -11,6 +11,14 @@ div.image {
     margin: 0 auto;
 }
 
+.image-centralized.divider {
+    margin-top: 16px;
+}
+
+.image-centralized.short-divider {
+    margin-top: 8px;
+}
+
 div.image.big.food {
     width: 233px;
     height: 175px;
