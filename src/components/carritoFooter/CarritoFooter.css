@@ -1,9 +1,9 @@
 .container-carrito-footer {
     border-radius: 4px;
     background-color: var(--container-color);
-    padding: 22px 21px 22px 22px;
-    height: calc(216px - 48px);
-    width: calc(100% - 47px);
+    padding: 6px 5px 6px 6px;
+    height: calc(184px - 16px);
+    width: calc(100% - 15px);
     position: absolute;
     bottom: 0;
     border: 2px solid var(--text-color);
@@ -26,8 +26,8 @@
 /*desktop view*/
 @media screen and (min-width: 992px) { /*vista desktop*/
     .container-carrito-footer {
-        width: calc(551px - 47px);
-        height: calc(156px - 48px);
+        width: calc(551px - 15px);
+        height: calc(124px - 16px);
     }
 
     .container-carrito-footer-buttons {

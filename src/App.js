@@ -29,22 +29,22 @@ function App() {
     </Input>
             <Image alt="foto" className="Combo" isBig={false} isFood={false}/>
             <IconsCustom icon="NavigationOutlinedIcon" />
-            <CarritoFooter title="Total" value={123}/>
             <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={true}/>
             <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={false}/>
             <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" date="08/03" isDetail={true}/>
-        <FoodInfo />
-        <LocationInfo />
-        <SliderCategories hasArrows={true} isMobile={true} />
-        <SliderCategories hasArrows={true} isMobile={false} />
-        <IngredientsInfo />
-        <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false}/>
-                <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={false} />
-        <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={true} />
-        <SliderItem title="Bacon full" dateExprirePromotion="08/03" value={1400} />
+            <FoodInfo />
+            <LocationInfo />
+            <SliderCategories hasArrows={true} isMobile={true} />
+            <SliderCategories hasArrows={true} isMobile={false} />
+            <IngredientsInfo />
+            <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false}/>
+            <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={false} />
+            <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={true} />
+            <SliderItem title="Bacon full" dateExprirePromotion="08/03" value={1400} />
+            <SliderProducts isMobile={true} title="Bacon full" dateExprirePromotion="11/03" value={750} isMobile={isMobile}/>
         */}
-        <SliderProducts isMobile={true} title="Bacon full" dateExprirePromotion="11/03" value={750} isMobile={isMobile}/>
         
+        <CarritoFooter title="Total" value={123}/>
         </div>
     );
 }
