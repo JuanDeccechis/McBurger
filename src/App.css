@@ -129,10 +129,8 @@ textarea {
 }
 
 article.container-pages {
-    height: 100%;
-    display: block;
-    padding: 0 23px;
-    width: calc(100% - 46px);
+    height: calc(100% - 60px);
+    margin-top: 60px;
     overflow-y: auto;
 }
 

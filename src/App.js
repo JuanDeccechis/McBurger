@@ -11,6 +11,8 @@ import SliderCategories from './components/sliderCategories/SliderCategories';
 import IngredientsInfo from './components/ingredientsInfo/IngredientsInfo';
 import SliderItem from './components/sliderItem/SliderItem';
 import SliderProducts from './components/sliderProducts/SliderProducts';
+import Menu from './components/menu/Menu';
+import Router from './pages/Router';
 
 const mobileMax = 425;
 const tabletMax = 992;
@@ -42,9 +44,9 @@ function App() {
             <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={true} />
             <SliderItem title="Bacon full" dateExprirePromotion="08/03" value={1400} />
             <SliderProducts isMobile={true} title="Bacon full" dateExprirePromotion="11/03" value={750} isMobile={isMobile}/>
-        */}
-        
         <CarritoFooter title="Total" value={123}/>
+        */}
+        <Router />
         </div>
     );
 }
