@@ -130,12 +130,27 @@ textarea {
 
 article.container-pages {
     height: calc(100% - 60px);
-    margin-top: 60px;
+    margin-bottom: 60px;
     overflow-y: auto;
+    width: 100%;
+}
+
+article.container-pages.container-page-cart {
+    height: calc(100% - 60px - 184px);
+}
+
+article.container-pages .container-pages-with-inputs {
+    align-items: normal;
+    width: calc(100% - 15px);
 }
 
 .control-overflow {
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.text-control-overflow {
     overflow: hidden;
     text-overflow: ellipsis; 
 }
@@ -157,6 +172,49 @@ article.container-pages {
 }
 */
 /*desktop view*/
+
+.longDivider {
+    margin-top: 40px;
+}
+
+div.image.map {
+    width: calc(100% - 4px - 15px);
+    height: 200px;
+    border: 2px solid var(--text-color);
+    border-radius: 4px;
+    background-image: url("./images/others/map.png");
+}
+
+.us-option {
+    width: calc(50%);
+}
+
+.us-option:hover {
+    cursor: pointer;
+}
+
+.us-selected-option {
+    border-bottom: solid 2px var(--primary-color);
+    color: var(--primary-color);
+}
+
+article.container-pages.us-form {
+    border-radius: 4px;
+    background-color: var(--container-color);
+    padding: 8px 7px 8px 8px; /*8px 11px 8px 12px;*/
+    width: calc(100% - 23px);
+}
+
+.us-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.us-file-attached {
+    margin-left: 12px;
+}
+
 @media screen and (min-width: 992px) { /*vista desktop*/
     h1 {
         font-weight: 300;

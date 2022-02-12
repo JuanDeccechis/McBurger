@@ -10,18 +10,25 @@ class Item extends React.Component {
         super(props);
         this.state = {};
     }
+
+    onClick() {
+        this.props.handleClick();
+    }
+
+    clickImage() {
+    }
     
     render() {
-        const { title, value, description, dateExprirePromotion, isDetail, isCarrito, quantity } = this.props;
+        const { title, value, className, description, dateExprirePromotion, isDetail, isCarrito, quantity } = this.props;
         if (isCarrito || (dateExprirePromotion && !isDetail)) {
             return (
-                <div className={`container-item container-carrito`}>
+                <div className={`container-item container-carrito ${className ? className : ''}`} onClick={() => this.onClick()}>
                     <div className="container-photo-description">
 
-                        <Image alt="foto" className="Combo" isBig={false} isLeft={true} isFood={dateExprirePromotion ? false : true}/>
+                        <Image alt="foto" handleClick={() => this.clickImage()} className="Combo" isBig={false} isLeft={true} isFood={dateExprirePromotion ? false : true}/>
                         <div className="photo-description">
                             <Title className="control-overflow" text={title} />
-                            <div className="item-description divider">
+                            <div className="item-description divider text-control-overflow">
                                 <span className="text1"> {description} </span>
                             </div>
                         </div>
@@ -34,7 +41,7 @@ class Item extends React.Component {
                                 <b className="text1 text1-bold"> {quantity} </b>
                                 <IconsCustom icon="AddCircleOutlineOutlinedIcon" />
                             </div>
-                            <b className="text1 text1-bold"> ${value} </b>
+                            <b className="text1 text1-bold icon"> ${value} </b>
                         </div>
                     :
                         <div className="space-around footer">
@@ -49,8 +56,10 @@ class Item extends React.Component {
             return (
                 <div className={`container-item 
                 ${dateExprirePromotion ? 'promotion' : 'container-food'}
-                ${isDetail ? '' : 'container-item-without-detail'} `}>
-                    <Image alt="foto" className="Combo" isBig={true} isFood={dateExprirePromotion ? false : true}/>
+                ${isDetail ? '' : 'container-item-without-detail'}
+                ${className ? className : ''} `}
+                onClick={() => this.onClick()}>
+                    <Image alt="foto" handleClick={() => this.clickImage()} className="Combo" isBig={true} isFood={dateExprirePromotion ? false : true}/>
                     
                     <Title className="titles-item-space" text={title} value={value} />
                     {isDetail &&

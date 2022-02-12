@@ -18,19 +18,20 @@ class Router extends React.Component {
     }
 
     render() {
+        const { isMobile } = this.props;
         return (
             <div className="container-pages">
                 <BrowserRouter basename="/McBurger">
-                    <Menu />
                     <Switch>
-                        <Route path="/home" component={(props) => <HomePage {...props} /> } />
-                        <Route path="/food" component={(props) => <FoodPage {...props} /> } />
-                        <Route path="/promotion" component={(props) => <PromotionPage {...props} /> } />
-                        <Route path="/location" component={(props) => <LocationPage {...props} /> } />
-                        <Route path="/cart" component={(props) => <CartPage {...props} /> } />
-                        <Route path="/us" component={(props) => <UsPage {...props} /> } />
+                        <Route path="/home" component={(props) => <HomePage isMobile={isMobile} {...props} /> } />
+                        <Route path="/food" component={(props) => <FoodPage isMobile={isMobile} {...props} /> } />
+                        <Route path="/promotion" component={(props) => <PromotionPage isMobile={isMobile} {...props} /> } />
+                        <Route path="/location" component={(props) => <LocationPage isMobile={isMobile} {...props} /> } />
+                        <Route path="/cart" component={(props) => <CartPage isMobile={isMobile} {...props} /> } />
+                        <Route path="/us" component={(props) => <UsPage isMobile={isMobile} {...props} /> } />
                         <Route path="/"> <Redirect to="/home" /> </Route>
                     </Switch>
+                    <Menu />
                 </BrowserRouter>
             </div>
         );

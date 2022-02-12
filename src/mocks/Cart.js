@@ -1,4 +1,4 @@
-export default Carrito = {
+export const Cart = {
     total: 2500,
     items: [
         {
@@ -8,7 +8,7 @@ export default Carrito = {
             globalDescription: "triple burger + papas grandes",
             description: "doble queso cheddar y panceta, acompañado de papas grandes",
             expirationDate: "08/03",
-            quantity: 02,
+            quantity: 2,
         },
         {
             title: "Triple con papas",
@@ -17,14 +17,14 @@ export default Carrito = {
             globalDescription: "triple burger + papas grandes",
             description: "doble queso cheddar y panceta, acompañado de papas grandes",
             expirationDate: "08/03",
-            quantity: 03,
+            quantity: 3,
         },
         {
             title: "Mega bacon simple",
             value: 600,
             id: 2,
             description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-            quantity: 05,
+            quantity: 5,
         },
     ],
 

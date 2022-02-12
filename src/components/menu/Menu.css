@@ -1,10 +1,11 @@
 .menu {
     position: fixed;
-    top: 0;
+    bottom: 0;
     height: 44px;
     padding: 6px 5px 6px 6px;
     border: 2px solid var(--text-color);
     background-color: var(--container-color);
+    border-radius: 4px;
 }
 
 .container-menu {

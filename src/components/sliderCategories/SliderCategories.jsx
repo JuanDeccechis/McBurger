@@ -39,7 +39,7 @@ class SliderCategories extends React.Component {
     }
     
     render() {
-        const { hasArrows, isMobile } = this.props;
+        const { hasArrows, isMobile, options } = this.props;
         const { currentSection } = this.state;
         return (
             <div className="container-slider-data-categories">
@@ -53,21 +53,11 @@ class SliderCategories extends React.Component {
                 <div className={`${isMobile ? 'container-slider-data' : ''}`}>
 
                     <div className={`slider-data ${isMobile ? '' : 'centralized'}`}>
-                        <div id="slider-categories-0" className="text1 slider-data-item text-centralized" onClick={() => this.setFocus(0)}> 
-                            <b className="text1 text1-bold"> Carne </b> 
-                        </div>
-                        <div id="slider-categories-1" className="text1 slider-data-item text-centralized" onClick={() => this.setFocus(1)}>
-                            <b className="text1 text1-bold"> Pollo </b>
-                        </div>
-                        <div id="slider-categories-2" className="text1 slider-data-item text-centralized" onClick={() => this.setFocus(2)}> 
-                            <b className="text1 text1-bold"> Ensaladas </b>
-                        </div>
-                        <div id="slider-categories-3" className="text1 slider-data-item text-centralized" onClick={() => this.setFocus(3)}>
-                            <b className="text1 text1-bold"> Papas </b>
-                        </div>
-                        <div id="slider-categories-4" className="text1 slider-data-item text-centralized" onClick={() => this.setFocus(4)}>
-                            <b className="text1 text1-bold"> Nuggets </b>
-                        </div>
+                        {options.map((option, index) => (
+                            <div id={`slider-categories-${index}`} key={index} className="text1 slider-data-item text-centralized" onClick={() => this.setFocus(index)}> 
+                                <b className="text1 text1-bold"> {option} </b> 
+                            </div>
+                        ))}
                     </div>
                 </div>
                 {hasArrows && isMobile &&

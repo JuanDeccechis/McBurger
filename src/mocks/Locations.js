@@ -1,33 +1,6 @@
-export default Locations = [
+export const Locations = [
     {
         type: "Restautantes",
-        id: 0,
-        places: [
-            { 
-                title: "McBurger 9 de Julio",
-                direction: "9 de Julio 567",
-                phone: "249-4423456",
-                isOpen: true,
-                id: 0,
-            },
-            { 
-                title: "McBurger Paz",
-                direction: "General Paz 567",
-                phone: "249-4423457",
-                isOpen: true,
-                id: 1,
-            },
-            { 
-                title: "McBurger Tandil",
-                direction: "Av Avellaneda 1234",
-                phone: "249-4423459",
-                isOpen: false,
-                id: 2,
-            },
-        ]
-    },
-    {
-        type: "Take Away",
         id: 1,
         places: [
             { 
@@ -35,35 +8,62 @@ export default Locations = [
                 direction: "9 de Julio 567",
                 phone: "249-4423456",
                 isOpen: true,
-                id: 0,
+                id: 10,
             },
             { 
                 title: "McBurger Paz",
                 direction: "General Paz 567",
                 phone: "249-4423457",
                 isOpen: true,
-                id: 1,
+                id: 11,
             },
             { 
                 title: "McBurger Tandil",
                 direction: "Av Avellaneda 1234",
                 phone: "249-4423459",
                 isOpen: false,
-                id: 2,
+                id: 12,
+            },
+        ]
+    },
+    {
+        type: "Take Away",
+        id: 2,
+        places: [
+            { 
+                title: "McBurger 9 de Julio",
+                direction: "9 de Julio 567",
+                phone: "249-4423456",
+                isOpen: true,
+                id: 20,
             },
             { 
                 title: "McBurger Paz",
                 direction: "General Paz 567",
                 phone: "249-4423457",
                 isOpen: true,
-                id: 3,
+                id: 21,
             },
             { 
                 title: "McBurger Tandil",
                 direction: "Av Avellaneda 1234",
                 phone: "249-4423459",
                 isOpen: false,
-                id: 4,
+                id: 22,
+            },
+            { 
+                title: "McBurger Paz",
+                direction: "General Paz 567",
+                phone: "249-4423457",
+                isOpen: true,
+                id: 23,
+            },
+            { 
+                title: "McBurger Tandil",
+                direction: "Av Avellaneda 1234",
+                phone: "249-4423459",
+                isOpen: false,
+                id: 24,
             },
         ]
     },

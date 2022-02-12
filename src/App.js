@@ -45,8 +45,8 @@ function App() {
             <SliderItem title="Bacon full" dateExprirePromotion="08/03" value={1400} />
             <SliderProducts isMobile={true} title="Bacon full" dateExprirePromotion="11/03" value={750} isMobile={isMobile}/>
         <CarritoFooter title="Total" value={123}/>
-        */}
-        <Router />
+    */}
+        <Router isMobile={true} />
         </div>
     );
 }
