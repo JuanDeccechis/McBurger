@@ -1,9 +1,11 @@
 .container-food-info {
     border-radius: 4px;
     background-color: var(--container-color);
-    padding: 24px 23px 24px 24px;
+    padding: 6px 5px 6px 6px;
     height: calc(136px - 48px);
     width: calc(100% - 47px);
+    margin: 8px auto 0 auto;
+    border: 2px solid var(--text-color);
 }
 
 /*desktop view*/

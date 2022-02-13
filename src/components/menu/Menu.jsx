@@ -16,31 +16,31 @@ class Menu extends React.Component {
                 <NavLink exact to="/home" className="menu-item container-centralized" /*"link nav-text"*/ activeClassName="active"> 
                     <div className="menu-item container-centralized">
                         <IconsCustom icon="HomeOutlinedIcon" />
-                        Home
+                        <span className="text1"> Home </span>
                     </div>
                 </NavLink>
                 <NavLink exact to="/food" className="menu-item container-centralized" /*"link nav-text"*/ activeClassName="active"> 
                     <div className="menu-item container-centralized">
                         <IconsCustom icon="HelpOutlineOutlinedIcon" />
-                        Comidas
+                        <span className="text1"> Comidas </span>
                     </div>
                 </NavLink>
                 <NavLink exact to="/promotion" className="menu-item container-centralized" /*"link nav-text"*/ activeClassName="active"> 
                     <div className="menu-item container-centralized">
                         <IconsCustom icon="NotificationsOutlinedIcon" />
-                        Promos
+                        <span className="text1"> Promos </span>
                     </div>
                 </NavLink>
                 <NavLink exact to="/location" className="menu-item container-centralized" /*"link nav-text"*/ activeClassName="active"> 
                     <div className="menu-item container-centralized">
                         <IconsCustom icon="SearchOutlinedIcon" />
-                        Locales
+                        <span className="text1"> Locales </span>
                     </div>
                 </NavLink>
                 <NavLink exact to="/cart" className="menu-item container-centralized" /*"link nav-text"*/ activeClassName="active"> 
                     <div className="menu-item menu-item-last container-centralized">
                         <IconsCustom icon="PaymentOutlinedIcon" />
-                        Carrito
+                        <span className="text1"> Carrito </span>
                     </div>
                 </NavLink>
             </div>

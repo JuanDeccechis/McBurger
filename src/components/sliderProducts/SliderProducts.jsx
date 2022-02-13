@@ -17,9 +17,10 @@ class SliderProducts extends React.Component {
     }
 
     handleScrollLink(event, sectionId) {
+        const { items } = this.props;
         event.preventDefault();
-        if ((sectionId > -1) && (sectionId < 6)) {
-            document.querySelector(`#slider-categories-${sectionId}`).scrollIntoView({
+        if ((sectionId > -1) && (sectionId < items.length)) {
+            document.querySelector(`#slider-product-categories-${sectionId}`).scrollIntoView({
                 behavior: 'smooth'
             });
             document.querySelector(`#sliderProduct${sectionId}`).scrollIntoView({
@@ -74,22 +75,33 @@ class SliderProducts extends React.Component {
             break;
         }
     }
+
+    handleAddItem(id) {
+        console.log(id);
+        console.log("slider product added");
+        localStorage.setItem("showMessage", "true");
+        let path = `/detailAdded`;
+        this.props.history.push(path);
+    }
+
+    handleShowDetail(id) {
+        console.log(id);
+        let path = `/detail`;
+        this.props.history.push(path);
+    }
     
     render() {
-        const { title, dateExprirePromotion, value, isMobile } = this.props;
+        const { title, items, isMobile } = this.props;
         const { currentSection } = this.state;
         return (
             <div className={`container-slider-products-info`}>
-                <Title text={"Otros productos"} />
+                <Title text={`${title ? title : 'Otros productos'}`} />
 
                 <div className={`container-slider-products-data ${isMobile ? 'short-divider' : 'divider'}`} /*onScroll={(event) => this.viewScroll(event)}>*/>
                     <div className="slider-products-data">
-                        <SliderItem id="sliderProduct0" isMobile={isMobile} title={title} dateExprirePromotion={dateExprirePromotion} value={value} onClick={() => this.setFocus(0)} />
-                        <SliderItem id="sliderProduct1" isMobile={isMobile} title={title} dateExprirePromotion={dateExprirePromotion} value={value} onClick={() => this.setFocus(1)} />
-                        <SliderItem id="sliderProduct2" isMobile={isMobile} title={title} dateExprirePromotion={dateExprirePromotion} value={value} onClick={() => this.setFocus(2)} />
-                        <SliderItem id="sliderProduct3" isMobile={isMobile} title={title} dateExprirePromotion={dateExprirePromotion} value={value} onClick={() => this.setFocus(3)} />
-                        <SliderItem id="sliderProduct4" isMobile={isMobile} title={title} dateExprirePromotion={dateExprirePromotion} value={value} onClick={() => this.setFocus(4)} />
-                        <SliderItem id="sliderProduct5" isMobile={isMobile} title={title} dateExprirePromotion={dateExprirePromotion} value={value} onClick={() => this.setFocus(5)} />
+                        {items.map((item, index) => (
+                            <SliderItem id={`sliderProduct${index}`} handleImageClick={() => this.handleShowDetail()} handleAddItem={() => this.handleAddItem(item.id)} key={index} isMobile={isMobile} title={item.title} dateExprirePromotion={item.expirationDate} value={item.value} onClick={() => this.setFocus(index)} />
+                        ))}
                     </div>
                 </div>  
                 
@@ -103,24 +115,11 @@ class SliderProducts extends React.Component {
                     <div className={`container-slider-data ${isMobile ? 'container-slider-product-data' : ''}`}>
 
                         <div className={`slider-data slider-product-data ${isMobile ? '' : 'centralized'}`}>
-                            <div id="slider-categories-0" className="text1 slider-product-number-item text-centralized" onClick={(event) => this.handleScrollLink(event, 0)}> 
-                                <b className="text1 text1-bold"> 1 </b> 
-                            </div>
-                            <div id="slider-categories-1" className="text1 slider-product-number-item text-centralized" onClick={(event) => this.handleScrollLink(event, 1)}> 
-                                <b className="text1 text1-bold"> 2 </b>
-                            </div>
-                            <div id="slider-categories-2" className="text1 slider-product-number-item text-centralized" onClick={(event) => this.handleScrollLink(event, 2)}> 
-                                <b className="text1 text1-bold"> 3 </b>
-                            </div>
-                            <div id="slider-categories-3" className="text1 slider-product-number-item text-centralized" onClick={(event) => this.handleScrollLink(event, 3)}> 
-                                <b className="text1 text1-bold"> 4 </b>
-                            </div>
-                            <div id="slider-categories-4" className="text1 slider-product-number-item text-centralized" onClick={(event) => this.handleScrollLink(event, 4)}> 
-                                <b className="text1 text1-bold"> 5 </b>
-                            </div>
-                            <div id="slider-categories-5" className="text1 slider-product-number-item text-centralized" onClick={(event) => this.handleScrollLink(event, 5)}> 
-                                <b className="text1 text1-bold"> 6 </b>
-                            </div>
+                            {items.map((item, index) => (
+                                <div id={`slider-product-categories-${index}`} key={index} className="text1 slider-product-number-item text-centralized" onClick={(event) => this.handleScrollLink(event, index)}> 
+                                    <b className="text1 text1-bold"> {index} </b> 
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div className="container-slider-arrow container-slider-product-arrow" >

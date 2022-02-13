@@ -10,7 +10,7 @@ class Title extends React.Component {
     render() {
         const { text, value, className } = this.props;
         return (
-            <div className= {`title-space-between ${className ? className : ''}`}>
+            <div className= {`${className ? className : ''}`}>
                 <h3>{text}</h3>
                 {value &&
                     <h3>${value}</h3>

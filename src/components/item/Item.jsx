@@ -12,14 +12,17 @@ class Item extends React.Component {
     }
 
     onClick() {
-        this.props.handleClick();
+        const { handleClick } = this.props;
+        if (handleClick) {
+            handleClick();
+        }
     }
 
     clickImage() {
     }
     
     render() {
-        const { title, value, className, description, dateExprirePromotion, isDetail, isCarrito, quantity } = this.props;
+        const { title, value, className, handleAddItem, description, dateExprirePromotion, isDetail, isCarrito, quantity } = this.props;
         if (isCarrito || (dateExprirePromotion && !isDetail)) {
             return (
                 <div className={`container-item container-carrito ${className ? className : ''}`} onClick={() => this.onClick()}>
@@ -59,9 +62,9 @@ class Item extends React.Component {
                 ${isDetail ? '' : 'container-item-without-detail'}
                 ${className ? className : ''} `}
                 onClick={() => this.onClick()}>
-                    <Image alt="foto" handleClick={() => this.clickImage()} className="Combo" isBig={true} isFood={dateExprirePromotion ? false : true}/>
+                    <Image alt="foto" value={value} handleClick={() => this.clickImage()} className="Combo" isBig={true} isFood={dateExprirePromotion ? false : true}/>
                     
-                    <Title className="titles-item-space" text={title} value={value} />
+                    <Title className={`titles-item-space ${dateExprirePromotion ? 'title-space-between' : 'title-centralized'}`} text={title} />
                     {isDetail &&
                         <>
                             <div className="item-description">
@@ -73,7 +76,7 @@ class Item extends React.Component {
                                 </div>
                             }
                             <div className="divider desktop-centralized">
-                                <Button isDisabled={false} content="Agregar" isBig={true} isPrimary={true} className="centralized" />
+                                <Button handleClick={handleAddItem} isDisabled={false} content="Agregar" isBig={true} isPrimary={true} className="centralized" />
                             </div>
                         </>
                     }

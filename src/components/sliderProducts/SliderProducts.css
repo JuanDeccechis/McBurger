@@ -1,9 +1,11 @@
 .container-slider-products-info {
     border-radius: 4px;
     background-color: var(--container-color);
-    padding: 24px 23px 24px 24px;
-    height: calc(284px - 48px);
+    padding: 6px 5px 6px 6px;
+    height: calc(307px - 48px);
     width: calc(100% - 47px);
+    margin: 8px auto 0 auto;
+    border: 2px solid var(--text-color);
 }
 
 .container-slider-products-data {
@@ -12,7 +14,7 @@
 }
 
 .slider-products-data {
-    width: 1050px;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -9,28 +9,28 @@ class FoodInfo extends React.Component {
     }
     
     render() {
-        const { value } = this.props;
+        const { item } = this.props;
         return (
             <div className="container-food-info">
-                <Title text={"Doble combo"} value={value} />
+                <Title className="title-space-between" text={item.title} value={item.value} />
                 <div className="titles-space-between divider">
                     <span>
-                        <span className="text1">Calorias: </span>
-                        <b className="text1 text1-bold">120 cal</b>
+                        <span className="text1"> {item.information[0].text}: </span>
+                        <b className="text1 text1-bold"> {item.information[0].value} </b>
                     </span>
                     <span>
-                        <span className="text1">Grasas: </span>
-                        <b className="text1 text1-bold">40 g</b>
+                        <span className="text1"> {item.information[1].text}: </span>
+                        <b className="text1 text1-bold"> {item.information[1].value} </b>
                     </span>
                 </div>
                 <div className="titles-space-between">
                     <span>
-                        <span className="text1">Proteinas: </span>
-                        <b className="text1 text1-bold">80 g</b>
+                        <span className="text1"> {item.information[2].text}: </span>
+                        <b className="text1 text1-bold"> {item.information[2].value} </b>
                     </span>
                     <span>
-                        <span className="text1">Hidratos: </span>
-                        <b className="text1 text1-bold">40 g</b>
+                        <span className="text1"> {item.information[3].text}: </span>
+                        <b className="text1 text1-bold"> {item.information[3].value} </b>
                     </span>
                 </div>
             </div>

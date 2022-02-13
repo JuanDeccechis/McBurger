@@ -10,14 +10,15 @@ class CarritoFooter extends React.Component {
     }
     
     goPromotions = () => {
-        
+        let path = `/promotion`;
+        this.props.history.push(path);
     }
 
     render() {
         const { value } = this.props;
         return (
             <div className="container-carrito-footer">
-                <Title text={"Total"} value={value} />
+                <Title text={"Total"} className="title-space-between" value={value} />
                 <div className="container-carrito-footer-buttons">
                     <Button handleClick={this.goPromotions} content="Seguir Comprando" isBig={true} isPrimary={true} className="divider" />
                     <Button content="Finalizar Compra" isBig={true} isPrimary={false} className="divider"/>

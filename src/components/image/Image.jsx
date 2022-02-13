@@ -13,14 +13,24 @@ class Image extends React.Component {
     }
 
     render() {
-        const { alt, handleClick, className, isBig, isFood, isLeft } = this.props;
+        const { alt, value, handleClick, className, isBig, isFood, isLeft } = this.props;
         return (
             <div className={`image ${isLeft ? '' : 'image-centralized'} 
             ${isBig ? "big" : "small"}
             ${isFood ? "food" : "promotion"}
             ${className ? className : ''}`} 
             onClick={handleClick ? handleClick : this.handleNothing}
-            alt={alt} />
+            alt={alt} >
+                {value && 
+                    <div className={`image-sticker container-centralized ${isBig ? '' : 'image-sticker-small'}`}>
+                        {isBig ?
+                            <h3> ${value} </h3>
+                            :
+                            <span className="text1"> ${value} </span>
+                        }
+                    </div>
+                }
+            </div>
         );
     }  
 }

@@ -16,9 +16,13 @@ class SliderCategories extends React.Component {
     }
 
     handleScrollLink(event, sectionId) {
+        const { options } = this.props;
         event.preventDefault();
         if ((sectionId > -1) && (sectionId < 5)) {
             document.querySelector(`#slider-categories-${sectionId}`).scrollIntoView({
+                behavior: 'smooth'
+            });
+            document.querySelector(`#food-category-${options[sectionId]}`).scrollIntoView({
                 behavior: 'smooth'
             });
             this.setState({ currentSection: sectionId });
@@ -27,6 +31,7 @@ class SliderCategories extends React.Component {
     }
 
     setFocus(sectionId) {
+        console.log(sectionId);
         const { selectedSection } = this.state;
         let sections = document.querySelectorAll(".slider-data-item");
         let previousSection = sections[selectedSection];
@@ -39,10 +44,10 @@ class SliderCategories extends React.Component {
     }
     
     render() {
-        const { hasArrows, isMobile, options } = this.props;
+        const { hasArrows, isMobile, options, className } = this.props;
         const { currentSection } = this.state;
         return (
-            <div className="container-slider-data-categories">
+            <div className={`container-slider-data-categories ${className ? className : ''}`}>
                 {hasArrows && isMobile &&
                     <div className="container-slider-arrow" >
                         <a href="/home" onClick={(event) => this.handleScrollLink(event, currentSection-1)}>
@@ -54,7 +59,7 @@ class SliderCategories extends React.Component {
 
                     <div className={`slider-data ${isMobile ? '' : 'centralized'}`}>
                         {options.map((option, index) => (
-                            <div id={`slider-categories-${index}`} key={index} className="text1 slider-data-item text-centralized" onClick={() => this.setFocus(index)}> 
+                            <div id={`slider-categories-${index}`} key={index} className="text1 slider-data-item text-centralized" onClick={(event) => this.handleScrollLink(event, index)}> 
                                 <b className="text1 text1-bold"> {option} </b> 
                             </div>
                         ))}

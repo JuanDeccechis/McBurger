@@ -39,6 +39,23 @@ div.image.small.promotion {
     height: 75.75px;
 }
 
+.image-sticker {
+    width: 70px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--text-color);
+    border-radius: 100px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+
+}
+
+.image-sticker-small {
+    width: 40px;
+    height: 30px;
+}
+
 div.image.Donut{
     background-image: url("../../images/food/Donut.png");
 }

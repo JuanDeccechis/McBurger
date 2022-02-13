@@ -8,6 +8,8 @@ import LocationPage from "./LocationPage";
 import PromotionPage from "./PromotionPage";
 import UsPage from "./UsPage";
 import Menu from '../components/menu/Menu';
+import ItemDetailPage from './ItemDetailPage';
+import ItemDetailPageProductAdded from './ItemDetailPageProductAdded';
 
 
 class Router extends React.Component {
@@ -29,7 +31,9 @@ class Router extends React.Component {
                         <Route path="/location" component={(props) => <LocationPage isMobile={isMobile} {...props} /> } />
                         <Route path="/cart" component={(props) => <CartPage isMobile={isMobile} {...props} /> } />
                         <Route path="/us" component={(props) => <UsPage isMobile={isMobile} {...props} /> } />
-                        <Route path="/"> <Redirect to="/home" /> </Route>
+                        <Route path="/detailAdded" component={(props) => <ItemDetailPageProductAdded isMobile={isMobile} {...props} /> } />
+                        <Route path="/detail" component={(props) => <ItemDetailPage isMobile={isMobile} {...props} /> } />
+                        <Route path="/" component={(props) => <Redirect to="/home" isMobile={isMobile} {...props} /> } />
                     </Switch>
                     <Menu />
                 </BrowserRouter>

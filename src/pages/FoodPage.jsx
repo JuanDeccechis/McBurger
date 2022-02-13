@@ -1,7 +1,9 @@
 import React from 'react';
 import Item from '../components/item/Item';
 import SliderCategories from '../components/sliderCategories/SliderCategories';
+import SliderProducts from '../components/sliderProducts/SliderProducts';
 import { Foods, FoodCategories } from '../mocks/Foods';
+import { Promotions } from '../mocks/Promotions';
 
 class FoodPage extends React.Component {
     constructor(props) {
@@ -9,25 +11,29 @@ class FoodPage extends React.Component {
         this.state = {};
     }
 
-    handleClick(id) {
+    handleShowDetail(id) {
         console.log(id);
+        let path = `/detail`;
+        this.props.history.push(path);
     }
     
     render() {
         return (
-            <article className={`container-pages `}>
-                <h2> Comidas </h2> 
-                <SliderCategories hasArrows={true} isMobile={true} options={FoodCategories} />
-                {Foods.map((item, index) => (
-                    <div key={index} className="longDivider">
-                        <h3> {item.type} </h3>
-                        {item.list.map((food, i) => (
-                            <Item key={i} className="divider" handleClick={() => this.handleClick(food.id)} title={food.title} value={food.value} description={food.description} isDetail={false} />
+            <>
+                <article className={`container-pages container-page-food`}>
+                    <SliderProducts isMobile={true} history={this.props.history} title="Nuestras promos" items={Promotions} />
+                        {Foods.map((item, index) => (
+                            <div key={index} className="longDivider">
+                                <h3 id={`food-category-${item.type}`}> {item.type} </h3>
+                                {item.list.map((food, i) => (
+                                    <Item key={i} className="divider" handleClick={() => this.handleShowDetail(food.id)} title={food.title} value={food.value} description={food.description} isDetail={false} />
+                                    ))}
+                            </div>
                         ))}
-                    </div>
-                ))}
 
-            </article>
+                </article>
+                    <SliderCategories className="divider container-foods" hasArrows={true} isMobile={true} options={FoodCategories} />
+                </>
         );
     }  
 }
