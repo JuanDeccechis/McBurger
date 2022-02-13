@@ -44,6 +44,7 @@ class ItemDetailPage extends React.Component {
     }
 
     render() {
+        const { isMobile } = this.props;
         const { showMessage, isRollback } = this.state;
         console.log(showMessage);
         return (
@@ -52,7 +53,7 @@ class ItemDetailPage extends React.Component {
                 <div className="divider"></div>
                 <FoodInfo item={Foods[0].list[0]} />
                 <div className="divider"></div>
-                <SliderProducts isMobile={true} history={this.props.history} items={Promotions} />
+                <SliderProducts isMobile={isMobile} history={this.props.history} items={Promotions} />
                 {showMessage && 
                     <div className="message-popup">
                         {isRollback ?

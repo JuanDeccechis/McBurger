@@ -28,7 +28,7 @@ button.secondary {
 }
 
 /*desktop view*/
-@media screen and (min-width: 992px) { /*vista desktop*/
+@media screen and (min-width: 600px) { /*vista desktop*/
     button.big {
         width: 244px;
     }

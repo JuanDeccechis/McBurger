@@ -18,10 +18,12 @@ class FoodPage extends React.Component {
     }
     
     render() {
+        const { isMobile } = this.props;
+        console.log(isMobile);
         return (
             <>
                 <article className={`container-pages container-page-food`}>
-                    <SliderProducts isMobile={true} history={this.props.history} title="Nuestras promos" items={Promotions} />
+                    <SliderProducts isMobile={isMobile} history={this.props.history} title="Nuestras promos" items={Promotions} />
                         {Foods.map((item, index) => (
                             <div key={index} className="longDivider">
                                 <h3 id={`food-category-${item.type}`}> {item.type} </h3>
@@ -32,7 +34,7 @@ class FoodPage extends React.Component {
                         ))}
 
                 </article>
-                    <SliderCategories className="divider container-foods" hasArrows={true} isMobile={true} options={FoodCategories} />
+                    <SliderCategories className="divider container-foods" hasArrows={true} isMobile={isMobile} options={FoodCategories} />
                 </>
         );
     }  
