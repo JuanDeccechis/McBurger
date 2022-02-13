@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from '../components/button/Button';
 import IconsCustom from '../components/icons/IconsCustom';
 import Input from '../components/input/Input';

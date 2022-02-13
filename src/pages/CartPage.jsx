@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CarritoFooter from '../components/carritoFooter/CarritoFooter';
 import Item from '../components/item/Item';
 import { Cart } from '../mocks/Cart';

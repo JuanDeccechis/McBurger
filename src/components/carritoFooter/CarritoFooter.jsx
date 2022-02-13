@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './CarritoFooter.css';
 import Button from '../button/Button';
 import Title from '../title/Title';

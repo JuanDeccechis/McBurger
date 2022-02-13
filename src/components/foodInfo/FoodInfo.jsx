@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './FoodInfo.css';
 import Title from '../title/Title';
 

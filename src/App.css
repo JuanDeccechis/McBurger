@@ -208,7 +208,7 @@ article.container-pages.us-form {
 .us-inline {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .us-file-attached {

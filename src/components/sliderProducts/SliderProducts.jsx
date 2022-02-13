@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SliderProducts.css';
 import Title from '../title/Title';
 import SliderItem from '../sliderItem/SliderItem';
@@ -51,22 +51,22 @@ class SliderProducts extends React.Component {
             case scrollValue < 5:
                 this.setFocus(0);
             break;
-            case 5 <= scrollValue < 10:
+            case (5 <= scrollValue) && (scrollValue < 10):
                 this.setFocus(1);
             break;
-            case 10 <= scrollValue < 15:
+            case (10 <= scrollValue) && (scrollValue < 15):
                 this.setFocus(2);
             break;
-            case 15 <= scrollValue < 29:
+            case (15 <= scrollValue) && (scrollValue < 29):
                 this.setFocus(3);
             break;
-            case 29 <= scrollValue < 49:
+            case (29 <= scrollValue) && (scrollValue < 49):
                 this.setFocus(4);
             break;
-            case 49 <= scrollValue < 333:
+            case (49 <= scrollValue) && (scrollValue < 333):
                 this.setFocus(5);
             break;
-            case 333 <= scrollValue < 650:
+            case (333 <= scrollValue) && (scrollValue < 650):
                 this.setFocus(6);
             break;
             default:
@@ -96,7 +96,7 @@ class SliderProducts extends React.Component {
 
                 <div className={`container-slider-data-categories container-slider-product-data-categories ${isMobile ? 'short-divider' : 'container-slider-products-categories-top'}`}>
                     <div className="container-slider-arrow container-slider-product-arrow" >
-                        <a onClick={(event) => this.handleScrollLink(event, currentSection-1)}>
+                        <a href="/home" onClick={(event) => this.handleScrollLink(event, currentSection-1)}>
                             <IconsCustom icon="arrowLeft" />
                         </a>
                     </div>
@@ -124,7 +124,7 @@ class SliderProducts extends React.Component {
                         </div>
                     </div>
                     <div className="container-slider-arrow container-slider-product-arrow" >
-                        <a onClick={(event) => this.handleScrollLink(event, currentSection+1)}>
+                        <a href="/home" onClick={(event) => this.handleScrollLink(event, currentSection+1)}>
                             <IconsCustom icon="arrowRight" />
                         </a>
                     </div>

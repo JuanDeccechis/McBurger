@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Item.css';
 import Button from '../button/Button';
 import Image from '../image/Image';

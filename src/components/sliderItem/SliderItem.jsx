@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SliderItem.css';
 import Title from '../title/Title';
 import Image from '../image/Image';

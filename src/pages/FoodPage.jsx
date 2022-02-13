@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Item from '../components/item/Item';
 import SliderCategories from '../components/sliderCategories/SliderCategories';
 import { Foods, FoodCategories } from '../mocks/Foods';

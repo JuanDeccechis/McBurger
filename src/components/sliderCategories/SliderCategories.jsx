@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SliderCategories.css';
 import IconsCustom from '../icons/IconsCustom';
 
@@ -45,7 +45,7 @@ class SliderCategories extends React.Component {
             <div className="container-slider-data-categories">
                 {hasArrows && isMobile &&
                     <div className="container-slider-arrow" >
-                        <a onClick={(event) => this.handleScrollLink(event, currentSection-1)}>
+                        <a href="/home" onClick={(event) => this.handleScrollLink(event, currentSection-1)}>
                             <IconsCustom icon="arrowLeft" />
                         </a>
                     </div>
@@ -62,7 +62,7 @@ class SliderCategories extends React.Component {
                 </div>
                 {hasArrows && isMobile &&
                     <div className="container-slider-arrow" >
-                        <a onClick={(event) => this.handleScrollLink(event, currentSection+1)}>
+                        <a href="/home" onClick={(event) => this.handleScrollLink(event, currentSection+1)}>
                             <IconsCustom icon="arrowRight" />
                         </a>
                     </div>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './IconsCustom.css';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 import AddCircleOutlineOutlinedIcon from '@material-ui/icons/AddCircleOutlineOutlined';
@@ -24,7 +24,7 @@ import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
 import VisibilityOutlinedIcon from "@material-ui/icons/VisibilityOutlined";
 import VisibilityOffOutlinedIcon from "@material-ui/icons/VisibilityOffOutlined";
 
-class IconsCustom extends Component {
+class IconsCustom extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -37,128 +37,103 @@ class IconsCustom extends Component {
                 return (
                     <AccountCircleOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "AddCircleOutlineOutlinedIcon":
                 return (
                     <AddCircleOutlineOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "AlternateEmailOutlinedIcon":
                 return (
                     <AlternateEmailOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "CheckCircleOutlinedIcon":
                 return (
                     <CheckCircleOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "DeleteForeverOutlinedIcon":
                 return (
                     <DeleteForeverOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "ExpandMoreOutlinedIcon":
                 return (
                     <ExpandMoreOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "FaceOutlinedIcon":
                 return (
                     <FaceOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "HelpOutlineOutlinedIcon":
                 return (
                     <HelpOutlineOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "HomeOutlinedIcon":
                 return (
                     <HomeOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "LockOpenOutlinedIcon":
                 return (
                     <LockOpenOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "LockOutlinedIcon":
                 return (
                     <LockOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "NotificationsActiveOutlinedIcon":
                 return (
                     <NotificationsActiveOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "NotificationsOutlinedIcon":
                 return (
                     <NotificationsOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "PaymentOutlinedIcon":
                 return (
                     <PaymentOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "RemoveCircleOutlineOutlinedIcon":
                 return (
                     <RemoveCircleOutlineOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "SearchOutlinedIcon":
                 return (
                     <SearchOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "StarBorderOutlinedIcon":
                 return (
                     <StarBorderOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "VisibilityOutlinedIcon":
                 return (
                     <VisibilityOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "VisibilityOffOutlinedIcon":
                 return (
                     <VisibilityOffOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             
             case "arrowDown":
                 return (
                     <ExpandMoreOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "arrowLeft":
                 return (
                     <ChevronLeftOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "arrowRight":
                 return (
                     <ChevronRightOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "arrowUp":
                 return (
                     <ExpandLessOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
             case "NavigationOutlinedIcon":
                 return (
                     <NavigationOutlinedIcon className={`icon icon-color ${className ? className : ''} rotate-percentage`} onClick={handleClick} /> 
                 );
-            break;
             default:
                 return (
                     <ExpandMoreOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
-            break;
         }
 
     }
