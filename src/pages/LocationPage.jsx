@@ -14,7 +14,7 @@ class LocationPage extends React.Component {
         console.log(Locations);
         return (
             <article className={`container-pages `}>
-                <div className="container-pages-with-inputs">
+                <div className="container-pages-with-inputs divider">
                 <Input placeholder="name" name="name" minLength={3} type="text" hasIconLeft={false} >
                     <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                 </Input>

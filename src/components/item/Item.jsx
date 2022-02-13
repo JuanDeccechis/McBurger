@@ -22,13 +22,13 @@ class Item extends React.Component {
     }
     
     render() {
-        const { title, value, className, handleAddItem, description, dateExprirePromotion, isDetail, isCarrito, quantity } = this.props;
+        const { title, value, className, handleAddItem, image, description, dateExprirePromotion, isDetail, isCarrito, quantity } = this.props;
         if (isCarrito || (dateExprirePromotion && !isDetail)) {
             return (
                 <div className={`container-item container-carrito ${className ? className : ''}`} onClick={() => this.onClick()}>
                     <div className="container-photo-description">
 
-                        <Image alt="foto" handleClick={() => this.clickImage()} className="Combo" isBig={false} isLeft={true} isFood={dateExprirePromotion ? false : true}/>
+                        <Image alt="foto" handleClick={() => this.clickImage()} className={image ? image : "Combo"} isBig={false} isLeft={true} isFood={dateExprirePromotion ? false : true}/>
                         <div className="photo-description">
                             <Title className="control-overflow" text={title} />
                             <div className="item-description divider text-control-overflow">
@@ -62,7 +62,7 @@ class Item extends React.Component {
                 ${isDetail ? '' : 'container-item-without-detail'}
                 ${className ? className : ''} `}
                 onClick={() => this.onClick()}>
-                    <Image alt="foto" value={value} handleClick={() => this.clickImage()} className="Combo" isBig={true} isFood={dateExprirePromotion ? false : true}/>
+                    <Image alt="foto" value={value} handleClick={() => this.clickImage()} className={image ? image : "Combo"} isBig={true} isFood={dateExprirePromotion ? false : true}/>
                     
                     <Title className={`titles-item-space ${dateExprirePromotion ? 'title-space-between' : 'title-centralized'}`} text={title} />
                     {isDetail &&

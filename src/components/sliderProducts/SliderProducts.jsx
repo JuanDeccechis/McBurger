@@ -100,7 +100,7 @@ class SliderProducts extends React.Component {
                 <div className={`container-slider-products-data ${isMobile ? 'short-divider' : 'divider'}`} /*onScroll={(event) => this.viewScroll(event)}>*/>
                     <div className="slider-products-data">
                         {items.map((item, index) => (
-                            <SliderItem id={`sliderProduct${index}`} handleImageClick={() => this.handleShowDetail()} handleAddItem={() => this.handleAddItem(item.id)} key={index} isMobile={isMobile} title={item.title} dateExprirePromotion={item.expirationDate} value={item.value} onClick={() => this.setFocus(index)} />
+                            <SliderItem id={`sliderProduct${index}`} handleImageClick={() => this.handleShowDetail()} handleAddItem={() => this.handleAddItem(item.id)} key={index} isMobile={isMobile} title={item.title} dateExprirePromotion={item.expirationDate} value={item.value} onClick={() => this.setFocus(index)} image={item.image} />
                         ))}
                     </div>
                 </div>  

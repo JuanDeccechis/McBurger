@@ -162,6 +162,7 @@ article.container-pages.container-page-cart {
 article.container-pages .container-pages-with-inputs {
     align-items: normal;
     width: calc(100% - 15px);
+    background-color: var(--container-color);
 }
 
 .control-overflow {

@@ -20,7 +20,7 @@ class PromotionPage extends React.Component {
             <article className={`container-pages `}>
                 {Promotions.map((promotion, index) => (
                     <div key={index}>
-                        <Item className="divider" handleClick={() => this.handleClick(promotion.id)} title={promotion.title} value={promotion.value} description={promotion.globalDescription} isDetail={false} dateExprirePromotion={promotion.expirationDate} />
+                        <Item className="divider" handleClick={() => this.handleClick(promotion.id)} title={promotion.title} value={promotion.value} description={promotion.globalDescription} isDetail={false} dateExprirePromotion={promotion.expirationDate} image={promotion.image} />
                     </div>
                 ))}
 

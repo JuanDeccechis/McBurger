@@ -10,17 +10,22 @@ import DeleteForeverOutlinedIcon from '@material-ui/icons/DeleteForeverOutlined'
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 import ExpandLessOutlinedIcon from '@material-ui/icons/ExpandLessOutlined';
 import FaceOutlinedIcon from '@material-ui/icons/FaceOutlined';
+import FastfoodOutlinedIcon from '@material-ui/icons/FastfoodOutlined';
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import LockOpenOutlinedIcon from '@material-ui/icons/LockOpenOutlined';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+//import LunchDiningOutlinedIcon from '@material-ui/icons/LunchDiningOutlined';
 import NavigationOutlinedIcon from '@material-ui/icons/NavigationOutlined';
 import NotificationsActiveOutlinedIcon from '@material-ui/icons/NotificationsActiveOutlined';
 import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
 import RemoveCircleOutlineOutlinedIcon from '@material-ui/icons/RemoveCircleOutlineOutlined';
+import RestaurantOutlinedIcon from '@material-ui/icons/RestaurantOutlined';
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
+import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
+import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
 import VisibilityOutlinedIcon from "@material-ui/icons/VisibilityOutlined";
 import VisibilityOffOutlinedIcon from "@material-ui/icons/VisibilityOffOutlined";
 
@@ -61,6 +66,10 @@ class IconsCustom extends React.Component {
                 return (
                     <FaceOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
+            case "FastfoodOutlinedIcon":
+                return (
+                    <FastfoodOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
+                );
             case "HelpOutlineOutlinedIcon":
                 return (
                     <HelpOutlineOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
@@ -93,13 +102,25 @@ class IconsCustom extends React.Component {
                 return (
                     <RemoveCircleOutlineOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
+            case "RestaurantOutlinedIcon":
+                return (
+                    <RestaurantOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
+                );
             case "SearchOutlinedIcon":
                 return (
                     <SearchOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
+            case "ShoppingCartOutlinedIcon":
+                return (
+                    <ShoppingCartOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
+                );
             case "StarBorderOutlinedIcon":
                 return (
                     <StarBorderOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
+                );
+            case "StorefrontOutlinedIcon":
+                return (
+                    <StorefrontOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
             case "VisibilityOutlinedIcon":
                 return (

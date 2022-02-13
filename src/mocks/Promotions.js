@@ -13,10 +13,11 @@ export const Promotions = [
             { text: "Proteinas", value: "80 g" }
         ],
         expirationDate: "08/03",
+        image: "TriplePapas",
     },
     {
-        title: "Mega bacon simple",
-        value: 600,
+        title: "Triple y doble con papas",
+        value: 1200,
         id: 1,
         globalDescription: "triple burger + papas grandes",
         description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
@@ -28,10 +29,11 @@ export const Promotions = [
             { text: "Proteinas", value: "80 g" }
         ],
         expirationDate: "08/03",
+        image: "TripleDoblePapas",
     },
     {
-        title: "Triple con papas",
-        value: 700,
+        title: "Combo x2",
+        value: 1500,
         id: 2,
         globalDescription: "triple burger + papas grandes",
         description: "doble queso cheddar y panceta, acompañado de papas grandes",
@@ -42,11 +44,12 @@ export const Promotions = [
             { text: "Hidratos", value: "40 g" },
             { text: "Proteinas", value: "80 g" }
         ],
-        expirationDate: "08/03"
+        expirationDate: "08/03",
+        image: "Combo",
     },
     {
-        title: "Mega bacon simple",
-        value: 600,
+        title: "Combo whopper x2",
+        value: 1600,
         id: 3,
         globalDescription: "triple burger + papas grandes",
         description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
@@ -58,10 +61,11 @@ export const Promotions = [
             { text: "Proteinas", value: "80 g" }
         ],
         expirationDate: "08/03",
+        image: "ComboWhopper",
     },
     {
-        title: "Triple con papas",
-        value: 700,
+        title: "Combo Ensalada",
+        value: 1700,
         id: 4,
         globalDescription: "triple burger + papas grandes",
         description: "doble queso cheddar y panceta, acompañado de papas grandes",
@@ -73,6 +77,7 @@ export const Promotions = [
             { text: "Proteinas", value: "80 g" }
         ],
         expirationDate: "08/03",
+        image: "ComboEnsalada",
     },
     {
         title: "Mega bacon simple",
@@ -88,6 +93,7 @@ export const Promotions = [
             { text: "Proteinas", value: "80 g" }
         ],
         expirationDate: "08/03",
+        image: "TriplePapas",
     },
     {
         title: "Triple con papas",
@@ -102,6 +108,7 @@ export const Promotions = [
             { text: "Hidratos", value: "40 g" },
             { text: "Proteinas", value: "80 g" }
         ],
-        expirationDate: "08/03"
+        expirationDate: "08/03",
+        image: "TriplePapas",
     },
 ]

@@ -28,7 +28,7 @@ class FoodPage extends React.Component {
                             <div key={index} className="longDivider">
                                 <h3 id={`food-category-${item.type}`}> {item.type} </h3>
                                 {item.list.map((food, i) => (
-                                    <Item key={i} className="divider" handleClick={() => this.handleShowDetail(food.id)} title={food.title} value={food.value} description={food.description} isDetail={false} />
+                                    <Item key={i} className="divider" handleClick={() => this.handleShowDetail(food.id)} title={food.title} value={food.value} description={food.description} isDetail={false} image={food.image} />
                                     ))}
                             </div>
                         ))}
