@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/McBurger/static/css/main.0648567f.chunk.css",
-    "main.js": "/McBurger/static/js/main.2751ed0d.chunk.js",
-    "main.js.map": "/McBurger/static/js/main.2751ed0d.chunk.js.map",
+    "main.css": "/McBurger/static/css/main.c50e6c4b.chunk.css",
+    "main.js": "/McBurger/static/js/main.3bc2a8f2.chunk.js",
+    "main.js.map": "/McBurger/static/js/main.3bc2a8f2.chunk.js.map",
     "runtime-main.js": "/McBurger/static/js/runtime-main.27927fab.js",
     "runtime-main.js.map": "/McBurger/static/js/runtime-main.27927fab.js.map",
     "static/js/2.59dfb86a.chunk.js": "/McBurger/static/js/2.59dfb86a.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.72102da8.chunk.js": "/McBurger/static/js/3.72102da8.chunk.js",
     "static/js/3.72102da8.chunk.js.map": "/McBurger/static/js/3.72102da8.chunk.js.map",
     "index.html": "/McBurger/index.html",
-    "static/css/main.0648567f.chunk.css.map": "/McBurger/static/css/main.0648567f.chunk.css.map",
+    "static/css/main.c50e6c4b.chunk.css.map": "/McBurger/static/css/main.c50e6c4b.chunk.css.map",
     "static/js/2.59dfb86a.chunk.js.LICENSE.txt": "/McBurger/static/js/2.59dfb86a.chunk.js.LICENSE.txt",
     "static/media/Image.css": "/McBurger/static/media/TriplePapas.1f33b514.png",
     "static/media/App.css": "/McBurger/static/media/map.1669ba1f.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.27927fab.js",
     "static/js/2.59dfb86a.chunk.js",
-    "static/css/main.0648567f.chunk.css",
-    "static/js/main.2751ed0d.chunk.js"
+    "static/css/main.c50e6c4b.chunk.css",
+    "static/js/main.3bc2a8f2.chunk.js"
   ]
 }
