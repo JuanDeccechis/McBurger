@@ -1,0 +1,17 @@
+fieldset textarea {
+    border: 0;
+    outline:0; /* el borde cuando cliqueo en el input*/
+    position: absolute;
+    top: 7px;
+    padding: 0;
+}
+
+.textarea {
+    height: calc(80px + 46px);
+}
+
+.textarea textarea {
+    height: 80px;
+    width: calc(100% - 24px);
+    overflow-y: auto;
+}
