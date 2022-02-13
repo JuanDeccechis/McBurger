@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/McBurger/static/css/main.73289948.chunk.css",
-    "main.js": "/McBurger/static/js/main.421bf064.chunk.js",
-    "main.js.map": "/McBurger/static/js/main.421bf064.chunk.js.map",
+    "main.css": "/McBurger/static/css/main.6b30acaa.chunk.css",
+    "main.js": "/McBurger/static/js/main.fcdb1ab2.chunk.js",
+    "main.js.map": "/McBurger/static/js/main.fcdb1ab2.chunk.js.map",
     "runtime-main.js": "/McBurger/static/js/runtime-main.cf9d5fde.js",
     "runtime-main.js.map": "/McBurger/static/js/runtime-main.cf9d5fde.js.map",
-    "static/js/2.5ac56507.chunk.js": "/McBurger/static/js/2.5ac56507.chunk.js",
-    "static/js/2.5ac56507.chunk.js.map": "/McBurger/static/js/2.5ac56507.chunk.js.map",
+    "static/js/2.542397b7.chunk.js": "/McBurger/static/js/2.542397b7.chunk.js",
+    "static/js/2.542397b7.chunk.js.map": "/McBurger/static/js/2.542397b7.chunk.js.map",
     "static/js/3.6277c3a0.chunk.js": "/McBurger/static/js/3.6277c3a0.chunk.js",
     "static/js/3.6277c3a0.chunk.js.map": "/McBurger/static/js/3.6277c3a0.chunk.js.map",
     "index.html": "/McBurger/index.html",
-    "static/css/main.73289948.chunk.css.map": "/McBurger/static/css/main.73289948.chunk.css.map",
-    "static/js/2.5ac56507.chunk.js.LICENSE.txt": "/McBurger/static/js/2.5ac56507.chunk.js.LICENSE.txt",
+    "static/css/main.6b30acaa.chunk.css.map": "/McBurger/static/css/main.6b30acaa.chunk.css.map",
+    "static/js/2.542397b7.chunk.js.LICENSE.txt": "/McBurger/static/js/2.542397b7.chunk.js.LICENSE.txt",
     "static/media/Image.css": "/McBurger/static/media/TriplePapas.1f33b514.png",
     "static/media/App.css": "/McBurger/static/media/map.1669ba1f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cf9d5fde.js",
-    "static/js/2.5ac56507.chunk.js",
-    "static/css/main.73289948.chunk.css",
-    "static/js/main.421bf064.chunk.js"
+    "static/js/2.542397b7.chunk.js",
+    "static/css/main.6b30acaa.chunk.css",
+    "static/js/main.fcdb1ab2.chunk.js"
   ]
 }
