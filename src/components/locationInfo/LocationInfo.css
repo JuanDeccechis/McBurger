@@ -13,5 +13,6 @@
     .container-location-info {
         height: calc(148px - 48px);
         width: calc(551px - 47px);
+        margin: 8px 0 0 0;
     }
 }

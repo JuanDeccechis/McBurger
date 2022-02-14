@@ -78,6 +78,7 @@
     .container-item {
         height: calc(447px - 48px);
         width: calc(551px - 47px);
+        margin: 8px 0 0 0;
     }
 
     .container-food {
@@ -86,6 +87,7 @@
     
     .container-item-without-detail {
         height: calc(447px - 48px - 172px);
+        margin: 8px 8px 0 0;
     }
 
     .container-carrito {

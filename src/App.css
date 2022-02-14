@@ -157,6 +157,7 @@ article.container-pages.container-page-food {
 
 article.container-pages.container-page-cart {
     height: calc(100% - 60px - 184px);
+    margin-bottom: 120px;
 }
 
 article.container-pages .container-pages-with-inputs {
@@ -198,12 +199,20 @@ article.container-pages .container-pages-with-inputs {
     margin-top: 40px;
 }
 
-div.image.map {
+div.image.background {
     width: calc(100% - 4px - 15px);
     height: 200px;
     border: 2px solid var(--text-color);
     border-radius: 4px;
+    background-size: cover;
+}
+
+div.image.map {
     background-image: url("./images/others/map.png");
+}
+
+div.image.publicity {
+    background-image: url("./images/others/publicity.jpg");
 }
 
 .container-foods {
@@ -234,6 +243,12 @@ article.container-pages.us-form {
     background-color: var(--container-color);
     padding: 8px 7px 8px 8px; /*8px 11px 8px 12px;*/
     width: calc(100% - 23px);
+}
+
+.inline {
+    display: inline;
+    width: auto;
+    margin-left: 8px;
 }
 
 .us-inline {
@@ -292,5 +307,52 @@ article.container-pages.us-form {
         font-weight: normal;
         font-size: 34px;
         line-height: 36px;
+    }
+
+    .promotion-pages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .foods-list-category {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    article.container-pages .container-pages-with-inputs {
+        width: calc(551px);
+    }
+
+    article.container-pages.location-page {
+        align-items: flex-start;
+        margin-left: 8px;
+        width: calc(100% - 8px);
+    }
+
+    div.image.background {
+        width: 551px;
+        height: 770px;
+    }
+
+    .location-page-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    article.container-pages.container-page-cart {
+        height: calc(100% - 16px - 169px);
+    }
+
+    .cart-pages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 }

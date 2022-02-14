@@ -11,28 +11,59 @@ class LocationPage extends React.Component {
     }
 
     render() {
+        const { isMobile } = this.props;
         console.log(Locations);
-        return (
-            <article className={`container-pages `}>
-                <div className="container-pages-with-inputs divider">
-                <Input placeholder="name" name="name" minLength={3} type="text" hasIconLeft={false} >
-                    <IconsCustom icon="NavigationOutlinedIcon" className="right" />
-                </Input>
-                </div>
-                <div>
-                    <div id="map" className="map image image-centralized" />  
-                </div>
-
-                {Locations.map((item, index) => (
-                    <div key={index} className="longDivider">
-                        <h3> {item.type} </h3>
-                        {item.places.map((location, i) => (
-                            <LocationInfo key={i} className="divider" title={location.title} direction={location.direction} phone={location.phone} isOpen={location.isOpen} />
-                        ))}
+        if (isMobile) {
+            return (
+                <article className={`container-pages location-page `}>
+                    <div className="container-pages-with-inputs divider">
+                        <Input placeholder="name" name="name" minLength={3} type="text" hasIconLeft={false} >
+                            <IconsCustom icon="NavigationOutlinedIcon" className="right" />
+                        </Input>
                     </div>
-                ))}
-            </article>
-        );
+                    <div className="container-map">
+                        <div id="map" className="map image image-centralized" />  
+                    </div>
+
+                    {Locations.map((item, index) => (
+                        <div key={index} className="longDivider">
+                            <h3> {item.type} </h3>
+                            {item.places.map((location, i) => (
+                                <LocationInfo key={i} className="divider" title={location.title} direction={location.direction} phone={location.phone} isOpen={location.isOpen} />
+                            ))}
+                        </div>
+                    ))}
+                </article>
+
+                
+            );
+        }
+        else {
+            return (
+                <article className={`container-pages location-page `}>
+                    <div className="container-pages-with-inputs divider">
+                        <Input placeholder="name" name="name" minLength={3} type="text" hasIconLeft={false} >
+                            <IconsCustom icon="NavigationOutlinedIcon" className="right" />
+                        </Input>
+                    </div>
+                    <div className="location-page-container">
+                        <div className="container-map longDivider">
+                            <div id="map" className="background image map" />  
+                        </div>
+                        <div>
+                            {Locations.map((item, index) => (
+                                <div key={index}>
+                                    <h3> {item.type} </h3>
+                                    {item.places.map((location, i) => (
+                                        <LocationInfo key={i} className="divider" title={location.title} direction={location.direction} phone={location.phone} isOpen={location.isOpen} />
+                                        ))}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </article>
+            )
+        }
     }  
 }
     

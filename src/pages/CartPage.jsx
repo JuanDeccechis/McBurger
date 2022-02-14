@@ -14,19 +14,43 @@ class CartPage extends React.Component {
     }
     
     render() {
+        const { isMobile } = this.props;
         console.log(Cart);
-        return (
-            <>
-                <article className={`container-pages container-page-cart `}>
-                    {Cart.items.map((cartItem, index) => (
-                        <div key={index}>
-                            <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} isCarrito={true} />
+        if (isMobile) {
+            return (
+                <>
+                    <article className={`container-pages container-page-cart ${isMobile ? '' : 'cart-pages'} `}>
+                        {Cart.items.map((cartItem, index) => (
+                            <div key={index} className="inline">
+                                <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} isCarrito={true} />
+                            </div>
+                        ))}
+                    </article>
+                    <CarritoFooter value={2700} history={this.props.history} />
+                </>
+            );
+        } else {
+            return (
+                <>
+                    <article className={`container-pages container-page-cart ${isMobile ? '' : 'cart-pages'} `}>
+                        
+                        <div className="location-page-container">
+                            <div className="container-map longDivider">
+                                <div className="background image publicity" />  
+                            </div>
+                            <div>
+                                {Cart.items.map((cartItem, index) => (
+                                    <div key={index} className={` ${isMobile ? '' : 'inline'} `}>
+                                        <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} isCarrito={true} />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                    ))}
-                </article>
-                <CarritoFooter value={2700} history={this.props.history} />
-            </>
-        );
+                    </article>
+                    <CarritoFooter value={2700} history={this.props.history} />
+                </>
+            );
+        }
     }  
 }
     
