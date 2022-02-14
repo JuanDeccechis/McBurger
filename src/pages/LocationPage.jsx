@@ -21,7 +21,7 @@ class LocationPage extends React.Component {
                             <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                         </Input>
                     </div>
-                    <div className="container-map">
+                    <div>
                         <div id="map" className="map image image-centralized" />  
                     </div>
 
@@ -46,8 +46,8 @@ class LocationPage extends React.Component {
                             <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                         </Input>
                     </div>
-                    <div className="location-page-container">
-                        <div className="container-map longDivider">
+                    <div className="location-page-container page-with-image">
+                        <div className="longDivider">
                             <div id="map" className="background image map" />  
                         </div>
                         <div>

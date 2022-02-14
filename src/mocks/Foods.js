@@ -8,7 +8,7 @@ export const Foods = [
                 value: 600,
                 id: 0,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla", "jamon", "queso" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -22,7 +22,7 @@ export const Foods = [
                 value: 700,
                 id: 1,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "180 cal" },
                     { text: "Grasas", value: "80 g" },
@@ -36,7 +36,7 @@ export const Foods = [
                 value: 800,
                 id: 2,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "200 cal" },
                     { text: "Grasas", value: "110 g" },
@@ -50,7 +50,7 @@ export const Foods = [
                 value: 800,
                 id: 3,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -64,7 +64,7 @@ export const Foods = [
                 value: 950,
                 id: 4,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "210 cal" },
                     { text: "Grasas", value: "70 g" },
@@ -77,7 +77,7 @@ export const Foods = [
                 value: 1000,
                 id: 5,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -90,7 +90,7 @@ export const Foods = [
                 value: 1000,
                 id: 6,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -109,7 +109,7 @@ export const Foods = [
                 value: 600,
                 id: 7,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -123,7 +123,7 @@ export const Foods = [
                 value: 700,
                 id: 8,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -143,7 +143,7 @@ export const Foods = [
                 value: 750,
                 id: 9,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -157,7 +157,7 @@ export const Foods = [
                 value: 800,
                 id: 10,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -171,7 +171,7 @@ export const Foods = [
                 value: 600,
                 id: 11,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -185,7 +185,7 @@ export const Foods = [
                 value: 600,
                 id: 12,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -204,7 +204,7 @@ export const Foods = [
                 value: 750,
                 id: 13,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -218,7 +218,7 @@ export const Foods = [
                 value: 800,
                 id: 14,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },
@@ -232,7 +232,7 @@ export const Foods = [
                 value: 800,
                 id: 15,
                 description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
-                ingredientes: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
+                ingredients: [ "queso cheddar", "salsa barbacoa", "cebolla" ],
                 information: [
                     { text: "Calorias", value: "120 cal" },
                     { text: "Grasas", value: "40 g" },

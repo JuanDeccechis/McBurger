@@ -48,16 +48,19 @@
 /*desktop view*/
 @media screen and (min-width: 600px) { /*vista desktop*/
     .container-slider-products-info {
-        width: 800px;
         height: 340px;
     }
 
     .container-slider-products-categories-top {
         position: absolute;
-        top: 24px;
+        top: 0;
         left: 300px;
         width: 300px;
         height: 36px;
         padding: 0;
+    }
+
+    .slider-products-data {
+        width: 2200px;
     }
 }

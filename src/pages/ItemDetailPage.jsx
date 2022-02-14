@@ -49,9 +49,18 @@ class ItemDetailPage extends React.Component {
         console.log(showMessage);
         return (
             <article className={`container-pages `}>
-                <Item className="divider" handleAddItem={() => this.handleClick(Foods[0].list[0].id)} title={Foods[0].list[0].title} value={Foods[0].list[0].value} description={Foods[0].list[0].description} isDetail={true} />
-                <div className="divider"></div>
-                <FoodInfo item={Foods[0].list[0]} />
+                <div className="detail-page-container">
+                    <Item className="divider" handleAddItem={() => this.handleClick(Foods[0].list[0].id)} title={Foods[0].list[0].title} value={Foods[0].list[0].value} description={Foods[0].list[0].description} isDetail={true} />
+                    {isMobile ?
+                        <FoodInfo item={Foods[0].list[0]} />
+                    :
+                        <div className="widthAuto">
+                            <FoodInfo item={Foods[0].list[0]} />
+                            <FoodInfo item={Foods[0].list[0]} isIngredients={true} />
+
+                        </div>
+                    }
+                </div>
                 <div className="divider"></div>
                 <SliderProducts isMobile={isMobile} history={this.props.history} items={Promotions} />
                 {showMessage && 

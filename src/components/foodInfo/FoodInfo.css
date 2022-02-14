@@ -15,4 +15,9 @@
         width: calc(551px - 47px);
     }
 
+    .ingredient-inline {
+        display: inline;
+        width: 150px;
+    }
+
 }

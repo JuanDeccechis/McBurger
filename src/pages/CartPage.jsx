@@ -31,24 +31,22 @@ class CartPage extends React.Component {
             );
         } else {
             return (
-                <>
-                    <article className={`container-pages container-page-cart ${isMobile ? '' : 'cart-pages'} `}>
-                        
-                        <div className="location-page-container">
-                            <div className="container-map longDivider">
-                                <div className="background image publicity" />  
-                            </div>
-                            <div>
-                                {Cart.items.map((cartItem, index) => (
-                                    <div key={index} className={` ${isMobile ? '' : 'inline'} `}>
-                                        <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} isCarrito={true} />
-                                    </div>
-                                ))}
-                            </div>
+                <article className={`container-pages container-page-cart ${isMobile ? '' : 'cart-pages'} `}>
+                    
+                    <div className="location-page-container">
+                        <div className="longDivider">
+                            <div className="background image publicity" />  
                         </div>
-                    </article>
-                    <CarritoFooter value={2700} history={this.props.history} />
-                </>
+                        <div>
+                            {Cart.items.map((cartItem, index) => (
+                                <div key={index} className={` ${isMobile ? '' : 'inline'} `}>
+                                    <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} isCarrito={true} />
+                                </div>
+                            ))}
+                            <CarritoFooter value={2700} history={this.props.history} />
+                        </div>
+                    </div>
+                </article>
             );
         }
     }  
