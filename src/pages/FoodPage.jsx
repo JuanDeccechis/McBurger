@@ -2,6 +2,7 @@ import React from 'react';
 import Item from '../components/item/Item';
 import SliderCategories from '../components/sliderCategories/SliderCategories';
 import SliderProducts from '../components/sliderProducts/SliderProducts';
+import SliderProductsWithoutNumbers from '../components/sliderProducts/SliderProductsWithoutNumbers';
 import { Foods, FoodCategories } from '../mocks/Foods';
 import { Promotions } from '../mocks/Promotions';
 
@@ -24,7 +25,7 @@ class FoodPage extends React.Component {
             return (
                 <>
                     <article className={`container-pages ${isMobile ? 'container-page-food' : ''}`}>
-                        <SliderProducts isMobile={isMobile} history={this.props.history} title="Nuestras promos" items={Promotions} />
+                        <SliderProductsWithoutNumbers isMobile={isMobile} history={this.props.history} title="Nuestras promos" items={Promotions} />
                         {Foods.map((item, index) => (
                             <div key={index} className="longDivider">
                                 <h3 id={`food-category-${item.type}`}> {item.type} </h3>
@@ -43,7 +44,7 @@ class FoodPage extends React.Component {
         } else {
             return (
                 <article className={`container-pages ${isMobile ? 'container-page-food' : ''}`}>
-                    <SliderProducts isMobile={isMobile} history={this.props.history} title="Nuestras promos" items={Promotions} />
+                    <SliderProductsWithoutNumbers isMobile={isMobile} history={this.props.history} title="Nuestras promos" items={Promotions} />
                     <div>
                         {Foods.map((item, index) => (
                             <div key={index} className="longDivider">
