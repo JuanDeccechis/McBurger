@@ -82,43 +82,43 @@ body {
 */
 
 @keyframes desplazarCaidaCarne {
-    from {top: 1px; opacity: 1%;}
-    to {top: 55px; opacity: 100%;}
+    from {top: 1px; opacity: 0.01;}
+    to {top: 55px; opacity: 1.0;}
 }
 
 @keyframes desplazarCaidaLechuga {
-    from {top: 1px;  opacity: 1%;}
-    to {top: 120px;  opacity: 100%;}
+    from {top: 1px;  opacity: 0.01;}
+    to {top: 120px;  opacity: 1.0;}
 }
 
 @keyframes desplazarCaidaBerenjena {
-    from {top: 1px;  opacity: 1%;}
-    to {top: 193px;  opacity: 100%;}
+    from {top: 1px;  opacity: 0.01;}
+    to {top: 193px;  opacity: 1.0;}
 }
 
 @keyframes desplazarCaidaPanArriba {
-    from {top: 1px;  opacity: 1%;}
-    to {top: 238px;  opacity: 100%;}
+    from {top: 1px;  opacity: 0.01;}
+    to {top: 238px;  opacity: 1.0;}
 }
 
 @keyframes desplazarSubidaCarne {
-    from {top: 55px;  opacity: 100%;}
-    to {top: 1px;  opacity: 1%;}
+    from {top: 55px;  opacity: 1.0;}
+    to {top: 1px;  opacity: 0.01;}
 }
 
 @keyframes desplazarSubidaLechuga {
-    from {top: 120px;  opacity: 100%;}
-    to {top: 1px;  opacity: 1%;}
+    from {top: 120px;  opacity: 1.0;}
+    to {top: 1px;  opacity: 0.01;}
 }
 
 @keyframes desplazarSubidaBerenjena {
-    from {top: 193px;  opacity: 100%;}
-    to {top: 1px;  opacity: 1%;}
+    from {top: 193px;  opacity: 1.0;}
+    to {top: 1px;  opacity: 0.01;}
 }
 
 @keyframes desplazarSubidaPanArriba {
-    from {top: 238px;  opacity: 100%;}
-    to {top: 1px;  opacity: 1%;}
+    from {top: 238px;  opacity: 1.0;}
+    to {top: 1px;  opacity: 0.01;}
 }
 
 @keyframes desplazarDesdeDerecha {
@@ -127,48 +127,64 @@ body {
 }
 
 @keyframes quitarTransparencia {
-    from {opacity: 40%;}
-    to {opacity: 100%;}
+    from {opacity: 0.4;}
+    to {opacity: 1.0;}
 }
 
 .animaCaidaCarne {
     animation-name: desplazarCaidaCarne;
     animation-duration: 2s;
+    -webkit-animation-name: desplazarCaidaCarne;
+    -webkit-animation-duration: 2s;
 }
 
 .animaCaidaLechuga {
     animation-name: desplazarCaidaLechuga;
     animation-duration: 2s;
+    -webkit-animation-name: desplazarCaidaLechuga;
+    -webkit-animation-duration: 2s;
 }
 
 .animaCaidaBerenjena {
     animation-name: desplazarCaidaBerenjena;
     animation-duration: 2s;
+    -webkit-animation-name: desplazarCaidaBerenjena;
+    -webkit-animation-duration: 2s;
 }
 
 .animaCaidaPanArriba {
     animation-name: desplazarCaidaPanArriba;
     animation-duration: 2s;
+    -webkit-animation-name: desplazarCaidaPanArriba;
+    -webkit-animation-duration: 2s;
 }
 
 .animaSubidaCarne {
     animation-name: desplazarSubidaCarne;
     animation-duration: 2s;
+    -webkit-animation-name: desplazarSubidaCarne;
+    -webkit-animation-duration: 2s;
 }
 
 .animaSubidaLechuga {
     animation-name: desplazarSubidaLechuga;
     animation-duration: 2s;
+    -webkit-animation-name: desplazarSubidaLechuga;
+    -webkit-animation-duration: 2s;
 }
 
 .animaSubidaBerenjena {
     animation-name: desplazarSubidaBerenjena;
     animation-duration: 2s;
+    -webkit-animation-name: desplazarSubidaBerenjena;
+    -webkit-animation-duration: 2s;
 }
 
 .animaSubidaPanArriba {
     animation-name: desplazarSubidaPanArriba;
     animation-duration: 2s;
+    -webkit-animation-name: desplazarSubidaPanArriba;
+    -webkit-animation-duration: 2s;
 }
 
 .section {
