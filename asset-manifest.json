@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/McBurger/static/css/main.8af1be3c.chunk.css",
+    "main.css": "/McBurger/static/css/main.3b1ccd3b.chunk.css",
     "main.js": "/McBurger/static/js/main.dba62394.chunk.js",
     "main.js.map": "/McBurger/static/js/main.dba62394.chunk.js.map",
     "runtime-main.js": "/McBurger/static/js/runtime-main.bf04b708.js",
@@ -10,7 +10,7 @@
     "static/js/3.0ca019fd.chunk.js": "/McBurger/static/js/3.0ca019fd.chunk.js",
     "static/js/3.0ca019fd.chunk.js.map": "/McBurger/static/js/3.0ca019fd.chunk.js.map",
     "index.html": "/McBurger/index.html",
-    "static/css/main.8af1be3c.chunk.css.map": "/McBurger/static/css/main.8af1be3c.chunk.css.map",
+    "static/css/main.3b1ccd3b.chunk.css.map": "/McBurger/static/css/main.3b1ccd3b.chunk.css.map",
     "static/js/2.8b1e6bbb.chunk.js.LICENSE.txt": "/McBurger/static/js/2.8b1e6bbb.chunk.js.LICENSE.txt",
     "static/media/Image.css": "/McBurger/static/media/tomate.754e6838.png",
     "static/media/App.css": "/McBurger/static/media/publicity.2f1c454b.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.bf04b708.js",
     "static/js/2.8b1e6bbb.chunk.js",
-    "static/css/main.8af1be3c.chunk.css",
+    "static/css/main.3b1ccd3b.chunk.css",
     "static/js/main.dba62394.chunk.js"
   ]
 }
