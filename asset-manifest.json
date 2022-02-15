@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/McBurger/static/css/main.7cb3c43a.chunk.css",
-    "main.js": "/McBurger/static/js/main.4b6b8d61.chunk.js",
-    "main.js.map": "/McBurger/static/js/main.4b6b8d61.chunk.js.map",
-    "runtime-main.js": "/McBurger/static/js/runtime-main.865985e5.js",
-    "runtime-main.js.map": "/McBurger/static/js/runtime-main.865985e5.js.map",
-    "static/js/2.197c61a9.chunk.js": "/McBurger/static/js/2.197c61a9.chunk.js",
-    "static/js/2.197c61a9.chunk.js.map": "/McBurger/static/js/2.197c61a9.chunk.js.map",
-    "static/js/3.ded5aeb0.chunk.js": "/McBurger/static/js/3.ded5aeb0.chunk.js",
-    "static/js/3.ded5aeb0.chunk.js.map": "/McBurger/static/js/3.ded5aeb0.chunk.js.map",
+    "main.css": "/McBurger/static/css/main.9f981f7f.chunk.css",
+    "main.js": "/McBurger/static/js/main.dba62394.chunk.js",
+    "main.js.map": "/McBurger/static/js/main.dba62394.chunk.js.map",
+    "runtime-main.js": "/McBurger/static/js/runtime-main.bf04b708.js",
+    "runtime-main.js.map": "/McBurger/static/js/runtime-main.bf04b708.js.map",
+    "static/js/2.8b1e6bbb.chunk.js": "/McBurger/static/js/2.8b1e6bbb.chunk.js",
+    "static/js/2.8b1e6bbb.chunk.js.map": "/McBurger/static/js/2.8b1e6bbb.chunk.js.map",
+    "static/js/3.0ca019fd.chunk.js": "/McBurger/static/js/3.0ca019fd.chunk.js",
+    "static/js/3.0ca019fd.chunk.js.map": "/McBurger/static/js/3.0ca019fd.chunk.js.map",
     "index.html": "/McBurger/index.html",
-    "static/css/main.7cb3c43a.chunk.css.map": "/McBurger/static/css/main.7cb3c43a.chunk.css.map",
-    "static/js/2.197c61a9.chunk.js.LICENSE.txt": "/McBurger/static/js/2.197c61a9.chunk.js.LICENSE.txt",
-    "static/media/Image.css": "/McBurger/static/media/TriplePapas.1f33b514.png",
-    "static/media/App.css": "/McBurger/static/media/map.1669ba1f.png"
+    "static/css/main.9f981f7f.chunk.css.map": "/McBurger/static/css/main.9f981f7f.chunk.css.map",
+    "static/js/2.8b1e6bbb.chunk.js.LICENSE.txt": "/McBurger/static/js/2.8b1e6bbb.chunk.js.LICENSE.txt",
+    "static/media/Image.css": "/McBurger/static/media/tomate.754e6838.png",
+    "static/media/App.css": "/McBurger/static/media/publicity.2f1c454b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.865985e5.js",
-    "static/js/2.197c61a9.chunk.js",
-    "static/css/main.7cb3c43a.chunk.css",
-    "static/js/main.4b6b8d61.chunk.js"
+    "static/js/runtime-main.bf04b708.js",
+    "static/js/2.8b1e6bbb.chunk.js",
+    "static/css/main.9f981f7f.chunk.css",
+    "static/js/main.dba62394.chunk.js"
   ]
 }
