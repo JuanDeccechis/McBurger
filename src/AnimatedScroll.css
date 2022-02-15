@@ -98,6 +98,8 @@ body {
     to {top: 193px;  opacity: 1.0;}
     */from {top: 1px;}
     to {top: 193px;}
+    from {opacity: 0.01;}
+    to {opacity: 1.0;}
 }
 
 @keyframes desplazarCaidaPanArriba {
@@ -105,6 +107,8 @@ body {
     to {top: 238px;  opacity: 1.0;}
     */from {top: 1px;}
     to {top: 238px;}
+    from {opacity: 0.01;}
+    to {opacity: 1.0;}
 }
 
 @keyframes desplazarSubidaCarne {
