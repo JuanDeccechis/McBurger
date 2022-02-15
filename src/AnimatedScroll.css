@@ -82,24 +82,22 @@ body {
 */
 
 @keyframes desplazarCaidaCarne {
-    /*from {top: 1px; opacity: 0.01;}
-    to {top: 55px; opacity: 1.0;}
-    */from {opacity: 0.01;}
+    from {top: 1px;}
+    to {top: 55px;}
+    from {opacity: 0.01;}
     to {opacity: 1.0;}
 }
 
 @keyframes desplazarCaidaLechuga {
-    /*from {top: 1px;  opacity: 0.01;}
+    from {top: 1px;  opacity: 0.01;}
     to {top: 120px;  opacity: 1.0;}
-    */from {opacity: 0.01;}
-    to {opacity: 1.0;}
 }
 
 @keyframes desplazarCaidaBerenjena {
     /*from {top: 1px;  opacity: 0.01;}
     to {top: 193px;  opacity: 1.0;}
-    */from {top: 1%;}
-    to {top: 100%;}
+    */from {top: 1px;}
+    to {top: 193px;}
 }
 
 @keyframes desplazarCaidaPanArriba {
