@@ -27,7 +27,7 @@ class LocationPage extends React.Component {
 
                     {Locations.map((item, index) => (
                         <div key={index} className="longDivider">
-                            <h3> {item.type} </h3>
+                            <h3 className="title-in-page"> {item.type} </h3>
                             {item.places.map((location, i) => (
                                 <LocationInfo key={i} className="divider" title={location.title} direction={location.direction} phone={location.phone} isOpen={location.isOpen} />
                             ))}
@@ -53,7 +53,7 @@ class LocationPage extends React.Component {
                         <div>
                             {Locations.map((item, index) => (
                                 <div key={index}>
-                                    <h3> {item.type} </h3>
+                                    <h3 className="title-in-page"> {item.type} </h3>
                                     {item.places.map((location, i) => (
                                         <LocationInfo key={i} className="divider" title={location.title} direction={location.direction} phone={location.phone} isOpen={location.isOpen} />
                                         ))}

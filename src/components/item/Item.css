@@ -2,7 +2,7 @@
     border-radius: 4px;
     background-color: var(--container-color);
     padding: 6px 5px 6px 6px;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--scroll-bar-color);
     margin: 8px auto 0 auto;
     height: calc(435px - 48px);
     width: calc(100% - 47px);
@@ -44,11 +44,15 @@
 
 .carrito-options {
     margin-left: calc(125px + 12px);
-    width: calc(100% - 125px - 12px - 47px);
+    width: calc(100% - 16px - 125px - 12px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.carrito-options .icon {
+    margin: 0;
 }
 
 .carrito-change-quantity {
@@ -57,7 +61,7 @@
     justify-content: space-around;
     align-items: center;
     width: 80px;
-    border: 2px solid black;
+    border: 2px solid var(--scroll-bar-color);
     border-radius: 4px;
 }
 

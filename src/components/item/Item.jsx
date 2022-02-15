@@ -44,7 +44,7 @@ class Item extends React.Component {
                                 <b className="text1 text1-bold"> {quantity} </b>
                                 <IconsCustom icon="AddCircleOutlineOutlinedIcon" />
                             </div>
-                            <b className="text1 text1-bold icon"> ${value} </b>
+                            <b className="text1 text1-bold"> ${value} </b>
                         </div>
                     :
                         <div className="space-around footer">

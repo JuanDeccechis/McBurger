@@ -22,7 +22,7 @@ class CartPage extends React.Component {
                     <article className={`container-pages container-page-cart ${isMobile ? '' : 'cart-pages'} `}>
                         {Cart.items.map((cartItem, index) => (
                             <div key={index} className="inline">
-                                <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} isCarrito={true} />
+                                <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} image={cartItem.image} isCarrito={true} />
                             </div>
                         ))}
                     </article>

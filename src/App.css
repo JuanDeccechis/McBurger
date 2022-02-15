@@ -7,6 +7,7 @@
     --disabled-color: #858585;
     --icon-color: #007BAD;
     --text-color: #000000;
+    --scroll-bar-color: #00000055;
     background-color: var(--background-color);
 }
 
@@ -116,7 +117,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00000055;
+    background-color: var(--scroll-bar-color);
     border-radius: 50px;
 }
 
@@ -143,21 +144,26 @@ textarea {
     align-items: center;
 }
 
+h3.title-in-page {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
 article.container-pages {
-    height: calc(100% - 60px);
-    margin-bottom: 60px;
+    height: calc(100% - 68px);
+    margin-bottom: 68px;
     overflow-y: auto;
     width: 100%;
 }
 
 article.container-pages.container-page-food {
-    height: calc(100% - 120px);
-    margin-bottom: 120px;
+    height: calc(100% - 136px);
+    margin-bottom: 136px;
 }
 
 article.container-pages.container-page-cart {
-    height: calc(100% - 60px - 184px);
-    margin-bottom: 120px;
+    height: calc(100% - 68px - 192px);
+    margin-bottom: 260px;
 }
 
 article.container-pages .container-pages-with-inputs {
@@ -202,7 +208,7 @@ article.container-pages .container-pages-with-inputs {
 div.image.background {
     width: calc(100% - 4px - 15px);
     height: 200px;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--scroll-bar-color);
     border-radius: 4px;
     background-size: cover;
 }
@@ -218,8 +224,8 @@ div.image.publicity {
 .container-foods {
     border-radius: 4px;
     position: fixed;
-    bottom: 60px;
-    border: 2px solid var(--text-color);
+    bottom: 68px;
+    border: 2px solid var(--scroll-bar-color);
 }
 .us-option {
     width: calc(50%);
@@ -278,7 +284,7 @@ article.container-pages.us-form {
 .message-container-message {
     width: calc(100% - 47px);
     padding: 6px 5px 6px 6px;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--scroll-bar-color);
     border-radius: 4px;
     height: 150px;
     background-color: var(--container-color);

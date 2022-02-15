@@ -5,7 +5,7 @@
     height: calc(307px - 48px);
     width: calc(100% - 47px);
     margin: 8px auto 0 auto;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--scroll-bar-color);
 }
 
 .container-slider-products-data {

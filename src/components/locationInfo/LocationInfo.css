@@ -1,6 +1,6 @@
 .container-location-info {
     border-radius: 4px;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--scroll-bar-color);
     background-color: var(--container-color);
     padding: 6px 5px 6px 6px;
     height: calc(136px - 48px);

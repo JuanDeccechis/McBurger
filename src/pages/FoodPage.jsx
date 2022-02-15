@@ -28,7 +28,7 @@ class FoodPage extends React.Component {
                         <SliderProductsWithoutNumbers isMobile={isMobile} history={this.props.history} title="Nuestras promos" items={Promotions} />
                         {Foods.map((item, index) => (
                             <div key={index} className="longDivider">
-                                <h3 id={`food-category-${item.type}`}> {item.type} </h3>
+                                <h3 id={`food-category-${item.type}`} className="title-in-page"> {item.type} </h3>
                                 {item.list.map((food, i) => (
                                     <Item key={i} className={`${isMobile ? 'divider' : '' }`} handleClick={() => this.handleShowDetail(food.id)} title={food.title} value={food.value} description={food.description} isDetail={false} image={food.image} />
                                 ))}
@@ -37,7 +37,7 @@ class FoodPage extends React.Component {
 
                     </article>
                     {isMobile &&
-                        <SliderCategories className="divider container-foods" hasArrows={true} isMobile={isMobile} options={FoodCategories} />
+                        <SliderCategories className="divider container-foods foods-categories-bottom" hasArrows={true} isMobile={isMobile} options={FoodCategories} />
                     }
                 </>
             );
@@ -48,7 +48,7 @@ class FoodPage extends React.Component {
                     <div>
                         {Foods.map((item, index) => (
                             <div key={index} className="longDivider">
-                                <h3 id={`food-category-${item.type}`}> {item.type} </h3>
+                                <h3 id={`food-category-${item.type}`} className="title-in-page"> {item.type} </h3>
                                 <div className="inline foods-list-category">
                                     {item.list.map((food, i) => (
                                         <Item key={i} className={`${isMobile ? 'divider' : '' }`} handleClick={() => this.handleShowDetail(food.id)} title={food.title} value={food.value} description={food.description} isDetail={false} image={food.image} />
