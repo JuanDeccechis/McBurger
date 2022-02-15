@@ -50,7 +50,7 @@ class ItemDetailPage extends React.Component {
         return (
             <article className={`container-pages `}>
                 <div className="detail-page-container">
-                    <Item className="divider" handleAddItem={() => this.handleClick(Foods[0].list[0].id)} title={Foods[0].list[0].title} value={Foods[0].list[0].value} description={Foods[0].list[0].description} isDetail={true} />
+                    <Item className="divider" handleAddItem={() => this.handleClick(Foods[0].list[0].id)} image={Foods[0].list[0].image} title={Foods[0].list[0].title} value={Foods[0].list[0].value} description={Foods[0].list[0].description} isDetail={true} />
                     {isMobile ?
                         <FoodInfo item={Foods[0].list[0]} />
                     :

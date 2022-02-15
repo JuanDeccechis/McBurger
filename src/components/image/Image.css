@@ -7,6 +7,20 @@ div.image {
     /*object-fit: contain; */
 }
 
+.relative {
+    position: relative;
+}
+
+div.parts {
+    width: 200px;
+    height: 84px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    /*object-fit: contain; */
+}
+
 .image-centralized {
     margin: 0 auto;
 }
@@ -145,6 +159,43 @@ div.image.TripleDoblePapas{
 div.image.TriplePapas{
     background-image: url("../../images/promotions/TriplePapas.png");
 }
+
+
+
+
+
+div.berenjena{
+    background-image: url("../../images/parts/berenjena.png");
+}
+
+div.carne{
+    background-image: url("../../images/parts/carne.png");
+}
+
+div.hongos{
+    background-image: url("../../images/parts/hongos.png");
+}
+
+div.lechuga{
+    background-image: url("../../images/parts/lechuga.png");
+}
+
+div.palta{
+    background-image: url("../../images/parts/palta.png");
+}
+
+div.panAbajo{
+    background-image: url("../../images/parts/pan_abajo.png");
+}
+
+div.panArriba{
+    background-image: url("../../images/parts/pan_arriba.png");
+}
+
+div.tomate{
+    background-image: url("../../images/parts/tomate.png");
+}
+
 
 
 /*desktop view*/
