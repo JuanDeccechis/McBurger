@@ -12,13 +12,19 @@ class HomePage extends React.Component {
     
 
     componentDidMount() {
-        let objectToScroll = document.querySelector("article");
-        objectToScroll.addEventListener("scroll", this.scrollFun);
+        const { isMobile } = this.props;
+        if (!isMobile) {
+            let objectToScroll = document.querySelector("article");
+            objectToScroll.addEventListener("scroll", this.scrollFun);
+        }
     }
 
     componentWillUnmount() {
-        let objectToScroll = document.querySelector("article");
-        objectToScroll.removeEventListener("scroll", this.scrollFun);
+        const { isMobile } = this.props;
+        if (!isMobile) {
+            let objectToScroll = document.querySelector("article");
+            objectToScroll.removeEventListener("scroll", this.scrollFun);
+        }
     }
 
     scrollFun = () => {
@@ -235,6 +241,7 @@ class HomePage extends React.Component {
     
     render() {
         const { seccionActual } = this.state;
+        const { isMobile } = this.props;
         return (
             <article className={`container-pages `}>
 home page
@@ -258,13 +265,15 @@ home page
                     <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                 </div>
             </div>
-            <div className="out">
-                <div className="oculto parts panArriba"/>
-                <div className="oculto parts berenjena"/>
-                <div className="oculto parts lechuga"/>
-                <div className="oculto parts carne"/>
-                <div className="parts panAbajo"/>
-            </div>
+            {!isMobile &&
+                <div className="out">
+                    <div className="oculto parts panArriba"/>
+                    <div className="oculto parts berenjena"/>
+                    <div className="oculto parts lechuga"/>
+                    <div className="oculto parts carne"/>
+                    <div className="parts panAbajo"/>
+                </div>
+            }
 
 
             </article>
