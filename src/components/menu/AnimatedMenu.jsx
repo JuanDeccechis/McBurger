@@ -102,44 +102,44 @@ class AnimatedMenu extends React.Component {
         return (
             <div className="container-animated-menu rotado-0 rotate-menu-0">
                 <div className="animated-menu burger-bread"></div>
-                <a href="#home-section-1" className="animated-menu-item animated-item-1 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-1", 0 - previousSelected )}>
+                <a href="#home-section-1" className="animated-menu-item section-burger animated-item-1 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-1", 0 - previousSelected )}>
                     <div className="menu-item">
                         <span className="text1"> Login </span>
                     </div>
                 </a>
-                <a href="#home-section-2" className="animated-menu-item animated-item-2 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-2", 1 - previousSelected)}>
+                <a href="#home-section-2" className="animated-menu-item section-lettuce animated-item-2 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-2", 1 - previousSelected)}>
                     <div className="menu-item" >
                         <span className="text1"> Comidas </span>
                     </div>
                 </a>
-                <a href="#home-section-3" className="animated-menu-item animated-item-3 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-3", 2 - previousSelected)}>
+                <a href="#home-section-3" className="animated-menu-item section-eggplants animated-item-3 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-3", 2 - previousSelected)}>
                     <div className="menu-item">
                         <span className="text1"> Promos </span>
                     </div>
                 </a>
-                <a href="#home-section-4" className="animated-menu-item animated-item-4 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-4", 3 - previousSelected)}>
+                <a href="#home-section-4" className="animated-menu-item section-bread animated-item-4 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-4", 3 - previousSelected)}>
                     <div className="menu-item">
                         <span className="text1"> Nosotros </span>
                     </div>
                 </a>
 
 
-                <a href="#home-section-1" className="animated-menu-item animated-item-5 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-1", -4 - previousSelected)}>
+                <a href="#home-section-1" className="animated-menu-item section-burger animated-item-5 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-1", -4 - previousSelected)}>
                     <div className="menu-item">
                         <span className="text1"> Login </span>
                     </div>
                 </a>
-                <a href="#home-section-2" className="animated-menu-item animated-item-6 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-2", -3 - previousSelected)}>
+                <a href="#home-section-2" className="animated-menu-item section-lettuce animated-item-6 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-2", -3 - previousSelected)}>
                     <div className="menu-item">
                         <span className="text1"> Comidas </span>
                     </div>
                 </a>
-                <a href="#home-section-3" className="animated-menu-item animated-item-7 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-3", -2 - previousSelected)}>
+                <a href="#home-section-3" className="animated-menu-item section-eggplants animated-item-7 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-3", -2 - previousSelected)}>
                     <div className="menu-item">
                         <span className="text1"> Promos </span>
                     </div>
                 </a>
-                <a href="#home-section-4" className="animated-menu-item animated-item-8 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-4", -1 - previousSelected)}>
+                <a href="#home-section-4" className="animated-menu-item section-bread animated-item-8 rotado-inverted-items-menu-0 rotate-inverted-items-menu-0" onClick={(event) => this.handleScrollLink(event, "#home-section-4", -1 - previousSelected)}>
                     <div className="menu-item">
                         <span className="text1"> Nosotros </span>
                     </div>
