@@ -22,7 +22,6 @@ class Router extends React.Component {
     render() {
         const { isMobile } = this.props;
         return (
-            <div className="container-pages">
                 <BrowserRouter basename="/McBurger">
                     <Switch>
                         <Route path="/home" component={(props) => <HomePage isMobile={isMobile} {...props} /> } />
@@ -37,7 +36,6 @@ class Router extends React.Component {
                     </Switch>
                     <Menu />
                 </BrowserRouter>
-            </div>
         );
     }
 }

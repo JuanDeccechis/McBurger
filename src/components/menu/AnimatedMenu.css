@@ -1,0 +1,255 @@
+.container-animated-menu {
+    width: 400px;
+    height: 400px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.animated-menu {
+    width: 209px;
+    height: 198px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: calc((400px - 198px) /2);
+    left: calc((400px - 209px) /2);
+    
+}
+
+.animated-menu-item {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    position: absolute;
+    text-decoration: none;
+}
+
+.animated-menu-item .menu-item {
+    border: 0;
+    text-align: center;
+    top: calc(50% - 12.5px);
+}
+
+.animated-item-1 {
+    top: calc(calc((400px - 198px) /2) - 70px);
+    left: calc(calc(209px / 2) + calc((400px - 209px) /2) - calc(70px / 2));
+}
+
+.animated-item-2 {
+    top: calc((calc(198px) * 1/ 4) + calc((400px - 198px) /2) - 70px);
+    left: calc((calc(209px) * 3/ 4) + calc((400px - 209px) /2));
+}
+
+.animated-item-3 {
+    top: calc((calc(198px - 70px) /2) + calc((400px - 198px) /2));
+    left: calc(209px + calc((400px - 209px) /2));
+}
+
+.animated-item-4 {
+    top: calc((calc(198px) * 3/ 4) + calc((400px - 198px) /2));
+    left: calc((calc(209px) * 3/ 4) + calc((400px - 209px) /2));
+}
+
+.animated-item-5 {
+    top: calc(198px + calc((400px - 198px) /2));
+    left: calc(calc(209px / 2) + calc((400px - 209px) /2) - calc(70px / 2));
+}
+
+.animated-item-6 {
+    top: calc((calc(198px) * 3/ 4) + calc((400px - 198px) /2)); 
+    left: calc(calc((400px - 209px) /2) - calc(70px /2));
+}
+
+.animated-item-7 {
+    top: calc((calc(198px - 70px) /2) + calc((400px - 198px) /2));
+    left: calc(calc((400px - 209px) /2) - 70px);
+}
+
+.animated-item-8 {
+    top: calc((calc(198px) * 1/ 4) + calc((400px - 198px) /2) - 70px);
+    left: calc( calc((400px - 209px) /2) - calc(70px /2));
+}
+
+.burger-bread {
+    background-image: url("../../images/others/burger-bread.png");
+}
+
+.rotado-0 {
+    transform: rotate3d(0, 0, 1, var(--previous-rotation-value));
+    -webkit-transform: rotate3d(0, 0, 1, var(--previous-rotation-value));
+}
+
+.rotado-inverted-items-menu-0 {
+    transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value) * -1));
+    -webkit-transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value) * -1));
+}
+
+@keyframes animaRotacionMenu-2 {
+    from { -webkit-transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value)));}
+    to { -webkit-transform: rotate3d(0, 0, 1, calc(90deg + var(--previous-rotation-value)));}
+    from { transform: rotate3d(0, 0, 1, var(--previous-rotation-value));}
+    to { transform: rotate3d(0, 0, 1, calc(90deg + var(--previous-rotation-value)));}
+}
+
+.rotate-menu-2 {
+    animation-name: animaRotacionMenu-2;
+    animation-duration: 2s;
+    -webkit-animation-name: animaRotacionMenu-2;
+    -webkit-animation-duration: 2s;
+}
+
+.rotado-2 {
+    transform: rotate3d(0, 0, 1, calc(90deg + var(--previous-rotation-value)));
+    -webkit-transform: rotate3d(0, 0, 1, calc(90deg + var(--previous-rotation-value)));
+}
+
+@keyframes animaRotacionItemsMenu-2 {
+    from { -webkit-transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value) * -1));}
+    to { -webkit-transform: rotate3d(0, 0, 1, calc(-90deg + calc(var(--previous-rotation-value) * -1)));}
+    from { transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value) * -1));}
+    to { transform: rotate3d(0, 0, 1, calc(-90deg + calc(var(--previous-rotation-value) * -1)));}
+}
+
+.rotate-inverted-items-menu-2 {
+    animation-name: animaRotacionItemsMenu-2;
+    animation-duration: 2s;
+    -webkit-animation-name: animaRotacionItemsMenu-2;
+    -webkit-animation-duration: 2s;
+}
+
+.rotado-inverted-items-menu-2 {
+    transform: rotate3d(0, 0, 1, calc(-90deg + calc(var(--previous-rotation-value) * -1)));
+    -webkit-transform: rotate3d(0, 0, 1, calc(-90deg + calc(var(--previous-rotation-value) * -1)));
+}
+
+
+
+
+
+
+@keyframes animaRotacionMenu-1 {
+    from { -webkit-transform: rotate3d(0, 0, 1, var(--previous-rotation-value));}
+    to { -webkit-transform: rotate3d(0, 0, 1, calc(45deg + var(--previous-rotation-value)));}
+    from { transform: rotate3d(0, 0, 1, var(--previous-rotation-value));}
+    to { transform: rotate3d(0, 0, 1, calc(45deg + var(--previous-rotation-value)));}
+}
+
+.rotate-menu-1 {
+    animation-name: animaRotacionMenu-1;
+    animation-duration: 2s;
+    -webkit-animation-name: animaRotacionMenu-1;
+    -webkit-animation-duration: 2s;
+}
+
+.rotado-1 {
+    transform: rotate3d(0, 0, 1, calc(45deg + var(--previous-rotation-value)));
+    -webkit-transform: rotate3d(0, 0, 1, calc(45deg + var(--previous-rotation-value)));
+}
+
+@keyframes animaRotacionItemsMenu-1 {
+    from { -webkit-transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value) * -1));}
+    to { -webkit-transform: rotate3d(0, 0, 1, calc(-45deg + calc(var(--previous-rotation-value) * -1)));}
+    from { transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value) * -1));}
+    to { transform: rotate3d(0, 0, 1, calc(-45deg + calc(var(--previous-rotation-value) * -1)));}
+}
+
+.rotate-inverted-items-menu-1 {
+    animation-name: animaRotacionItemsMenu-1;
+    animation-duration: 2s;
+    -webkit-animation-name: animaRotacionItemsMenu-1;
+    -webkit-animation-duration: 2s;
+}
+
+.rotado-inverted-items-menu-1 {
+    transform: rotate3d(0, 0, 1, calc(-45deg + calc(var(--previous-rotation-value) * -1)));
+    -webkit-transform: rotate3d(0, 0, 1, calc(-45deg + calc(var(--previous-rotation-value) * -1)));
+}
+
+
+
+
+
+
+
+@keyframes animaRotacionMenu--1 {
+    from { -webkit-transform: rotate3d(0, 0, 1, var(--previous-rotation-value));}
+    to { -webkit-transform: rotate3d(0, 0, 1, calc(-45deg + var(--previous-rotation-value)));}
+    from { transform: rotate3d(0, 0, 1, var(--previous-rotation-value));}
+    to { transform: rotate3d(0, 0, 1, calc(-45deg + var(--previous-rotation-value)));}
+}
+
+.rotate-menu--1 {
+    animation-name: animaRotacionMenu--1;
+    animation-duration: 2s;
+    -webkit-animation-name: animaRotacionMenu--1;
+    -webkit-animation-duration: 2s;
+}
+
+.rotado--1 {
+    transform: rotate3d(0, 0, 1, calc(-45deg + var(--previous-rotation-value)));
+    -webkit-transform: rotate3d(0, 0, 1, calc(-45deg + var(--previous-rotation-value)));
+}
+
+@keyframes animaRotacionItemsMenu--1 {
+    from { -webkit-transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value) * -1));}
+    to { -webkit-transform: rotate3d(0, 0, 1, calc(45deg + calc(var(--previous-rotation-value) * -1)));}
+    from { transform: rotate3d(0, 0, 1, calc(var(--previous-rotation-value) * -1));}
+    to { transform: rotate3d(0, 0, 1, calc(45deg + calc(var(--previous-rotation-value) * -1)));}
+}
+
+.rotate-inverted-items-menu--1 {
+    animation-name: animaRotacionItemsMenu--1;
+    animation-duration: 2s;
+    -webkit-animation-name: animaRotacionItemsMenu--1;
+    -webkit-animation-duration: 2s;
+}
+
+.rotado-inverted-items-menu--1 {
+    transform: rotate3d(0, 0, 1, calc(45deg + calc(var(--previous-rotation-value) * -1)));
+    -webkit-transform: rotate3d(0, 0, 1, calc(45deg + calc(var(--previous-rotation-value) * -1)));
+}
+
+
+
+
+
+
+
+@keyframes animaRotacionMenu--2 {
+    from { -webkit-transform: rotate3d(0, 0, 1, var(--previous-rotation-value));}
+    to { -webkit-transform: rotate3d(0, 0, 1, calc(-90deg + var(--previous-rotation-value)));}
+    from { transform: rotate3d(0, 0, 1, var(--previous-rotation-value));}
+    to { transform: rotate3d(0, 0, 1, calc(-90deg + var(--previous-rotation-value)));}
+}
+
+.rotate-menu--2 {
+    animation-name: animaRotacionMenu--2;
+    animation-duration: 2s;
+    -webkit-animation-name: animaRotacionMenu--2;
+    -webkit-animation-duration: 2s;
+}
+
+.rotado--2 {
+    transform: rotate3d(0, 0, 1, calc(-90deg +  var(--previous-rotation-value)));
+    -webkit-transform: rotate3d(0, 0, 1, calc(-90deg +  var(--previous-rotation-value)));
+}
+
+@keyframes animaRotacionItemsMenu--2 {
+    from { -webkit-transform: rotate3d(0, 0, 1,  calc(var(--previous-rotation-value) * -1));}
+    to { -webkit-transform: rotate3d(0, 0, 1, calc(90deg +  calc(var(--previous-rotation-value) * -1)));}
+    from { transform: rotate3d(0, 0, 1,  calc(var(--previous-rotation-value) * -1));}
+    to { transform: rotate3d(0, 0, 1, calc(90deg +  calc(var(--previous-rotation-value) * -1)));}
+}
+
+.rotate-inverted-items-menu--2 {
+    animation-name: animaRotacionItemsMenu--2;
+    animation-duration: 2s;
+    -webkit-animation-name: animaRotacionItemsMenu--2;
+    -webkit-animation-duration: 2s;
+}
+
+.rotado-inverted-items-menu--2 {
+    transform: rotate3d(0, 0, 1, calc(90deg +  calc(var(--previous-rotation-value) * -1)));
+    -webkit-transform: rotate3d(0, 0, 1, calc(90deg +  calc(var(--previous-rotation-value) * -1)));
+}

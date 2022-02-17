@@ -9,6 +9,7 @@
     --text-color: #000000;
     --scroll-bar-color: #00000055;
     background-color: var(--background-color);
+    --previous-rotation-value: 90deg;
 }
 
 .App {
@@ -149,6 +150,18 @@ h3.title-in-page {
     color: var(--secondary-color);
 }
 
+.container-pages-no-scrolled {
+    height: 100%;
+}
+
+.home-with-extra-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    left: -150px;
+}
+
 article.container-pages {
     height: calc(100% - 68px);
     margin-bottom: 68px;
@@ -218,7 +231,7 @@ div.image.map {
 }
 
 div.image.publicity {
-    background-image: url("./images/others/publicity.jpg");
+    background-image: url("./images/others/publicity-drink.png");
 }
 
 .container-foods {
@@ -327,6 +340,11 @@ article.container-pages.us-form {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: flex-start;
+    }
+
+    article.container-pages.container-home-page {
+        width: calc(100% - 200px);
+        margin-left: auto;
     }
 
     article.container-pages .container-pages-with-inputs {

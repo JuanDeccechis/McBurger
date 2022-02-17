@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/card/Card';
+import AnimatedMenu from '../components/menu/AnimatedMenu';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -242,42 +243,84 @@ class HomePage extends React.Component {
     render() {
         const { seccionActual } = this.state;
         const { isMobile } = this.props;
-        return (
-            <article className={`container-pages `}>
-home page
-            <div>
-                <div className="section section-burger">
-                    <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+        if (isMobile) {
+            return (
+                <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
+    home page
+                <div>
+                    <div id="home-section-1" className="section section-burger">
+                        <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div className="section section-lettuce">
-                    <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                <div>
+                    <div id="home-section-2" className="section section-lettuce">
+                        <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div className="section section-eggplants">
-                    <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                <div>
+                    <div id="home-section-3" className="section section-eggplants">
+                        <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div className="section section-bread">
-                    <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                <div>
+                    <div id="home-section-4" className="section section-bread">
+                        <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                    </div>
                 </div>
-            </div>
-            {!isMobile &&
-                <div className="out">
-                    <div className="oculto parts panArriba"/>
-                    <div className="oculto parts berenjena"/>
-                    <div className="oculto parts lechuga"/>
-                    <div className="oculto parts carne"/>
-                    <div className="parts panAbajo"/>
-                </div>
-            }
+                {!isMobile &&
+                    <div className="out">
+                        <div className="oculto parts panArriba"/>
+                        <div className="oculto parts berenjena"/>
+                        <div className="oculto parts lechuga"/>
+                        <div className="oculto parts carne"/>
+                        <div className="parts panAbajo"/>
+                    </div>
+                }
+                </article>
+            );
+        }
+        else {
+            return (
+                <div className="container-pages-no-scrolled home-with-extra-menu">
+                    <span>
+                    <AnimatedMenu />
 
-
-            </article>
-        );
+                    </span>
+                    <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
+        home page
+                    <div>
+                        <div id="home-section-1" className="section section-burger">
+                            <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                        </div>
+                    </div>
+                    <div>
+                        <div id="home-section-2" className="section section-lettuce">
+                            <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                        </div>
+                    </div>
+                    <div>
+                        <div id="home-section-3" className="section section-eggplants">
+                            <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                        </div>
+                    </div>
+                    <div>
+                        <div id="home-section-4" className="section section-bread">
+                            <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                        </div>
+                    </div>
+                    {!isMobile &&
+                        <div className="out">
+                            <div className="oculto parts panArriba"/>
+                            <div className="oculto parts berenjena"/>
+                            <div className="oculto parts lechuga"/>
+                            <div className="oculto parts carne"/>
+                            <div className="parts panAbajo"/>
+                        </div>
+                    }
+                    </article>
+                </div>
+            );
+        }
     }  
 }
     
