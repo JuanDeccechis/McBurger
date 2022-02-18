@@ -47,6 +47,7 @@ class HomePage extends React.Component {
         if (caso != 0) {
             this.setState({ seccionActual: caso });
         }
+        let cards = 0;
         switch (caso) {
             case 1:
                 document.querySelector(".panArriba").classList.remove("animaCaidaPanArriba");
@@ -69,6 +70,12 @@ class HomePage extends React.Component {
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
                 document.querySelector(".lechuga").classList.remove("oculto");
+
+                cards = document.querySelectorAll(".card-lettuce");
+                cards[0].classList.add("animaEntradaCardLechuga");
+                cards[0].classList.remove("oculto");
+                cards[1].classList.add("animaEntradaCardLechuga");
+                cards[1].classList.remove("oculto");
                 break;
             case 3:
                 document.querySelector(".panArriba").classList.remove("animaCaidaPanArriba");
@@ -80,6 +87,12 @@ class HomePage extends React.Component {
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
                 document.querySelector(".berenjena").classList.remove("oculto");
+
+                cards = document.querySelectorAll(".card-eggplants");
+                cards[0].classList.add("animaEntradaCardBerenjena");
+                cards[0].classList.remove("oculto");
+                cards[1].classList.add("animaEntradaCardBerenjena");
+                cards[1].classList.remove("oculto");
                 break;
             case 4:
                 document.querySelector(".panArriba").classList.add("animaCaidaPanArriba");
@@ -91,6 +104,13 @@ class HomePage extends React.Component {
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
                 document.querySelector(".panArriba").classList.remove("oculto");
+
+                //.classList.add("mostrarCardPanArriba");
+                cards = document.querySelectorAll(".card-bread");
+                cards[0].classList.add("animaEntradaCardPan");
+                cards[0].classList.remove("oculto");
+                cards[1].classList.add("animaEntradaCardPan");
+                cards[1].classList.remove("oculto");
                 break;
             case 11:
                 document.querySelector(".panArriba").classList.remove("animaCaidaPanArriba");
@@ -111,6 +131,7 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+
                 window.setTimeout(() => {
                     document.querySelector(".panArriba").classList.add("oculto");
                 }, 1000);
@@ -124,6 +145,14 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.add("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+
+                //.classList.add("borrarCardPanArriba");
+                cards = document.querySelectorAll(".card-bread");
+                cards[0].classList.remove("animaEntradaCardPan");
+                cards[0].classList.add("oculto");
+                cards[1].classList.remove("animaEntradaCardPan");
+                cards[1].classList.add("oculto");
+
                 window.setTimeout(() => {
                     document.querySelector(".berenjena").classList.add("oculto");
                 }, 1000);
@@ -137,6 +166,13 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.add("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+
+                cards = document.querySelectorAll(".card-eggplants");
+                cards[0].classList.remove("animaEntradaCardBerenjena");
+                cards[0].classList.add("oculto");
+                cards[1].classList.remove("animaEntradaCardBerenjena");
+                cards[1].classList.add("oculto");
+
                 window.setTimeout(() => {
                     document.querySelector(".lechuga").classList.add("oculto");
                 }, 1000);
@@ -150,6 +186,13 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.add("animaSubidaCarne");
+
+                cards = document.querySelectorAll(".card-lettuce");
+                cards[0].classList.remove("animaEntradaCardLechuga");
+                cards[0].classList.add("oculto");
+                cards[1].classList.remove("animaEntradaCardLechuga");
+                cards[1].classList.add("oculto");
+
                 window.setTimeout(() => {
                     document.querySelector(".carne").classList.add("oculto");
                 }, 1000);
@@ -295,17 +338,17 @@ class HomePage extends React.Component {
                     </div>
                     <div>
                         <div id="home-section-2" className="section section-lettuce">
-                            <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                            <Card title="Nuestras Comidas" className="card-lettuce oculto" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                         </div>
                     </div>
                     <div>
                         <div id="home-section-3" className="section section-eggplants">
-                            <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                            <Card title="Nuestras Comidas" className="card-eggplants oculto" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                         </div>
                     </div>
                     <div>
                         <div id="home-section-4" className="section section-bread">
-                            <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                            <Card title="Nuestras Comidas" className="card-bread oculto" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                         </div>
                     </div>
                     {!isMobile &&

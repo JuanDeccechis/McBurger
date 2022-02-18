@@ -3,6 +3,7 @@ import Button from '../components/button/Button';
 import FoodInfo from '../components/foodInfo/FoodInfo';
 import Item from '../components/item/Item';
 import SliderProducts from '../components/sliderProducts/SliderProducts';
+import SliderProductsWithoutNumbers from '../components/sliderProducts/SliderProductsWithoutNumbers';
 import { Foods } from '../mocks/Foods';
 import { Promotions } from '../mocks/Promotions';
 
@@ -62,7 +63,7 @@ class ItemDetailPage extends React.Component {
                     }
                 </div>
                 <div className="divider"></div>
-                <SliderProducts isMobile={isMobile} history={this.props.history} items={Promotions} />
+                <SliderProductsWithoutNumbers isMobile={isMobile} history={this.props.history} items={Promotions} />
                 {showMessage && 
                     <div className="message-popup">
                         {isRollback ?

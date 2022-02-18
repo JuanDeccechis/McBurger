@@ -12,8 +12,6 @@ class SliderItem extends React.Component {
     
     render() {
         const { handleAddItem, handleImageClick, title, dateExprirePromotion, value, isMobile, id, image } = this.props;
-        console.log("item slider");
-        console.log(isMobile);
         return (
             <div id={id} className={`container-item container-slider-item`}>
                 <Title className="control-overflow with-padding" text={title} />

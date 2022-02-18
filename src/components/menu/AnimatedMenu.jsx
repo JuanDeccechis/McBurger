@@ -16,7 +16,9 @@ class AnimatedMenu extends React.Component {
         event.preventDefault();
         let rotatingDesc = document.querySelector(".rotate-menu-1");
         let rotatingAsc = document.querySelector(".rotate-menu--1");
-        if (!(rotatingAsc || rotatingDesc)) {
+        let rotatingDesc2 = document.querySelector(".rotate-menu-2");
+        let rotatingAsc2 = document.querySelector(".rotate-menu--2");
+        if (!(rotatingAsc || rotatingDesc || rotatingAsc2 || rotatingDesc2)) {
             document.querySelector(sectionId).scrollIntoView({
                 behavior: 'smooth'
             });
@@ -57,16 +59,22 @@ class AnimatedMenu extends React.Component {
             case (itemSelected === -7):
                 classRotate = -1;
             break;
-            case (itemSelected) === 2:
-                classRotate = -2;
-            break;
-            case (itemSelected) === -2:
+            case (itemSelected === 6):
                 classRotate = 2;
             break;
-            case (itemSelected) === 1:
+            case (itemSelected === -6):
+                classRotate = -2;
+            break;
+            case (itemSelected === 2):
+                classRotate = -2;
+            break;
+            case (itemSelected === -2):
+                classRotate = 2;
+            break;
+            case (itemSelected === 1):
                 classRotate = -1;
             break;
-            case (itemSelected) === -1:
+            case (itemSelected === -1):
                 classRotate = 1;
             break;
             default:
