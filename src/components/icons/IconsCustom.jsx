@@ -151,6 +151,10 @@ class IconsCustom extends React.Component {
                 return (
                     <NavigationOutlinedIcon className={`icon icon-color ${className ? className : ''} rotate-percentage`} onClick={handleClick} /> 
                 );
+            case "Logo":
+                return (
+                    <div className={`icon icon-color logo Logo ${className ? className : ''} `} onClick={handleClick} /> 
+                );
             default:
                 return (
                     <ExpandMoreOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 

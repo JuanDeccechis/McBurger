@@ -15,7 +15,7 @@ class Menu extends React.Component {
             <div className="container-menu menu">
                 <NavLink exact to="/home" className="menu-item container-centralized" /*"link nav-text"*/ activeClassName="active"> 
                     <div className="menu-item container-centralized">
-                        <IconsCustom icon="HomeOutlinedIcon" />
+                        <IconsCustom icon= "Logo" />
                         <span className="text1"> Home </span>
                     </div>
                 </NavLink>
