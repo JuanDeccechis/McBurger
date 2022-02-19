@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/McBurger/static/css/main.744c63b8.chunk.css",
-    "main.js": "/McBurger/static/js/main.10ea7a4b.chunk.js",
-    "main.js.map": "/McBurger/static/js/main.10ea7a4b.chunk.js.map",
+    "main.css": "/McBurger/static/css/main.58e87b3c.chunk.css",
+    "main.js": "/McBurger/static/js/main.7baf9b02.chunk.js",
+    "main.js.map": "/McBurger/static/js/main.7baf9b02.chunk.js.map",
     "runtime-main.js": "/McBurger/static/js/runtime-main.ed2a5c83.js",
     "runtime-main.js.map": "/McBurger/static/js/runtime-main.ed2a5c83.js.map",
     "static/js/2.6b480e70.chunk.js": "/McBurger/static/js/2.6b480e70.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.0e9d57fa.chunk.js": "/McBurger/static/js/3.0e9d57fa.chunk.js",
     "static/js/3.0e9d57fa.chunk.js.map": "/McBurger/static/js/3.0e9d57fa.chunk.js.map",
     "index.html": "/McBurger/index.html",
-    "static/css/main.744c63b8.chunk.css.map": "/McBurger/static/css/main.744c63b8.chunk.css.map",
+    "static/css/main.58e87b3c.chunk.css.map": "/McBurger/static/css/main.58e87b3c.chunk.css.map",
     "static/js/2.6b480e70.chunk.js.LICENSE.txt": "/McBurger/static/js/2.6b480e70.chunk.js.LICENSE.txt",
     "static/media/Image.css": "/McBurger/static/media/tomate.754e6838.png",
     "static/media/AnimatedPortrait.css": "/McBurger/static/media/chipsVertical.edacf6d1.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.ed2a5c83.js",
     "static/js/2.6b480e70.chunk.js",
-    "static/css/main.744c63b8.chunk.css",
-    "static/js/main.10ea7a4b.chunk.js"
+    "static/css/main.58e87b3c.chunk.css",
+    "static/js/main.7baf9b02.chunk.js"
   ]
 }
