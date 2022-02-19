@@ -183,6 +183,9 @@ article.container-pages.container-page-cart {
 article.container-pages .container-pages-with-inputs {
     align-items: normal;
     width: calc(100% - 15px);
+    padding: 6px 5px 6px 6px;
+    border: 2px solid var(--scroll-bar-color);
+    border-radius: 4px;
     background-color: var(--container-color);
 }
 
@@ -233,6 +236,11 @@ div.image.background.publicity {
     border: 0;
     width: 638px;
     margin: 0 auto;
+}
+
+div.image.map.mobile-map {
+    width: 375px;
+    height: 280px;
 }
 
 div.image.map {
@@ -349,14 +357,14 @@ article.container-pages.us-form {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .foods-list-category {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     article.container-pages.container-home-page {

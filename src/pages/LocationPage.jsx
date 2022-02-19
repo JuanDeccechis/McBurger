@@ -17,12 +17,11 @@ class LocationPage extends React.Component {
             return (
                 <article className={`container-pages location-page `}>
                     <div className="container-pages-with-inputs short-divider">
-                        <Input placeholder="name" name="name" minLength={3} type="text" hasIconLeft={false} >
-                            <IconsCustom icon="NavigationOutlinedIcon" className="right" />
+                        <Input placeholder="Ciudad" name="Ciudad" type="text" hasIconLeft={false} >
                         </Input>
                     </div>
-                    <div>
-                        <div id="map" className="map image image-centralized" />  
+                    <div className="short-divider">
+                        <div id="map" className="map image image-centralized mobile-map" />  
                     </div>
 
                     {Locations.map((item, index) => (
@@ -42,8 +41,7 @@ class LocationPage extends React.Component {
             return (
                 <article className={`container-pages location-page `}>
                     <div className="container-pages-with-inputs short-divider">
-                        <Input placeholder="name" name="name" minLength={3} type="text" hasIconLeft={false} >
-                            <IconsCustom icon="NavigationOutlinedIcon" className="right" />
+                        <Input placeholder="Ciudad" name="Ciudad" type="text" hasIconLeft={false} >
                         </Input>
                     </div>
                     <div className="location-page-container page-with-image">

@@ -29,6 +29,14 @@ export const Cart = {
             quantity: 5,
             image: "MegaBaconSimple",
         },
+        {
+            title: "Mega bacon simple",
+            value: 600,
+            id: 2,
+            description: "bacon crocante, queso cheddar, salsa barbacoa y cebolla",
+            quantity: 5,
+            image: "MegaBaconSimple",
+        },
     ],
 
 }
