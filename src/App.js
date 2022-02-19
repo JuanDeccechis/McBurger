@@ -1,5 +1,6 @@
 import './App.css';
 import './AnimatedScroll.css';
+import './AnimatedPortrait.css';
 import React from 'react';
 import Button from './components/button/Button';
 import Input from './components/input/Input';
@@ -15,6 +16,7 @@ import SliderItem from './components/sliderItem/SliderItem';
 import SliderProducts from './components/sliderProducts/SliderProducts';
 import Menu from './components/menu/Menu';
 import Router from './pages/Router';
+import LoadingPage from './pages/LoadingPage';
 
 
 const mobileMax = 600;
@@ -25,12 +27,14 @@ class App extends React.Component {
         this.state = {
             width: window.innerWidth,
             isMobile: window.innerWidth <= mobileMax,
+            isLoading: true,
         }
     }
 
     componentDidMount(){
         localStorage.setItem("isLogged", "false");
         window.addEventListener('resize', this.reportWindowSize);
+        window.setTimeout(() => {this.setState({ isLoading: false })}, 10000);
     }
 
     componentWillUnmount() {
@@ -45,35 +49,14 @@ class App extends React.Component {
     }
 
     render() {
-        const { isMobile } = this.state;
+        const { isMobile, isLoading } = this.state;
         return (
             <div className="App">
-                {/*<Button isDisabled={true} content="comidas" isBig={true} />
-                <Button content="comidas" isBig={false} />
-                <Button content="locales" isBig={true} />
-                <button>carrito</button>
-                <Button isDisabled={false} content="nosotros" isPrimary={false} isBig={true} />
-                <Input placeholder="name" name="name" minLength={3} maxLength={12} type="text" hasIconLeft={true} >
-                    <IconsCustom icon="VisibilityIcon" className="right" />
-        </Input>
-                <Image alt="foto" className="Combo" isBig={false} isFood={false}/>
-                <IconsCustom icon="NavigationOutlinedIcon" />
-                <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={true}/>
-                <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" isDetail={false}/>
-                <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" date="08/03" isDetail={true}/>
-                <FoodInfo />
-                <LocationInfo />
-                <SliderCategories hasArrows={true} isMobile={true} />
-                <SliderCategories hasArrows={true} isMobile={false} />
-                <IngredientsInfo />
-                <Item title="Pollo con cheddar" value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false}/>
-                <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={false} />
-                <Item title="Pollo con cheddar" quantity={2} value={700} description="doble queso cheddar" dateExprirePromotion="08/03" isDetail={false} isCarrito={true} />
-                <SliderItem title="Bacon full" dateExprirePromotion="08/03" value={1400} />
-                <SliderProducts isMobile={true} title="Bacon full" dateExprirePromotion="11/03" value={750} isMobile={isMobile}/>
-            <CarritoFooter title="Total" value={123}/>
-        */}
-            <Router isMobile={isMobile} />
+                {isLoading && isMobile ?
+                    <LoadingPage />
+                :
+                    <Router isMobile={isMobile} />
+                }
             </div>
         );
     }

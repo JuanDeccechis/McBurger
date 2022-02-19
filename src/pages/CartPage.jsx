@@ -34,12 +34,12 @@ class CartPage extends React.Component {
                 <article className={`container-pages container-page-cart ${isMobile ? '' : 'cart-pages'} `}>
                     
                     <div className="location-page-container">
-                        <div className="longDivider">
+                        <div className="short-divider">
                             <div className="background image publicity" />  
                         </div>
                         <div>
                             {Cart.items.map((cartItem, index) => (
-                                <div key={index} className={` ${isMobile ? '' : 'inline'} `}>
+                                <div key={index} className={/* ${isMobile ? '' : ''} `*/''}>
                                     <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} isCarrito={true} />
                                 </div>
                             ))}

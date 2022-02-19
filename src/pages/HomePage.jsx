@@ -289,7 +289,6 @@ class HomePage extends React.Component {
         if (isMobile) {
             return (
                 <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
-    home page
                 <div>
                     <div id="home-section-1" className="section section-burger">
                         <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
@@ -330,7 +329,6 @@ class HomePage extends React.Component {
 
                     </span>
                     <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
-        home page
                     <div>
                         <div id="home-section-1" className="section section-burger">
                             <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />

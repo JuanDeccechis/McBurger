@@ -95,8 +95,10 @@
 .rotate-menu-2 {
     animation-name: animaRotacionMenu-2;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: animaRotacionMenu-2;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .rotado-2 {
@@ -114,8 +116,10 @@
 .rotate-inverted-items-menu-2 {
     animation-name: animaRotacionItemsMenu-2;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: animaRotacionItemsMenu-2;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .rotado-inverted-items-menu-2 {
@@ -138,8 +142,10 @@
 .rotate-menu-1 {
     animation-name: animaRotacionMenu-1;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: animaRotacionMenu-1;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .rotado-1 {
@@ -157,8 +163,10 @@
 .rotate-inverted-items-menu-1 {
     animation-name: animaRotacionItemsMenu-1;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: animaRotacionItemsMenu-1;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .rotado-inverted-items-menu-1 {
@@ -182,8 +190,10 @@
 .rotate-menu--1 {
     animation-name: animaRotacionMenu--1;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: animaRotacionMenu--1;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .rotado--1 {
@@ -201,8 +211,10 @@
 .rotate-inverted-items-menu--1 {
     animation-name: animaRotacionItemsMenu--1;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: animaRotacionItemsMenu--1;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .rotado-inverted-items-menu--1 {
@@ -226,8 +238,10 @@
 .rotate-menu--2 {
     animation-name: animaRotacionMenu--2;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: animaRotacionMenu--2;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .rotado--2 {
@@ -245,8 +259,10 @@
 .rotate-inverted-items-menu--2 {
     animation-name: animaRotacionItemsMenu--2;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: animaRotacionItemsMenu--2;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .rotado-inverted-items-menu--2 {

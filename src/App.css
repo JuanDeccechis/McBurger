@@ -224,6 +224,14 @@ div.image.background {
     border: 2px solid var(--scroll-bar-color);
     border-radius: 4px;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.image.background.publicity {
+    border: 0;
+    width: 638px;
+    margin: 0 auto;
 }
 
 div.image.map {
@@ -231,7 +239,7 @@ div.image.map {
 }
 
 div.image.publicity {
-    background-image: url("./images/others/publicity-drink.png");
+    background-image: url("./images/others/publicity-eat.png");
 }
 
 .container-foods {

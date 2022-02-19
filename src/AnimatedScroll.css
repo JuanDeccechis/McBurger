@@ -113,78 +113,100 @@ div.parts.panArriba{
 .animaCaidaCarne {
     animation-name: desplazarCaidaCarne;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarCaidaCarne;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaCaidaLechuga {
     animation-name: desplazarCaidaLechuga;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarCaidaLechuga;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaCaidaBerenjena {
     animation-name: desplazarCaidaBerenjena;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarCaidaBerenjena;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaCaidaPanArriba {
     animation-name: desplazarCaidaPanArriba;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarCaidaPanArriba;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaSubidaCarne {
     animation-name: desplazarSubidaCarne;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarSubidaCarne;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaSubidaLechuga {
     animation-name: desplazarSubidaLechuga;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarSubidaLechuga;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaSubidaBerenjena {
     animation-name: desplazarSubidaBerenjena;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarSubidaBerenjena;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaSubidaPanArriba {
     animation-name: desplazarSubidaPanArriba;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarSubidaPanArriba;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaEntradaCardLechuga {
     animation-name: desplazarDesdeAbajo;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarDesdeAbajo;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaEntradaCardBerenjena {
     animation-name: desplazarDesdeIzquierda;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarDesdeIzquierda;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .animaEntradaCardPan {
     animation-name: desplazarDesdeArriba;
     animation-duration: 2s;
+    animation-timing-function: linear;
     -webkit-animation-name: desplazarDesdeArriba;
     -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
 }
 
 .section {
