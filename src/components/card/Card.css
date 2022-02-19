@@ -1,9 +1,10 @@
 .item-long-description {
-    height: 70px;
+    min-height: 70px;
 }
 
 .card-item {
     opacity: 0.9;
+    height: auto;
 }
 
 .card-item-with-buttons {
