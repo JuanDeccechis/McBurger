@@ -7,6 +7,7 @@
     width: 200px;
     right: calc(20px);
     height: 0;
+    top: calc(50% - 238px - 84px);
 }
 
 div.parts.panAbajo{
@@ -36,6 +37,12 @@ div.parts.panArriba{
 }
 
 
+@keyframes desplazarCaidaPanAbajo {
+    from {top: -55px;}
+    to {top: 1px;}
+    from {opacity: 0.01;}
+    to {opacity: 1.0;}
+}
 
 @keyframes desplazarCaidaCarne {
     from {top: 1px;}
@@ -61,6 +68,11 @@ div.parts.panArriba{
     to {top: 238px;}
     from {opacity: 0.01;}
     to {opacity: 1.0;}
+}
+
+@keyframes desplazarSubidaPanAbajo {
+    from {top: 1px;  opacity: 1.0;}
+    to {top: -55px;  opacity: 0.01;}
 }
 
 @keyframes desplazarSubidaCarne {
@@ -110,6 +122,15 @@ div.parts.panArriba{
     to {opacity: 1.0;}
 }
 
+.animaCaidaPanAbajo {
+    animation-name: desplazarCaidaPanAbajo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    -webkit-animation-name: desplazarCaidaPanAbajo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+}
+
 .animaCaidaCarne {
     animation-name: desplazarCaidaCarne;
     animation-duration: 2s;
@@ -142,6 +163,15 @@ div.parts.panArriba{
     animation-duration: 2s;
     animation-timing-function: linear;
     -webkit-animation-name: desplazarCaidaPanArriba;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+}
+
+.animaSubidaPanAbajo {
+    animation-name: desplazarSubidaPanAbajo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    -webkit-animation-name: desplazarSubidaPanAbajo;
     -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: linear;
 }

@@ -54,21 +54,26 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaCaidaLechuga");
                 document.querySelector(".carne").classList.add("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.add("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaSubidaPanAbajo");
                 document.querySelector(".carne").classList.remove("oculto");
+                document.querySelector(".panAbajo").classList.remove("oculto");
                 break;
             case 2:
                 document.querySelector(".panArriba").classList.remove("animaCaidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.add("animaCaidaLechuga");
                 document.querySelector(".carne").classList.remove("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaSubidaPanAbajo");
                 document.querySelector(".lechuga").classList.remove("oculto");
 
                 cards = document.querySelectorAll(".card-lettuce");
@@ -82,10 +87,12 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.add("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaCaidaLechuga");
                 document.querySelector(".carne").classList.remove("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaSubidaPanAbajo");
                 document.querySelector(".berenjena").classList.remove("oculto");
 
                 cards = document.querySelectorAll(".card-eggplants");
@@ -99,10 +106,12 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaCaidaLechuga");
                 document.querySelector(".carne").classList.remove("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaSubidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("oculto");
 
                 //.classList.add("mostrarCardPanArriba");
@@ -117,20 +126,24 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaCaidaLechuga");
                 document.querySelector(".carne").classList.remove("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaSubidaPanAbajo");
                 break;
             case 12:
                 document.querySelector(".panArriba").classList.remove("animaCaidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaCaidaLechuga");
                 document.querySelector(".carne").classList.remove("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.add("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaSubidaPanAbajo");
 
                 window.setTimeout(() => {
                     document.querySelector(".panArriba").classList.add("oculto");
@@ -141,10 +154,12 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaCaidaLechuga");
                 document.querySelector(".carne").classList.remove("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.add("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaSubidaPanAbajo");
 
                 //.classList.add("borrarCardPanArriba");
                 cards = document.querySelectorAll(".card-bread");
@@ -162,10 +177,12 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaCaidaLechuga");
                 document.querySelector(".carne").classList.remove("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.add("animaSubidaLechuga");
                 document.querySelector(".carne").classList.remove("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaSubidaPanAbajo");
 
                 cards = document.querySelectorAll(".card-eggplants");
                 cards[0].classList.remove("animaEntradaCardBerenjena");
@@ -182,10 +199,12 @@ class HomePage extends React.Component {
                 document.querySelector(".berenjena").classList.remove("animaCaidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaCaidaLechuga");
                 document.querySelector(".carne").classList.remove("animaCaidaCarne");
+                document.querySelector(".panAbajo").classList.remove("animaCaidaPanAbajo");
                 document.querySelector(".panArriba").classList.remove("animaSubidaPanArriba");
                 document.querySelector(".berenjena").classList.remove("animaSubidaBerenjena");
                 document.querySelector(".lechuga").classList.remove("animaSubidaLechuga");
                 document.querySelector(".carne").classList.add("animaSubidaCarne");
+                document.querySelector(".panAbajo").classList.add("animaSubidaPanAbajo");
 
                 cards = document.querySelectorAll(".card-lettuce");
                 cards[0].classList.remove("animaEntradaCardLechuga");
@@ -195,6 +214,7 @@ class HomePage extends React.Component {
 
                 window.setTimeout(() => {
                     document.querySelector(".carne").classList.add("oculto");
+                    document.querySelector(".panAbajo").classList.add("oculto");
                 }, 1000);
                 break;
             default:
@@ -358,7 +378,7 @@ class HomePage extends React.Component {
                             <div className="oculto parts berenjena"/>
                             <div className="oculto parts lechuga"/>
                             <div className="oculto parts carne"/>
-                            <div className="parts panAbajo"/>
+                            <div className="oculto parts panAbajo"/>
                         </div>
                     }
                     </article>
