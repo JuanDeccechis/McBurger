@@ -68,9 +68,9 @@ class TextArea extends React.Component {
         }
         return (
             <>
-                <fieldset aria-hidden="true" className={`input-icons ${error ? '' : 'input-margin'} textarea`}>
+                <fieldset aria-hidden="true" className={`input-icons input-margin ${error ? 'error-color' : 'input-margin'} textarea`}>
                     <legend>
-                        <span className="text2">{`${placeholder ? placeholder : name} *`}</span>
+                        <span className={`text2 ${error ? "error-color" : ''}`}>{`${placeholder ? placeholder : name} *`}</span>
                     </legend>
                     {this.props.children && 
                         childrenWithExtraProp[0] /* el ícono */}
@@ -94,7 +94,7 @@ class TextArea extends React.Component {
                     {childrenWithExtraProp[1] /* el ojo */}
                 </fieldset>
                 {error &&
-                    <span className="text2 error-text">{error}</span>
+                    <span className="text2 error-text error-color">{error}</span>
                 }
             </>
         );

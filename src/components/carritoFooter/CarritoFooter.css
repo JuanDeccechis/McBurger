@@ -6,7 +6,12 @@
     width: calc(100% - 47px);
     position: fixed;
     bottom: 68px;
+    margin: 8px auto 0 auto;
     border: 2px solid var(--scroll-bar-color);
+}
+
+.carrito-footer-horizontal-alinineation {
+    left: 16px;
 }
 
 .titles-space-between {

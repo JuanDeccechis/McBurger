@@ -16,7 +16,7 @@ class LocationPage extends React.Component {
         if (isMobile) {
             return (
                 <article className={`container-pages location-page `}>
-                    <div className="container-pages-with-inputs divider">
+                    <div className="container-pages-with-inputs short-divider">
                         <Input placeholder="name" name="name" minLength={3} type="text" hasIconLeft={false} >
                             <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                         </Input>
@@ -41,7 +41,7 @@ class LocationPage extends React.Component {
         else {
             return (
                 <article className={`container-pages location-page `}>
-                    <div className="container-pages-with-inputs divider">
+                    <div className="container-pages-with-inputs short-divider">
                         <Input placeholder="name" name="name" minLength={3} type="text" hasIconLeft={false} >
                             <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                         </Input>

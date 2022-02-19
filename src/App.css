@@ -7,6 +7,7 @@
     --disabled-color: #858585;
     --icon-color: #007BAD;
     --text-color: #000000;
+    --error-color: #CD002A;
     --scroll-bar-color: #00000055;
     background-color: var(--background-color);
     --previous-rotation-value: 90deg;
@@ -268,8 +269,16 @@ div.image.publicity {
 article.container-pages.us-form {
     border-radius: 4px;
     background-color: var(--container-color);
-    padding: 8px 7px 8px 8px; /*8px 11px 8px 12px;*/
-    width: calc(100% - 23px);
+    padding: 6px 5px 6px 6px; /*8px 11px 8px 12px;*/
+    border: 2px solid var(--scroll-bar-color);
+    width: calc(100% - 31px);
+    height: calc(100% - 92px);
+    margin: 0 auto;
+    top: 8px;
+}
+
+.us-form .container-slider-data-categories {
+    left: auto;
 }
 
 .inline {
@@ -374,8 +383,11 @@ article.container-pages.us-form {
     article.container-pages .us-form {
         border-radius: 4px;
         background-color: var(--container-color);
-        padding: 8px 7px 8px 8px; /*8px 11px 8px 12px;*/
-        width: calc(100% - 23px);
+        padding: 6px 5px 6px 6px; /*8px 11px 8px 12px;*/
+        border: 2px solid var(--scroll-bar-color);
+        width: calc(100% - 31px);
+        right: 8px;
+        top: 8px;
     }    
 
     div.image.background {

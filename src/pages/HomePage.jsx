@@ -204,7 +204,7 @@ class HomePage extends React.Component {
 
     getCasoDesc = (altura) => {
         const { seccionActual } = this.state;
-        if (altura >= window.innerHeight * 3.0) {
+        if (altura >= (window.innerHeight * 3.0 - 1)) {
             if (seccionActual !== 4) {
                 return 4;
             }
@@ -212,7 +212,7 @@ class HomePage extends React.Component {
                 return 0;
             }
         }
-        if (altura >= window.innerHeight * 2.0) {
+        if (altura > (window.innerHeight * 2.0 - 1)) {
             if (seccionActual !== 3) {
                 return 3;
             }
@@ -220,7 +220,7 @@ class HomePage extends React.Component {
                 return 0;
             }
         }
-        if (altura >= window.innerHeight * 1.0) {
+        if (altura > (window.innerHeight * 1.0 - 1)) {
             if (seccionActual !== 2) {
                 return 2;
             }
@@ -282,6 +282,9 @@ class HomePage extends React.Component {
         }
     }
 
+    handleRedirect(destination) {
+        this.props.history.push(destination);
+    }
     
     render() {
         const { seccionActual } = this.state;
@@ -291,22 +294,22 @@ class HomePage extends React.Component {
                 <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
                 <div>
                     <div id="home-section-1" className="section section-burger">
-                        <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                        <Card isMobile={isMobile} title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/food")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/food")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                     </div>
                 </div>
                 <div>
                     <div id="home-section-2" className="section section-lettuce">
-                        <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                        <Card isMobile={isMobile} title="Nuestras Comidas" buttonText="Ver comidas" primaryAction={() => this.handleRedirect("/food")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                     </div>
                 </div>
                 <div>
                     <div id="home-section-3" className="section section-eggplants">
-                        <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                        <Card isMobile={isMobile} title="Nuestras Promos" buttonText="Ver promos" primaryAction={() => this.handleRedirect("/promotion")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                     </div>
                 </div>
                 <div>
                     <div id="home-section-4" className="section section-bread">
-                        <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                        <Card isMobile={isMobile} title="Nosotros" buttonText="Contactanos" primaryAction={() => this.handleRedirect("/us")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                     </div>
                 </div>
                 {!isMobile &&
@@ -331,22 +334,22 @@ class HomePage extends React.Component {
                     <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
                     <div>
                         <div id="home-section-1" className="section section-burger">
-                            <Card title="Nuestras Comidas" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                            <Card isMobile={isMobile} title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/food")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/food")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                         </div>
                     </div>
                     <div>
                         <div id="home-section-2" className="section section-lettuce">
-                            <Card title="Nuestras Comidas" className="card-lettuce oculto" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                            <Card isMobile={isMobile} title="Nuestras Comidas" className="card-lettuce oculto" buttonText="Ver comidas" primaryAction={() => this.handleRedirect("/food")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                         </div>
                     </div>
                     <div>
                         <div id="home-section-3" className="section section-eggplants">
-                            <Card title="Nuestras Comidas" className="card-eggplants oculto" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                            <Card isMobile={isMobile} title="Nuestras Promos" className="card-eggplants oculto" buttonText="Ver promos" primaryAction={() => this.handleRedirect("/promotion")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                         </div>
                     </div>
                     <div>
                         <div id="home-section-4" className="section section-bread">
-                            <Card title="Nuestras Comidas" className="card-bread oculto" description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
+                            <Card isMobile={isMobile} title="Nosotros" className="card-bread oculto" buttonText="Contactanos" primaryAction={() => this.handleRedirect("/us")}  description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad" />
                         </div>
                     </div>
                     {!isMobile &&

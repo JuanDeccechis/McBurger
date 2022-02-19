@@ -11,8 +11,16 @@ fieldset {
     width: 100%;
 }
 
+.error-color {
+    color: var(--error-color);
+}
+
+fieldset.error-color {
+    border-color: var(--error-color);
+}
+
 .input-margin {
-    margin-bottom: 22px;
+    margin-top: 16px;
 }
 
 fieldset input {

@@ -34,7 +34,9 @@ class App extends React.Component {
     componentDidMount(){
         localStorage.setItem("isLogged", "false");
         window.addEventListener('resize', this.reportWindowSize);
-        window.setTimeout(() => {this.setState({ isLoading: false })}, 10000);
+        if (window.innerWidth <= mobileMax) {
+            window.setTimeout(() => {this.setState({ isLoading: false })}, 10000);
+        }
     }
 
     componentWillUnmount() {

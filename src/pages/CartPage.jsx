@@ -26,7 +26,7 @@ class CartPage extends React.Component {
                             </div>
                         ))}
                     </article>
-                    <CarritoFooter value={2700} history={this.props.history} />
+                    <CarritoFooter value={2700} history={this.props.history} isMobile={isMobile} />
                 </>
             );
         } else {
@@ -43,7 +43,7 @@ class CartPage extends React.Component {
                                     <Item className="divider" handleClick={() => this.handleClick(cartItem.id)} title={cartItem.title} value={cartItem.value} description={cartItem.globalDescription ? cartItem.globalDescription : cartItem.description} isDetail={false} dateExprirePromotion={cartItem.expirationDate} quantity={cartItem.quantity} isCarrito={true} />
                                 </div>
                             ))}
-                            <CarritoFooter value={2700} history={this.props.history} />
+                            <CarritoFooter value={2700} history={this.props.history} isMobile={isMobile} />
                         </div>
                     </div>
                 </article>

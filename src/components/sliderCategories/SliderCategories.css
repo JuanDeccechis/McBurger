@@ -1,7 +1,7 @@
 .container-slider-data-categories {
     border-radius: 4px;
     background-color: var(--container-color);
-    padding: 8px 7px 8px 8px; /*8px 11px 8px 12px;*/
+    padding: 6px 5px 6px 6px; /*8px 11px 8px 12px;*/
     height: calc(40px);
     width: calc(100% - 47px);
     display: flex;
@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 8px auto 0 auto;
-    left: 14px;
+    left: 16px;
 }
 
 .container-slider-arrow {

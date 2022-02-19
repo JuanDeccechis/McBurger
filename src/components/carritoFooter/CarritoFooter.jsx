@@ -15,9 +15,9 @@ class CarritoFooter extends React.Component {
     }
 
     render() {
-        const { value } = this.props;
+        const { value, isMobile } = this.props;
         return (
-            <div className="container-carrito-footer">
+            <div className={`container-carrito-footer ${isMobile ? 'carrito-footer-horizontal-alinineation' : ''}`}>
                 <Title text={"Total"} className="title-space-between" value={value} />
                 <div className="container-carrito-footer-buttons">
                     <Button handleClick={this.goPromotions} content="Seguir Comprando" isBig={true} isPrimary={true} className="divider" />

@@ -16,8 +16,8 @@ class FoodInfo extends React.Component {
                     <Title className="title-space-between" text={"Ingredientes"} />
                     <div className="flex-wrap divider">
                         {item.ingredients.map((ingredient, index) => (
-                            <div className="ingredient-inline">
-                                <span key={index} className="text1"> {ingredient} </span>
+                            <div key={index} className="ingredient-inline">
+                                <span className="text1"> {ingredient} </span>
                             </div>
 
                         ))}

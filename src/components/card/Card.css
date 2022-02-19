@@ -5,3 +5,7 @@
 .card-item {
     opacity: 0.9;
 }
+
+.card-item-with-buttons {
+    height: calc(435px - 48px - 172px + 72px);
+}

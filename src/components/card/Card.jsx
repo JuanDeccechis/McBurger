@@ -11,7 +11,7 @@ class Card extends React.Component {
     }
     
     render() {
-        const { className, value, image, title, description, handleAddItem } = this.props;
+        const { className, isMobile, value, image, title, buttonText, description, primaryAction, secondaryAction, secondButtonText } = this.props;
         return (
             <>
                 <div className={`container-item container-food container-item-without-detail card-item
@@ -21,6 +21,7 @@ class Card extends React.Component {
                 </div>
         
                 <div className={`container-item container-food container-item-without-detail card-item
+                ${(secondButtonText && isMobile) ? 'card-item-with-buttons' : ''}
                 ${className ? className : ''} `}>
                     <Title className={`titles-item-space title-centralized`} text={title} />
 
@@ -28,9 +29,16 @@ class Card extends React.Component {
                         <div className="item-long-description">
                             <span className="text1"> {description} </span>
                         </div>
-                        <div className="divider desktop-centralized">
-                            <Button handleClick={handleAddItem} isDisabled={false} content="Agregar" isBig={true} isPrimary={true} className="centralized" />
+                        {secondButtonText ?
+                        <div className={`container-carrito-footer-buttons`}>
+                            <Button handleClick={primaryAction} isDisabled={false} content={buttonText} isBig={true} isPrimary={true} className="divider" />
+                            <Button handleClick={secondaryAction} isDisabled={false} content={secondButtonText} isBig={true} isPrimary={false} className="divider" />
                         </div>
+                        :
+                            <div className={`desktop-centralized`}>
+                                <Button handleClick={primaryAction} isDisabled={false} content={buttonText} isBig={true} isPrimary={true} className="divider" />
+                            </div>
+                        }
                     </>  
 
                 </div>

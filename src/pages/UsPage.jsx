@@ -49,7 +49,7 @@ class UsPage extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className={`divider`} >
+                    <div >
                         <Input placeholder="Nombre" name="Nombre" minLength={3} type="text" hasIconLeft={false} >
                         </Input>
                         <Input placeholder="Apellido" name="Apellido" minLength={3} type="text" hasIconLeft={false} >
@@ -61,23 +61,26 @@ class UsPage extends React.Component {
                         <Input placeholder="Ciudad" name="Ciudad" minLength={3} type="text" hasIconLeft={false} >
                             <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                         </Input>
-                        <TextArea placeholder="Comentario" name="Comentario" minLength={3} type="text" hasIconLeft={false} >
-                        </TextArea>
-                        
-                    {selectedSection === 0 ?
-                        <Button isDisabled={false} content="Enviar comentario" isPrimary={true} isBig={true} />            
-                    :
                         <div>
-                            <div className="us-inline">
-                                <Button isDisabled={false} handleClick={() => this.attachFile()} content="Adjuntar CV" isPrimary={true} isBig={false} />
-                                {fileAttached &&
-                                    <span className="text1 us-file-attached">Curriculum-Vitae.pdf</span>
-                                }
-                            </div>
-
-                            <Button isDisabled={!fileAttached} className="divider" content="Postularme" isPrimary={true} isBig={true} />
+                            <TextArea placeholder="Comentario" name="Comentario" minLength={3} type="text" hasIconLeft={false} />
                         </div>
-                    }
+                        
+                        <div className="divider">
+                            {selectedSection === 0 ?
+                                <Button isDisabled={false} content="Enviar comentario" isPrimary={true} isBig={true} />            
+                            :
+                                <div>
+                                    <div className="us-inline">
+                                        <Button isDisabled={false} handleClick={() => this.attachFile()} content="Adjuntar CV" isPrimary={true} isBig={false} />
+                                        {fileAttached &&
+                                            <span className="text1 us-file-attached">Curriculum-Vitae.pdf</span>
+                                        }
+                                    </div>
+
+                                    <Button isDisabled={!fileAttached} className="divider" content="Postularme" isPrimary={true} isBig={true} />
+                                </div>
+                            }
+                        </div>
                     </div>
                 </article>
             );
@@ -99,7 +102,7 @@ class UsPage extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`divider`} >
+                            <div>
                                 <Input placeholder="Nombre" name="Nombre" minLength={3} type="text" hasIconLeft={false} >
                                 </Input>
                                 <Input placeholder="Apellido" name="Apellido" minLength={3} type="text" hasIconLeft={false} >
@@ -111,23 +114,26 @@ class UsPage extends React.Component {
                                 <Input placeholder="Ciudad" name="Ciudad" minLength={3} type="text" hasIconLeft={false} >
                                     <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                                 </Input>
-                                <TextArea placeholder="Comentario" name="Comentario" minLength={3} type="text" hasIconLeft={false} >
-                                </TextArea>
-                                
-                            {selectedSection === 0 ?
-                                <Button isDisabled={false} content="Enviar comentario" isPrimary={true} isBig={true} />            
-                            :
                                 <div>
-                                    <div className="us-inline">
-                                        <Button isDisabled={false} handleClick={() => this.attachFile()} content="Adjuntar CV" isPrimary={true} isBig={false} />
-                                        {fileAttached &&
-                                            <span className="text1 us-file-attached">Curriculum-Vitae.pdf</span>
-                                        }
-                                    </div>
-
-                                    <Button isDisabled={!fileAttached} className="divider" content="Postularme" isPrimary={true} isBig={true} />
+                                    <TextArea placeholder="Comentario" name="Comentario" minLength={3} type="text" hasIconLeft={false} />
                                 </div>
-                            }
+                                
+                                <div className="divider">
+                                    {selectedSection === 0 ?
+                                        <Button isDisabled={false} content="Enviar comentario" isPrimary={true} isBig={true} />            
+                                    :
+                                        <div>
+                                            <div className="us-inline">
+                                                <Button isDisabled={false} handleClick={() => this.attachFile()} content="Adjuntar CV" isPrimary={true} isBig={false} />
+                                                {fileAttached &&
+                                                    <span className="text1 us-file-attached">Curriculum-Vitae.pdf</span>
+                                                }
+                                            </div>
+
+                                            <Button isDisabled={!fileAttached} className="divider" content="Postularme" isPrimary={true} isBig={true} />
+                                        </div>
+                                    }
+                                </div>
                             </div>
                         </div>
                     </article>
