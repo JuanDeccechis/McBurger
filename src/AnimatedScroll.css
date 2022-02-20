@@ -250,16 +250,57 @@ div.parts.panArriba{
     align-items: center;
 }
 
+.section.section-burger {
+    background-image: url("./images/background/fondoVacio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
 .section-burger {
-    background-color: brown;
+    background-color: #914F39;
+}
+
+.background-card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.section.section-lettuce {
+    background-image: url("./images/background/fondoLleno.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 
 .section-lettuce {
     background-color: #CAE9B4;
 }
 
+.section.section-eggplants {
+    background-image: url("./images/background/fondoVacio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
 .section-eggplants {
     background-color: #614051;
+}
+
+.section.section-bread {
+    background-image: url("./images/background/fondoLleno.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 
 .section-bread {

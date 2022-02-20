@@ -79,8 +79,6 @@ class HomePage extends React.Component {
                 cards = document.querySelectorAll(".card-lettuce");
                 cards[0].classList.add("animaEntradaCardLechuga");
                 cards[0].classList.remove("oculto");
-                cards[1].classList.add("animaEntradaCardLechuga");
-                cards[1].classList.remove("oculto");
                 break;
             case 3:
                 document.querySelector(".panArriba").classList.remove("animaCaidaPanArriba");
@@ -98,8 +96,6 @@ class HomePage extends React.Component {
                 cards = document.querySelectorAll(".card-eggplants");
                 cards[0].classList.add("animaEntradaCardBerenjena");
                 cards[0].classList.remove("oculto");
-                cards[1].classList.add("animaEntradaCardBerenjena");
-                cards[1].classList.remove("oculto");
                 break;
             case 4:
                 document.querySelector(".panArriba").classList.add("animaCaidaPanArriba");
@@ -118,8 +114,6 @@ class HomePage extends React.Component {
                 cards = document.querySelectorAll(".card-bread");
                 cards[0].classList.add("animaEntradaCardPan");
                 cards[0].classList.remove("oculto");
-                cards[1].classList.add("animaEntradaCardPan");
-                cards[1].classList.remove("oculto");
                 break;
             case 11:
                 document.querySelector(".panArriba").classList.remove("animaCaidaPanArriba");
@@ -165,8 +159,6 @@ class HomePage extends React.Component {
                 cards = document.querySelectorAll(".card-bread");
                 cards[0].classList.remove("animaEntradaCardPan");
                 cards[0].classList.add("oculto");
-                cards[1].classList.remove("animaEntradaCardPan");
-                cards[1].classList.add("oculto");
 
                 window.setTimeout(() => {
                     document.querySelector(".berenjena").classList.add("oculto");
@@ -187,8 +179,6 @@ class HomePage extends React.Component {
                 cards = document.querySelectorAll(".card-eggplants");
                 cards[0].classList.remove("animaEntradaCardBerenjena");
                 cards[0].classList.add("oculto");
-                cards[1].classList.remove("animaEntradaCardBerenjena");
-                cards[1].classList.add("oculto");
 
                 window.setTimeout(() => {
                     document.querySelector(".lechuga").classList.add("oculto");
@@ -209,8 +199,6 @@ class HomePage extends React.Component {
                 cards = document.querySelectorAll(".card-lettuce");
                 cards[0].classList.remove("animaEntradaCardLechuga");
                 cards[0].classList.add("oculto");
-                cards[1].classList.remove("animaEntradaCardLechuga");
-                cards[1].classList.add("oculto");
 
                 window.setTimeout(() => {
                     document.querySelector(".carne").classList.add("oculto");
@@ -314,22 +302,22 @@ class HomePage extends React.Component {
                 <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
                 <div>
                     <div id="home-section-1" className="section section-burger">
-                        <Card isMobile={isMobile} title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/food")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/food")} description="Te damos la bienvenida a nuestra familia, donde puedes degustar la pasion que dejamos en la cocina." />
+                        <Card isMobile={isMobile} background="section-burger" title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/food")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/food")} description="Te damos la bienvenida a nuestra familia, donde puedes degustar la pasion que dejamos en la cocina." />
                     </div>
                 </div>
                 <div>
                     <div id="home-section-2" className="section section-lettuce">
-                        <Card isMobile={isMobile} title="Nuestras Comidas" buttonText="Ver comidas" primaryAction={() => this.handleRedirect("/food")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad." />
+                        <Card isMobile={isMobile} background="section-lettuce" title="Nuestras Comidas" buttonText="Ver comidas" primaryAction={() => this.handleRedirect("/food")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad." />
                     </div>
                 </div>
                 <div>
                     <div id="home-section-3" className="section section-eggplants">
-                        <Card isMobile={isMobile} title="Nuestras Promos" buttonText="Ver promos" primaryAction={() => this.handleRedirect("/promotion")} description="Disfruta los mejores combos de sabor: calidad, cantidad y variedad a precios super, con nuestras promociones." />
+                        <Card isMobile={isMobile} background="section-eggplants" title="Nuestras Promos" buttonText="Ver promos" primaryAction={() => this.handleRedirect("/promotion")} description="Disfruta los mejores combos de sabor: calidad, cantidad y variedad a precios super, con nuestras promociones." />
                     </div>
                 </div>
                 <div>
                     <div id="home-section-4" className="section section-bread">
-                        <Card isMobile={isMobile} title="Nosotros" buttonText="Contactanos" primaryAction={() => this.handleRedirect("/us")} description="Convertite en parte del mejor equipo de trabajo, y dejanos comentarios para seguir mejorando tanto nuestra comida como nuestra atencion." />
+                        <Card isMobile={isMobile} background="section-bread" title="Nosotros" buttonText="Contactanos" primaryAction={() => this.handleRedirect("/us")} description="Convertite en parte del mejor equipo de trabajo, y dejanos comentarios para seguir mejorando tanto nuestra comida como nuestra atencion." />
                     </div>
                 </div>
                 {!isMobile &&
@@ -354,22 +342,22 @@ class HomePage extends React.Component {
                     <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
                     <div>
                         <div id="home-section-1" className="section section-burger">
-                            <Card isMobile={isMobile} title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/food")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/food")} description="Te damos la bienvenida a nuestra familia, donde puedes degustar la pasion que dejamos en la cocina." />
+                            <Card isMobile={isMobile} background="section-burger" title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/food")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/food")} description="Te damos la bienvenida a nuestra familia, donde puedes degustar la pasion que dejamos en la cocina." />
                         </div>
                     </div>
                     <div>
                         <div id="home-section-2" className="section section-lettuce">
-                            <Card isMobile={isMobile} title="Nuestras Comidas" className="card-lettuce oculto" buttonText="Ver comidas" primaryAction={() => this.handleRedirect("/food")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad." />
+                            <Card isMobile={isMobile} background="section-lettuce" title="Nuestras Comidas" className="card-lettuce oculto" buttonText="Ver comidas" primaryAction={() => this.handleRedirect("/food")} description="Experimenta un mundo de sabor con nuestras delicias. Contamos con la materia prima de mayor calidad." />
                         </div>
                     </div>
                     <div>
                         <div id="home-section-3" className="section section-eggplants">
-                            <Card isMobile={isMobile} title="Nuestras Promos" className="card-eggplants oculto" buttonText="Ver promos" primaryAction={() => this.handleRedirect("/promotion")} description="Disfruta los mejores combos de sabor: calidad, cantidad y variedad a precios super, con nuestras promociones." />
+                            <Card isMobile={isMobile} background="section-eggplants" title="Nuestras Promos" className="card-eggplants oculto" buttonText="Ver promos" primaryAction={() => this.handleRedirect("/promotion")} description="Disfruta los mejores combos de sabor: calidad, cantidad y variedad a precios super, con nuestras promociones." />
                         </div>
                     </div>
                     <div>
                         <div id="home-section-4" className="section section-bread">
-                            <Card isMobile={isMobile} title="Nosotros" className="card-bread oculto" buttonText="Contactanos" primaryAction={() => this.handleRedirect("/us")}  description="Convertite en parte del mejor equipo de trabajo, y dejanos comentarios para seguir mejorando tanto nuestra comida como nuestra atencion." />
+                            <Card isMobile={isMobile} background="section-bread" title="Nosotros" className="card-bread oculto" buttonText="Contactanos" primaryAction={() => this.handleRedirect("/us")}  description="Convertite en parte del mejor equipo de trabajo, y dejanos comentarios para seguir mejorando tanto nuestra comida como nuestra atencion." />
                         </div>
                     </div>
                     {!isMobile &&

@@ -25,6 +25,10 @@
     text-decoration: none;
 }
 
+.animated-menu-item .background-card {
+    border-radius: 100px;
+}
+
 .animated-menu-item .menu-item {
     border: 0;
     text-align: center;
