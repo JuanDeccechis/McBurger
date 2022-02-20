@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/McBurger/static/css/main.e9ea13a4.chunk.css",
-    "main.js": "/McBurger/static/js/main.b62f1017.chunk.js",
-    "main.js.map": "/McBurger/static/js/main.b62f1017.chunk.js.map",
+    "main.css": "/McBurger/static/css/main.4abe24e6.chunk.css",
+    "main.js": "/McBurger/static/js/main.91e3438b.chunk.js",
+    "main.js.map": "/McBurger/static/js/main.91e3438b.chunk.js.map",
     "runtime-main.js": "/McBurger/static/js/runtime-main.15451249.js",
     "runtime-main.js.map": "/McBurger/static/js/runtime-main.15451249.js.map",
     "static/js/2.b7f4fa68.chunk.js": "/McBurger/static/js/2.b7f4fa68.chunk.js",
@@ -10,18 +10,19 @@
     "static/js/3.558b4071.chunk.js": "/McBurger/static/js/3.558b4071.chunk.js",
     "static/js/3.558b4071.chunk.js.map": "/McBurger/static/js/3.558b4071.chunk.js.map",
     "index.html": "/McBurger/index.html",
-    "static/css/main.e9ea13a4.chunk.css.map": "/McBurger/static/css/main.e9ea13a4.chunk.css.map",
+    "static/css/main.4abe24e6.chunk.css.map": "/McBurger/static/css/main.4abe24e6.chunk.css.map",
     "static/js/2.b7f4fa68.chunk.js.LICENSE.txt": "/McBurger/static/js/2.b7f4fa68.chunk.js.LICENSE.txt",
     "static/media/Image.css": "/McBurger/static/media/tomate.754e6838.png",
     "static/media/AnimatedPortrait.css": "/McBurger/static/media/chipsVertical.edacf6d1.png",
     "static/media/AnimatedMenu.css": "/McBurger/static/media/burger-bread.16812e39.png",
+    "static/media/AnimatedScroll.css": "/McBurger/static/media/fondoVacio.3a87d794.jpg",
     "static/media/IconsCustom.css": "/McBurger/static/media/logo.0c20523d.png",
     "static/media/App.css": "/McBurger/static/media/publicity-eat.a047d7ac.png"
   },
   "entrypoints": [
     "static/js/runtime-main.15451249.js",
     "static/js/2.b7f4fa68.chunk.js",
-    "static/css/main.e9ea13a4.chunk.css",
-    "static/js/main.b62f1017.chunk.js"
+    "static/css/main.4abe24e6.chunk.css",
+    "static/js/main.91e3438b.chunk.js"
   ]
 }
