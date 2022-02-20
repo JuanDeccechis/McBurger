@@ -291,6 +291,11 @@ class HomePage extends React.Component {
     }
 
     handleRedirect(destination) {
+        if (destination === "/session") {
+            destination = "/promotion";
+            localStorage.setItem("isLogged", "true");
+
+        }
         this.props.history.push(destination);
     }
     
@@ -302,7 +307,7 @@ class HomePage extends React.Component {
                 <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
                 <div>
                     <div id="home-section-1" className="section section-burger">
-                        <Card isMobile={isMobile} background="section-burger" title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/food")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/food")} description="Te damos la bienvenida a nuestra familia, donde puedes degustar la pasion que dejamos en la cocina." />
+                        <Card isMobile={isMobile} background="section-burger" title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/session")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/session")} description="Te damos la bienvenida a nuestra familia, donde puedes degustar la pasion que dejamos en la cocina." />
                     </div>
                 </div>
                 <div>
@@ -342,7 +347,7 @@ class HomePage extends React.Component {
                     <article className={`container-pages ${isMobile ? '' : 'container-home-page'} `}>
                     <div>
                         <div id="home-section-1" className="section section-burger">
-                            <Card isMobile={isMobile} background="section-burger" title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/food")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/food")} description="Te damos la bienvenida a nuestra familia, donde puedes degustar la pasion que dejamos en la cocina." />
+                            <Card isMobile={isMobile} background="section-burger" title="McBurger" buttonText="Iniciar sesion" primaryAction={() => this.handleRedirect("/session")} secondButtonText="Registrarme" secondaryAction={() => this.handleRedirect("/session")} description="Te damos la bienvenida a nuestra familia, donde puedes degustar la pasion que dejamos en la cocina." />
                         </div>
                     </div>
                     <div>

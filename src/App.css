@@ -307,10 +307,10 @@ article.container-pages.us-form {
 
 .message-popup {
     width: 100%;
-    height: 100%;
+    height: 200px;
     background-color: var(--primary-color);
     opacity: 0.9;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;

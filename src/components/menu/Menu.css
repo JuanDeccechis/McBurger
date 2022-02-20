@@ -2,10 +2,11 @@
     position: fixed;
     bottom: 0;
     height: 44px;
-    padding: 6px 5px 6px 6px;
+    padding: 6px 0px 6px 0px;
     border: 2px solid var(--scroll-bar-color);
     background-color: var(--container-color);
     border-radius: 4px;
+    width: calc(100% - 4px);
 }
 
 .container-menu {
