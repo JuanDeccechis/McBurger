@@ -18,6 +18,7 @@ class LocationPage extends React.Component {
                 <article className={`container-pages location-page `}>
                     <div className="container-pages-with-inputs short-divider">
                         <Input placeholder="Ciudad" name="Ciudad" type="text" hasIconLeft={false} >
+                            <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                         </Input>
                     </div>
                     <div className="short-divider">
@@ -42,6 +43,7 @@ class LocationPage extends React.Component {
                 <article className={`container-pages location-page `}>
                     <div className="container-pages-with-inputs short-divider">
                         <Input placeholder="Ciudad" name="Ciudad" type="text" hasIconLeft={false} >
+                            <IconsCustom icon="NavigationOutlinedIcon" className="right" />
                         </Input>
                     </div>
                     <div className="location-page-container page-with-image">

@@ -20,14 +20,15 @@ import NavigationOutlinedIcon from '@material-ui/icons/NavigationOutlined';
 import NotificationsActiveOutlinedIcon from '@material-ui/icons/NotificationsActiveOutlined';
 import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
+import PhoneIcon from '@material-ui/icons/Phone';
 import RemoveCircleOutlineOutlinedIcon from '@material-ui/icons/RemoveCircleOutlineOutlined';
 import RestaurantOutlinedIcon from '@material-ui/icons/RestaurantOutlined';
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
-import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
 import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
 import VisibilityOutlinedIcon from "@material-ui/icons/VisibilityOutlined";
 import VisibilityOffOutlinedIcon from "@material-ui/icons/VisibilityOffOutlined";
+import SpecialIcon from './SpecialIcon';
 
 class IconsCustom extends React.Component {
     constructor(props) {
@@ -98,6 +99,10 @@ class IconsCustom extends React.Component {
                 return (
                     <PaymentOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
+            case "PhoneIcon":
+                return (
+                    <PhoneIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
+                );
             case "RemoveCircleOutlineOutlinedIcon":
                 return (
                     <RemoveCircleOutlineOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
@@ -112,7 +117,8 @@ class IconsCustom extends React.Component {
                 );
             case "ShoppingCartOutlinedIcon":
                 return (
-                    <ShoppingCartOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
+                    <SpecialIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} />
+//                    <ShoppingCartOutlinedIcon className={`icon icon-color ${className ? className : ''}`} onClick={handleClick} /> 
                 );
             case "StarBorderOutlinedIcon":
                 return (

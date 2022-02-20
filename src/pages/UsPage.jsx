@@ -50,13 +50,17 @@ class UsPage extends React.Component {
                         </div>
                     </div>
                     <div >
-                        <Input placeholder="Nombre" name="Nombre" minLength={3} type="text" hasIconLeft={false} >
+                        <Input placeholder="Nombre" name="Nombre" minLength={3} type="text" hasIconLeft={true} >
+                            <IconsCustom icon="AccountCircleOutlinedIcon" />
                         </Input>
-                        <Input placeholder="Apellido" name="Apellido" minLength={3} type="text" hasIconLeft={false} >
+                        <Input placeholder="Apellido" name="Apellido" minLength={3} type="text" hasIconLeft={true} >
+                            <IconsCustom icon="AccountCircleOutlinedIcon" />
                         </Input>
-                        <Input placeholder="E-mail" name="E-mail" minLength={3} type="text" hasIconLeft={false} >
+                        <Input placeholder="E-mail" name="E-mail" minLength={3} type="text" hasIconLeft={true} >
+                            <IconsCustom icon="AlternateEmailOutlinedIcon" />
                         </Input>
-                        <Input placeholder="Telefono" name="Telefono" minLength={3} type="text" hasIconLeft={false} >
+                        <Input placeholder="Telefono" name="Telefono" minLength={3} type="text" hasIconLeft={true} >
+                            <IconsCustom icon="PhoneIcon" />
                         </Input>
                         <Input placeholder="Ciudad" name="Ciudad" minLength={3} type="text" hasIconLeft={false} >
                             <IconsCustom icon="NavigationOutlinedIcon" className="right" />
@@ -103,13 +107,17 @@ class UsPage extends React.Component {
                                 </div>
                             </div>
                             <div>
-                                <Input placeholder="Nombre" name="Nombre" minLength={3} type="text" hasIconLeft={false} >
+                                <Input placeholder="Nombre" name="Nombre" minLength={3} type="text" hasIconLeft={true} >
+                                    <IconsCustom icon="AccountCircleOutlinedIcon" />
                                 </Input>
-                                <Input placeholder="Apellido" name="Apellido" minLength={3} type="text" hasIconLeft={false} >
+                                <Input placeholder="Apellido" name="Apellido" minLength={3} type="text" hasIconLeft={true} >
+                                    <IconsCustom icon="AccountCircleOutlinedIcon" />
                                 </Input>
-                                <Input placeholder="E-mail" name="E-mail" minLength={3} type="text" hasIconLeft={false} >
+                                <Input placeholder="E-mail" name="E-mail" minLength={3} type="text" hasIconLeft={true} >
+                                    <IconsCustom icon="AlternateEmailOutlinedIcon" />
                                 </Input>
-                                <Input placeholder="Telefono" name="Telefono" minLength={3} type="text" hasIconLeft={false} >
+                                <Input placeholder="Telefono" name="Telefono" minLength={3} type="text" hasIconLeft={true} >
+                                    <IconsCustom icon="PhoneIcon" />
                                 </Input>
                                 <Input placeholder="Ciudad" name="Ciudad" minLength={3} type="text" hasIconLeft={false} >
                                     <IconsCustom icon="NavigationOutlinedIcon" className="right" />
