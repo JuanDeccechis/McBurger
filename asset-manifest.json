@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/McBurger/static/css/main.c3d869e9.chunk.css",
-    "main.js": "/McBurger/static/js/main.d02f6ef6.chunk.js",
-    "main.js.map": "/McBurger/static/js/main.d02f6ef6.chunk.js.map",
+    "main.js": "/McBurger/static/js/main.74b3fa6f.chunk.js",
+    "main.js.map": "/McBurger/static/js/main.74b3fa6f.chunk.js.map",
     "runtime-main.js": "/McBurger/static/js/runtime-main.15451249.js",
     "runtime-main.js.map": "/McBurger/static/js/runtime-main.15451249.js.map",
     "static/js/2.dc64faab.chunk.js": "/McBurger/static/js/2.dc64faab.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.15451249.js",
     "static/js/2.dc64faab.chunk.js",
     "static/css/main.c3d869e9.chunk.css",
-    "static/js/main.d02f6ef6.chunk.js"
+    "static/js/main.74b3fa6f.chunk.js"
   ]
 }
