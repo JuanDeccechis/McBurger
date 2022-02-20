@@ -12,7 +12,6 @@ class LocationPage extends React.Component {
 
     render() {
         const { isMobile } = this.props;
-        console.log(Locations);
         if (isMobile) {
             return (
                 <article className={`container-pages location-page `}>

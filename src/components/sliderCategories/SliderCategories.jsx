@@ -31,7 +31,6 @@ class SliderCategories extends React.Component {
     }
 
     setFocus(sectionId) {
-        console.log(sectionId);
         const { selectedSection } = this.state;
         let sections = document.querySelectorAll(".slider-data-item");
         let previousSection = sections[selectedSection];

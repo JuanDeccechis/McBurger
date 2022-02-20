@@ -9,14 +9,12 @@ class PromotionPage extends React.Component {
     }
 
     handleClick(id) {
-        console.log(id);
         let path = `/detail`;
         this.props.history.push(path);
     }
     
     render() {
         const { isMobile } = this.props;
-        console.log(Promotions);
         return (
             <article className={`container-pages promotion-pages`}>
                 {Promotions.map((promotion, index) => (

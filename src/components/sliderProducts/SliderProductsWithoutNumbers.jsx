@@ -14,15 +14,12 @@ class SliderProductsWithoutNumbers extends React.Component {
     
 
     handleAddItem(id) {
-        console.log(id);
-        console.log("slider product added");
         localStorage.setItem("showMessage", "true");
         let path = `/detailAdded`;
         this.props.history.push(path);
     }
 
     handleShowDetail(id) {
-        console.log(id);
         let path = `/detail`;
         this.props.history.push(path);
     }

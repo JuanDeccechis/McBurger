@@ -81,7 +81,6 @@ class AnimatedMenu extends React.Component {
                 classRotate = 0;
             break;
         }
-        console.log(classRotate);
         if (classRotate !== 0) {
             rotateContainer.classList.remove(`rotado-${previousClassRotate}`);
             for (let index = 0; index < rotateItems.length; index++) {

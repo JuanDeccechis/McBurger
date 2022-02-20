@@ -27,8 +27,6 @@ class SliderProducts extends React.Component {
                 behavior: 'smooth'
             });
             let log = document.querySelector(`.container-slider-products-data`);
-            console.log(sectionId);
-            console.log(log.scrollLeft);
             this.setState({ currentSection: sectionId });
             this.setFocus(sectionId);
         }
@@ -77,15 +75,12 @@ class SliderProducts extends React.Component {
     }
 
     handleAddItem(id) {
-        console.log(id);
-        console.log("slider product added");
         localStorage.setItem("showMessage", "true");
         let path = `/detailAdded`;
         this.props.history.push(path);
     }
 
     handleShowDetail(id) {
-        console.log(id);
         let path = `/detail`;
         this.props.history.push(path);
     }

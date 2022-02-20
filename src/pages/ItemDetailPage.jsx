@@ -18,16 +18,12 @@ class ItemDetailPage extends React.Component {
 
     componentDidMount() {
         let showMessage = localStorage.getItem("showMessage");
-        console.log(showMessage === "true");
-        console.log(this.props.showMessage);
         if (showMessage === "true") {
             this.addProduct();
         }
     }
 
     handleClick(id) {
-        console.log(id);
-        console.log("productAdded");
         this.addProduct();
     }
     
@@ -47,7 +43,6 @@ class ItemDetailPage extends React.Component {
     render() {
         const { isMobile } = this.props;
         const { showMessage, isRollback } = this.state;
-        console.log(showMessage);
         return (
             <article className={`container-pages `}>
                 <div className="detail-page-container">

@@ -15,8 +15,6 @@ class CartPage extends React.Component {
 
     componentDidMount() {
         let showMessage = localStorage.getItem("showMessageCart");
-        console.log(showMessage === "true");
-        console.log(this.props.showMessage);
         if (showMessage === "true") {
             this.hideMessage();
         }
@@ -39,7 +37,6 @@ class CartPage extends React.Component {
     }
 
     handleClick(id) {
-        console.log(id);
     }
 
     loggin = () => {
@@ -50,7 +47,6 @@ class CartPage extends React.Component {
     render() {
         const { isMobile } = this.props;
         const { showMessage, buyFinished } = this.state;
-        console.log(Cart);
         if (isMobile) {
             return (
                 <>

@@ -13,14 +13,12 @@ class FoodPage extends React.Component {
     }
 
     handleShowDetail(id) {
-        console.log(id);
         let path = `/detail`;
         this.props.history.push(path);
     }
     
     render() {
         const { isMobile } = this.props;
-        console.log(isMobile);
         if (isMobile) {
             return (
                 <>
